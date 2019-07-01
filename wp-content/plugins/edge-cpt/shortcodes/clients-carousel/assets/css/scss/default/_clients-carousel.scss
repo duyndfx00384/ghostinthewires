@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+
+.edgt-clients-carousel-holder {
+    @include edgtRelativeHolderLayout();
+    
+	.edgt-cc-inner {
+		@include edgtRelativeHolderLayout();
+	}
+	
+	.edgt-cc-item {
+		@include edgtRelativeHolderLayout();
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		.edgt-cc-item {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	/***** Hover Types - begin *****/
+	
+	&.edgt-cc-hover-switch-images {
+		
+		.edgt-cc-item {
+			
+			&:hover {
+				
+				.edgt-cc-image {
+					opacity: 0;
+				}
+				
+				.edgt-cc-hover-image {
+					opacity: 1;
+				}
+			}
+			
+			.edgt-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				margin: 0 auto;
+				opacity: 1;
+				@include edgtTransition(opacity .25s ease-in-out);
+			}
+			
+			.edgt-cc-hover-image {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: auto;
+				opacity: 0;
+				@include edgtTransform(translateX(-50%));
+				@include edgtTransition(opacity .25s ease-in-out);
+			}
+		}
+	}
+	
+	&.edgt-cc-hover-roll-over {
+		
+		.edgt-cc-item {
+			overflow: hidden;
+			
+			&:hover {
+				
+				.edgt-cc-image {
+					@include edgtTransform(translateY(100%));
+				}
+				
+				.edgt-cc-hover-image {
+					@include edgtTransform(translate(-50%, 0));
+				}
+			}
+			
+			.edgt-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				margin: 0 auto;
+				-webkit-transition: -webkit-transform .4s ease;
+				-moz-transition: -moz-transform .4s ease;
+				transition: transform .4s ease;
+			}
+			
+			.edgt-cc-hover-image {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: auto;
+				-webkit-transition: -webkit-transform .4s ease;
+				-moz-transition: -moz-transform .4s ease;
+				transition: transform .4s ease;
+				@include edgtTransform(translate(-50%, -100%));
+			}
+		}
+	}
+
+	&.edgt-cc-hover-pulse-image {
+
+		.edgt-cc-item {
+			overflow: hidden;
+			@include edgtTransition(all 0.25s ease-in-out);
+			@include edgtTransform(translate3d(0,0,0));
+
+			&.edgt-cc-hover {
+				@include edgtTransform(translate3d(0,-6px,0));
+			}
+
+			.edgt-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				margin: 0 auto;
+			}
+
+			.edgt-cc-hover-image {
+				display: none;
+			}
+		}
+	}
+	
+	/***** Hover Types - end *****/
+}
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */

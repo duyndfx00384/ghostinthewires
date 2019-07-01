@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Header responsive styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgt-page-header .edgt-vertical-align-containers {
+    padding: 0 40px;
+  }
+  .edgt-paspartu-enabled .edgt-page-header .edgt-vertical-align-containers {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edgt-drop-down .wide .second > .inner > ul {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-page-header {
+    display: none;
+  }
+  .edgt-drop-down .wide .second > .inner > ul {
+    width: 768px;
+  }
+}
+
+/* ==========================================================================
+   Header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Fixed header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edgt-boxed .edgt-page-header .edgt-fixed-wrapper.fixed {
+    width: 1000px;
+  }
+}
+
+/* ==========================================================================
+   Fixed header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Standard style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1300px) {
+  .edgt-header-standard .edgt-menu-area {
+    padding: 0 40px;
+  }
+  .edgt-header-standard .edgt-menu-area .edgt-grid {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Header Standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Mobile header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-mobile-header {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-mobile-header .edgt-mobile-side-area {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Mobile header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Sticky header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edgt-boxed .edgt-page-header .edgt-sticky-header {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-boxed.edgt-sticky-up-mobile-header .mobile-header-appear .edgt-mobile-header-inner {
+    width: 818px;
+    left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-boxed.edgt-sticky-up-mobile-header .mobile-header-appear .edgt-mobile-header-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-boxed.edgt-sticky-up-mobile-header .mobile-header-appear .edgt-mobile-header-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-boxed.edgt-sticky-up-mobile-header .mobile-header-appear .edgt-mobile-header-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .edgt-boxed.edgt-sticky-up-mobile-header .mobile-header-appear .edgt-mobile-header-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Sticky header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Top header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgt-top-bar > .edgt-vertical-align-containers {
+    padding: 0 40px;
+  }
+  .edgt-top-bar .edgt-grid {
+    width: 100%;
+  }
+  .edgt-top-bar .edgt-grid .edgt-vertical-align-containers {
+    padding: 0 40px;
+  }
+  .edgt-top-bar-in-grid-padding .edgt-top-bar .edgt-grid .edgt-vertical-align-containers {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-top-bar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Top header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/header-map-responsive.css.map */

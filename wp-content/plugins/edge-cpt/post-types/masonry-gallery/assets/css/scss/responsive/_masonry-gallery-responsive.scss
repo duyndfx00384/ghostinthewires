@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.edgt-masonry-gallery-holder {
+		
+		.edgt-mg-grid-sizer,
+		.edgt-mg-item {
+			width: 50%;
+		}
+		
+		.edgt-mg-item {
+			
+			&.edgt-mg-square-big,
+			&.edgt-mg-rectangle-landscape {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 680px) {
+
+	.edgt-masonry-gallery-holder {
+		
+		.edgt-mg-grid-sizer,
+		.edgt-mg-item {
+			width: 100%;
+		}
+	}
+}
+
+@include phone-portrait {
+	.edgt-masonry-gallery-holder {
+		.edgt-mg-item.edgt-mg-extended {
+			.edgt-mg-item-text {
+				display: none;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - end
+   ========================================================================== */

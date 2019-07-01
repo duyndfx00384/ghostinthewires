@@ -1,0 +1,58 @@
+.edgt-linked-images-list {
+
+	$columns_label: ('two', 'three', 'four', 'five', 'six');
+
+	@for $i from 0 to length($columns_label) {
+		&.edgt-#{nth($columns_label,$i+1)}-columns {
+			$column_margin_width: 2%*($i+2);
+			$column_width: (100%-$column_margin_width)/($i+2);
+
+
+			.edgt-linked-images-item {
+				width: $column_width;
+				margin-right: 2%;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.edgt-linked-images-item {
+		float: left;
+		box-sizing: border-box;
+		text-align: center;
+		margin-bottom: 2%;
+		&:last-child {
+			padding-right: 0;
+		}
+		.edgt-linked-images-item-inner {
+			position: relative;
+			padding: 40px;
+			background-color: #fff;
+			border: 1px solid #e1e1e1;
+		}
+
+		.edgt-linked-images-item-image {
+			@include edgtTransition(all 0.25s ease-in-out);
+		}
+
+		.edgt-corse-category-title-text {
+			margin-bottom: 0;
+		}
+
+		.edgt-linked-images-item-link {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		&:hover {
+			.edgt-linked-images-item-image {
+				@include edgtTransform(translateY(-4px));
+			}
+		}
+	}
+}

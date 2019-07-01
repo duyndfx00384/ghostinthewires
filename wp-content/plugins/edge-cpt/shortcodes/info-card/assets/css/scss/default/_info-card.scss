@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Info Card shortcode style - begin
+   ========================================================================== */
+
+.edgt-info-card{
+    border: 1px solid #e1e1e1;
+
+    .edgt-info-card-inner{
+        .edgt-ic-image-holder{
+            border-bottom: 1px solid #e1e1e1;
+            overflow: hidden;
+
+            img{
+                display: block;
+                width: 100%;
+                @include edgtTransition(transform .5s ease);
+                @include edgtTransform(translateZ(0));
+                backface-visibility: hidden;
+            }
+        }
+
+        .edgt-ic-text-holder{
+            padding: 0 27px 40px;
+            position: relative;
+            .edgt-ic-title{
+                margin: 31px 0 14px;
+            }
+            .edgt-ic-description{
+                text-align: left;
+            }
+            .edgt-ic-tag{
+                position: absolute;
+                right: 15px;
+                bottom: 6px;
+                font-size: 14px;
+                color: $first-main-color;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &:hover {
+        .edgt-info-card-inner {
+            .edgt-ic-image-holder img {
+                @include edgtTransform(scale(1.02));
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Info Card shortcode style - end
+   ========================================================================== */

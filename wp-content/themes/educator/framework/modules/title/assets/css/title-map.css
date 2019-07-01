@@ -1,0 +1,213 @@
+/* ==========================================================================
+   Title styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Title style - begin
+   ========================================================================== */
+.edgt-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 175px;
+  background-color: #f7f7f7;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  z-index: 101;
+}
+
+.edgt-title-holder.edgt-bg-responsive {
+  height: auto !important;
+}
+
+.edgt-title-holder.edgt-bg-responsive .edgt-title-image {
+  display: block;
+}
+
+.edgt-title-holder.edgt-bg-responsive .edgt-title-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edgt-title-holder.edgt-bg-parallax {
+  background-attachment: fixed;
+}
+
+.edgt-title-holder .edgt-title-image {
+  display: none;
+}
+
+.edgt-title-holder .edgt-title-image img {
+  display: block;
+  width: 100%;
+}
+
+.edgt-title-holder .edgt-title-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edgt-title-holder .edgt-title-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   Title style - end
+   ========================================================================== */
+/* ==========================================================================
+   Breadcrumbs Title type style - begin
+   ========================================================================== */
+.edgt-title-holder.edgt-breadcrumbs-type .edgt-breadcrumbs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.edgt-title-holder.edgt-breadcrumbs-type .edgt-breadcrumbs.edgt-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edgt-title-holder.edgt-breadcrumbs-type .edgt-breadcrumbs.edgt-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.edgt-title-holder.edgt-breadcrumbs-type .edgt-breadcrumbs a,
+.edgt-title-holder.edgt-breadcrumbs-type .edgt-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.edgt-title-holder.edgt-breadcrumbs-type .edgt-breadcrumbs a:hover {
+  color: #434343;
+}
+
+/* ==========================================================================
+   Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Centered Title type style - begin
+   ========================================================================== */
+.edgt-title-holder.edgt-centered-type .edgt-title-inner {
+  text-align: center;
+}
+
+.edgt-title-holder.edgt-centered-type .edgt-page-title {
+  margin: 0;
+}
+
+.edgt-title-holder.edgt-centered-type .edgt-page-subtitle {
+  display: block;
+  margin: 10px 0 0 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Centered Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard With Breadcrumbs Title type style - begin
+   ========================================================================== */
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-title-info,
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-title-inner-holder {
+  position: relative;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-title-info {
+  display: inline-block;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs-info {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-page-title {
+  margin: 0;
+  color: #212121;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-page-subtitle {
+  margin: 5px 0 0;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs {
+  color: #888888;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs.edgt-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs.edgt-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs a,
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs a:hover {
+  color: #212121;
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard Title type style - begin
+   ========================================================================== */
+.edgt-title-holder.edgt-standard-type .edgt-page-title {
+  margin: 0;
+}
+
+.edgt-title-holder.edgt-standard-type .edgt-page-subtitle {
+  margin: 10px 0 0;
+}
+
+/* ==========================================================================
+   Standard Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Title styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/title-map.css.map */

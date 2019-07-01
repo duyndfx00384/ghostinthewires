@@ -1,0 +1,33 @@
+.edgt-course-features-holder {
+	.edgt-course-features{
+		list-style: none;
+		li {
+			border-bottom: 1px solid #ebebeb;
+			padding: 13px 0 12px;
+
+            &:last-child{
+                border-bottom: 0;
+            }
+
+			.edgt-item-icon {
+				color: $first-main-color;
+				font-size: 18px;
+                margin: 0 16px 0 7px;
+                position: relative;
+                top: 5px;
+			}
+
+			.edgt-item-label {
+				font-weight: 600;
+				font-size: 14px;
+				color: $default-heading-color;
+			}
+
+			.edgt-item-value {
+				float: right;
+				font-size: 14px;
+			}
+
+		}
+	}
+}

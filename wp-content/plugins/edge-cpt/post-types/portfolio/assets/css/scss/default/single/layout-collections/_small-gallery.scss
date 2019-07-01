@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - begin
+   ========================================================================== */
+
+.edgt-portfolio-single-holder {
+    
+    &.edgt-ps-small-gallery-layout {
+    
+        .edgt-ps-image-holder {
+            width: 100%;
+        
+            .edgt-ps-image {
+                float: left;
+            
+                a {
+    
+                    &:hover {
+        
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+    
+                    &:after {
+                        @include edgtAbsoluteHolderLayout();
+                        content: '';
+                        background-color: rgba($default-heading-color, .4);
+                        opacity: 0;
+                        @include edgtTransition(opacity .2s ease-in-out);
+                    }
+                }
+            }
+        }
+    
+        .edgt-ps-content-item {
+            margin: 0 0 30px;
+        }
+        .edgt-ps-title{
+            padding: 0;
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - end
+   ========================================================================== */

@@ -1,0 +1,190 @@
+/* ==========================================================================
+   Footer styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   #Content bottom styles - begin
+   ========================================================================== */
+.edgt-content-bottom .edgt-content-bottom-inner {
+  box-sizing: border-box;
+}
+
+.edgt-content-bottom .edgt-content-bottom-inner.edgt-grid {
+  padding: 20px 0;
+}
+
+.edgt-content-bottom .edgt-content-bottom-inner.edgt-full-width {
+  padding: 20px 50px;
+}
+
+/* ==========================================================================
+   #Content bottom styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+.edgt-page-footer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.edgt-page-footer .edgt-footer-top-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #222222;
+  box-sizing: border-box;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.light .widget {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edgt-page-footer .edgt-footer-top-holder.light .widget a {
+  color: #fff;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.light .widget a:hover {
+  color: #a9a9a9;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.light .widget .edgt-course-list-holder.edgt-cl-minimal article .edgt-cli-text .edgt-instructor-name {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edgt-page-footer .edgt-footer-top-holder.dark {
+  background-color: #fafafa;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.dark .widget {
+  color: #888;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.dark .widget a {
+  color: #313131;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.dark .widget a:hover {
+  color: #2d76b2;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.dark .widget .edgt-widget-title-holder .edgt-widget-title {
+  color: #313131;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.dark .widget.edgt-blog-list-widget .edgt-post-info-author .edgt-post-info-author-text,
+.edgt-page-footer .edgt-footer-top-holder.dark .widget.edgt-blog-list-widget .edgt-post-info-author .edgt-post-info-author-link {
+  color: #888 !important;
+}
+
+.edgt-page-footer .edgt-footer-top-holder.edgt-transparent-footer-top {
+  background-color: transparent !important;
+}
+
+.edgt-page-footer .edgt-footer-top-holder .edgt-footer-top-alignment-center {
+  text-align: center;
+}
+
+.edgt-page-footer .edgt-footer-top-holder .edgt-footer-top-alignment-left {
+  text-align: left;
+}
+
+.edgt-page-footer .edgt-footer-top-holder .edgt-footer-top-alignment-right {
+  text-align: right;
+}
+
+.edgt-page-footer .edgt-footer-top-holder .edgt-footer-top-inner {
+  box-sizing: border-box;
+}
+
+.edgt-page-footer .edgt-footer-top-holder .edgt-footer-top-inner.edgt-grid {
+  padding: 98px 0 39px;
+}
+
+.edgt-page-footer .edgt-footer-top-holder .edgt-footer-top-inner.edgt-full-width {
+  padding: 98px 50px 39px;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #222222;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.light .edgt-footer-bottom-inner {
+  border-top-color: #404040;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.light a:not(.edgt-social-icon-widget-holder) {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.light .widget {
+  color: #888;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.light .widget a {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.dark {
+  background-color: #fafafa;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.dark .edgt-footer-bottom-inner {
+  border-top-color: #ebebeb;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.dark .widget {
+  color: #555;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.dark .widget a {
+  color: #313131;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder.edgt-transparent-footer-bottom {
+  background-color: transparent !important;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder .edgt-footer-bottom-inner {
+  box-sizing: border-box;
+  border-top: 1px solid rgba(72, 72, 72, 0.8);
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder .edgt-footer-bottom-inner.edgt-grid {
+  padding: 20px 0;
+}
+
+.edgt-page-footer .edgt-footer-bottom-holder .edgt-footer-bottom-inner.edgt-full-width {
+  padding: 20px 50px;
+}
+
+.edgt-boxed .edgt-page-footer .edgt-footer-top-holder .edgt-footer-top-inner.edgt-grid {
+  padding: 98px 15px 39px;
+}
+
+.edgt-boxed .edgt-page-footer .edgt-footer-bottom-holder .edgt-footer-bottom-inner.edgt-grid {
+  padding: 20px 0;
+}
+
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/footer-map.css.map */

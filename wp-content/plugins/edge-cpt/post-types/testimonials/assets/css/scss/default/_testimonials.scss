@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+
+.edgt-testimonials-holder {
+    @include edgtRelativeHolderLayout();
+    
+    .edgt-testimonials,
+    .edgt-testimonial-content,
+    .edgt-testimonial-text-holder {
+        @include edgtRelativeHolderLayout();
+    }
+
+    .edgt-testimonials {
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+
+    .edgt-testimonial-image {
+
+        img {
+            width: auto !important;
+            border-radius: 50%;
+        }
+    }
+
+    .owl-dots{
+        margin: 15px 0 0;
+        .owl-dot {
+            span {
+                width: 9px;
+                height: 9px;
+                margin: 0 9px;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */

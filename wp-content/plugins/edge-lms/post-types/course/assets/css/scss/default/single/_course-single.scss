@@ -1,0 +1,217 @@
+.edgt-course-single-holder {
+	.edgt-course-basic-info-wrapper {
+        padding-top: 20px;
+        border-top: 1px solid #e1e1e1;
+	}
+
+	.edgt-sidebar-holder {
+		padding-left: 25px;
+	}
+
+
+	.edgt-course-title-wrapper {
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+		.edgt-course-left-section,
+		.edgt-course-right-section {
+			display: table-cell;
+			vertical-align: middle;
+			height: 100%;
+
+		}
+
+		.edgt-course-left-section {
+			width: 70%;
+		}
+		.edgt-course-right-section {
+			text-align: right;
+			width: 30%;
+			.edgt-course-wishlist-wrapper {
+                margin: 0 0 0 9px;
+                display: inline-block;
+                width: 33px;
+                height: 33px;
+                border: 1px solid #e1e1e1;
+                text-align: center;
+				a {
+					color: $first-main-color;
+					text-transform: uppercase;
+					i {
+						font-size: 16px;
+						position: relative;
+                        line-height: 33px;
+					}
+				}
+				span {
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+
+	.edgt-course-single-title {
+        display: inline-block;
+    }
+
+	.edgt-course-basic-info-wrapper {
+
+        .edgt-course-info-wrapper{
+            .edgt-course-instructor,
+            .edgt-course-categories{
+                min-height: 82px;
+            }
+        }
+
+		.edgt-instructor-label,
+		.edgt-course-category-label,
+		.edgt-course-reviews-label{
+			font-size: 14px;
+			font-weight: 600;
+			color: #303030;
+			display: block;
+            padding-top: 7px;
+            line-height: 1;
+		}
+
+		.edgt-instructor-name,
+		.edgt-course-category-items a,
+		.edgt-post-info-comments{
+			font-size: 14px;
+			font-weight: 400;
+			color: #808080;
+			&:hover {
+				color: $first-main-color;
+			}
+		}
+
+		.edgt-course-instructor{
+            border-right: 1px solid #e1e1e1;
+			@include edgtTableLayout;
+			.edgt-instructor-image,
+			.edgt-instructor-info {
+				@include edgtTableCellLayout;
+			}
+
+			.edgt-instructor-image {
+				width: 70px;
+				padding-right: 3px;
+				img {
+					-webkit-border-radius:50%;
+					-moz-border-radius:50%;
+					border-radius:50%;
+					display: block;
+				}
+			}
+		}
+
+		.edgt-course-categories{
+            display: table;
+			padding-top: 2px;
+			padding-left: 0;
+            position: relative;
+            left: -9px;
+
+            .edgt-course-categories-wrapper{
+                display: table-cell;
+                width: 100%;
+                position: relative;
+                vertical-align: middle;
+            }
+		}
+
+		.edgt-course-stars {
+			i {
+				color:  $second-main-color;
+			}
+		}
+
+        .edgt-course-price-detail{
+            display: table;
+            min-height: 82px;
+            float: right;
+
+            &.edgt-course-bought{
+                width: 100%;
+            }
+
+            .edgt-course-single-type {
+                padding-right: 17px;
+                display: table-cell;
+                vertical-align: middle;
+                color: $first-main-color;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 25px;
+            }
+
+
+            .edgt-course-action {
+                display: table-cell;
+                vertical-align: middle;
+
+                &.edgt-course-progress{
+                    width: 80%;
+                }
+            }
+
+        }
+	}
+
+	.edgt-course-image-wrapper {
+		margin-top: 18px;
+	}
+
+	.edgt-course-tabs-wrapper {
+		margin-top: 19px;
+		.edgt-tabs-nav {
+
+            li{
+                &.ui-tabs-active{
+                    background-color: #F7F7F7;
+
+                    a{
+                        background-color: transparent;
+                    }
+                }
+                a{
+                    padding: 5px 35px 6px 24px;
+                }
+            }
+
+			.edgt-tab-icon {
+				font-size: 18px;
+				padding-right: 15px;
+                position: relative;
+                top: 3px;
+			}
+
+            .edgt-tab-title{
+                font-weight: 600;
+            }
+		}
+        .edgt-course-content-title{
+            margin: 20px 0 15px;
+        }
+	}
+
+    .edgt-course-single-wrapper{
+        &.edgt-simple-course{
+            .edgt-user-price-wrapper{
+                text-align: right;
+                display: table-cell;
+                vertical-align: middle;
+                padding-right: 0;
+
+                .edgt-course-single-type{
+                    position: relative;
+                    right: 0;
+                    display: inline-block;
+                }
+            }
+            .edgt-course-tabs-wrapper {
+                margin-top: 40px;
+            }
+        }
+    }
+}

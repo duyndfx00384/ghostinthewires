@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Single Image shortcode style - begin
+   ========================================================================== */
+
+.edgt-single-image-holder {
+    @include edgtRelativeHolderLayout();
+
+	.edgt-si-inner {
+		background-size: cover;
+	}
+
+	&.edgt-has-shadow {
+
+		.edgt-si-inner {
+			-webkit-box-shadow: 0 10px 21px 0 rgba(19,117,154,.1);
+			-moz-box-shadow: 0 10px 21px 0 rgba(19,117,154,.1);
+			box-shadow: 0 10px 21px 0 rgba(19,117,154,.1);
+		}
+	}
+	
+	.edgt-si-inner {
+		@include edgtRelativeHolderLayout();
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-custom-link {
+
+		.edgt-si-inner {
+			@include edgtTransition(all .2s ease-in-out);
+		}
+
+		&:hover {
+			.edgt-si-inner {
+				-webkit-box-shadow: 0 9px 21px 9px rgba(19,117,154,.1);
+				-moz-box-shadow: 0 9px 21px 9px rgba(19,117,154,.1);
+				box-shadow: 0 9px 21px 9px rgba(19,117,154,.1);
+				@include edgtTransform(translateY(-3px));
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-lightbox {
+		
+		.edgt-si-inner {
+			
+			a {
+				
+				&:hover {
+					
+					&:after {
+						opacity: 1;
+					}
+				}
+				
+				&:after {
+					@include edgtAbsoluteHolderLayout();
+					content: '';
+					background-color: rgba($default-heading-color, .4);
+					opacity: 0;
+					@include edgtTransition(opacity .2s ease-in-out);
+				}
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-zoom {
+		
+		.edgt-si-inner {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include edgtTransform(scale(1.04));
+				}
+			}
+			
+			img {
+				-webkit-transition: -webkit-transform .3s ease-in-out;
+				-moz-transition: -moz-transform .3s ease-in-out;
+				transition: transform .3s ease-in-out;
+				@include edgtTransform(scale(1));
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-grayscale {
+		
+		.edgt-si-inner {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include edgtTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+	
+	/***** Moving Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-moving {
+		
+		.edgt-si-inner {
+			overflow: hidden;
+			background-repeat: no-repeat;
+			background-position: 0 center;
+			background-size: 120%;
+			@include edgtTransition(background .7s ease-out);
+			
+			&:hover {
+				background-position: 90% center;
+			}
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			img {
+				z-index: -1;
+			}
+			
+			@include ipad-landscape {
+				background: none;
+				
+				img {
+					z-index: inherit;
+				}
+			}
+		}
+	}
+	
+	/***** Moving Behavior Style - end *****/
+}
+/* ==========================================================================
+   Single Image shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,508 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Common responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Course shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .edgt-course-list-holder.edgt-cl-standard article .edgt-cli-text-holder .edgt-cli-top-info .edgt-cli-title {
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .edgt-course-list-holder.edgt-cl-simple article .edgt-cli-text-holder .edgt-cli-excerpt {
+    margin: 5px 0 5px !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-course-list-holder.edgt-cl-gallery.edgt-cl-five-columns article {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgt-course-list-holder.edgt-cl-gallery.edgt-cl-five-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-course-list-holder.edgt-cl-simple article .edgt-cl-item-inner .edgt-cli-image-wrapper {
+    width: 47%;
+  }
+  .edgt-course-list-holder.edgt-cl-simple article .edgt-cl-item-inner .edgt-cli-text-holder {
+    padding: 24px 30px 25px;
+    width: 53%;
+  }
+  .edgt-course-list-holder.edgt-cl-gallery.edgt-cl-three-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-course-list-holder.edgt-cl-gallery.edgt-cl-three-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-course-list-holder.edgt-cl-gallery.edgt-cl-four-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-course-list-holder.edgt-cl-gallery.edgt-cl-four-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-course-list-holder.edgt-cl-gallery.edgt-cl-five-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-course-list-holder.edgt-cl-gallery.edgt-cl-five-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-course-list-holder.edgt-cl-simple article .edgt-cl-item-inner {
+    display: block;
+    table-layout: inherit;
+  }
+  .edgt-course-list-holder.edgt-cl-simple article .edgt-cl-item-inner .edgt-cli-image-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .edgt-course-list-holder.edgt-cl-simple article .edgt-cl-item-inner .edgt-cli-text-holder {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-course-list-holder.edgt-cl-gallery article {
+    width: 100% !important;
+  }
+  .edgt-cl-filter-holder {
+    display: none;
+  }
+  .edgt-cl-filter-holder .edgt-course-layout-filter {
+    display: none;
+  }
+  .edgt-cl-filter-holder .edgt-course-items-counter,
+  .edgt-cl-filter-holder .edgt-course-items-order {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: left;
+  }
+}
+
+/* ==========================================================================
+   Course shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-course-table-holder tbody .edgt-ct-item .edgt-tc-course-field .edgt-ci-price-holder {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  .edgt-course-table-holder tbody .edgt-ct-item .edgt-tc-instructor-field .edgt-instructor-image {
+    display: none;
+  }
+  .edgt-course-table-holder tbody .edgt-ct-item .edgt-tc-instructor-field .edgt-instructor-name {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-course-table-holder tbody .edgt-ct-item td {
+    padding: 17px 15px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-course-table-holder thead {
+    display: none;
+  }
+  .edgt-course-table-holder thead td {
+    padding: 26px 15px;
+  }
+  .edgt-course-table-holder tbody .edgt-ct-item {
+    display: block;
+    padding: 25px 0 30px;
+  }
+  .edgt-course-table-holder tbody .edgt-ct-item td {
+    display: block;
+    text-align: center;
+    padding: 10px 33px;
+  }
+  .edgt-course-table-holder tbody .edgt-ct-item td.edgt-tc-button-field {
+    text-align: center;
+  }
+  .edgt-course-table-holder tbody .edgt-ct-item .edgt-ci-price-holder {
+    display: block !important;
+  }
+  .edgt-course-table-holder tbody .edgt-ct-item .edgt-tc-instructor-field a {
+    display: block !important;
+  }
+  .edgt-course-table-holder tbody .edgt-ct-item .edgt-tc-instructor-field .edgt-instructor-name {
+    display: block;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-course-popup .edgt-course-popup-inner .edgt-grid-col-8 {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-categories,
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-instructor,
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-reviews {
+    min-height: 80px;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-post-info-comments {
+    display: block;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-instructor-name,
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-category,
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-post-info-comments {
+    display: block;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6 {
+    width: 50%;
+    float: left;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper {
+    width: 50%;
+    float: left;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper .edgt-course-instructor {
+    padding-right: 8px;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-action {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6 {
+    width: 100%;
+    float: left;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper {
+    width: 50%;
+    float: left;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper .edgt-course-instructor {
+    padding-right: 0;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6 .edgt-course-price-detail {
+    float: none;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-action {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-course-single-wrapper .edgt-course-single-holder .edgt-course-title-wrapper .edgt-course-right-section {
+    text-align: left;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper {
+    margin-top: 25px;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-action {
+    text-align: center;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-instructor {
+    display: block;
+    text-align: center;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-instructor .edgt-instructor-image,
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-instructor .edgt-instructor-info {
+    display: block;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-instructor .edgt-instructor-image {
+    padding-right: 0;
+    margin: 0 auto;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-4.edgt-course-info-wrapper {
+    width: 100%;
+    float: none;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-reviews,
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-categories {
+    text-align: center;
+    padding-left: 0;
+    border-left: 0;
+  }
+  .edgt-course-single-wrapper .edgt-course-title-wrapper {
+    display: block;
+    text-align: center;
+  }
+  .edgt-course-single-wrapper .edgt-course-title-wrapper .edgt-course-left-section {
+    display: block;
+    width: 100%;
+  }
+  .edgt-course-single-wrapper .edgt-course-title-wrapper .edgt-course-left-section .edgt-course-single-type {
+    margin-left: 0;
+  }
+  .edgt-course-single-wrapper .edgt-course-title-wrapper .edgt-course-right-section {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .edgt-course-single-wrapper .edgt-course-reviews-list-top .edgt-course-reviews-number-wrapper,
+  .edgt-course-single-wrapper .edgt-course-reviews-list-top .edgt-course-rating-percente-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .edgt-course-single-wrapper .edgt-course-reviews-list-top .edgt-course-reviews-number-wrapper {
+    border-bottom: 0;
+  }
+  .edgt-course-single-wrapper .edgt-course-reviews-list-top .edgt-course-rating-separator {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper {
+    display: inline-flex;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper .edgt-course-instructor {
+    min-height: 50px;
+    text-align: left;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper .edgt-course-instructor .edgt-instructor-image {
+    display: none;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper .edgt-course-categories {
+    min-height: 50px;
+    left: -19px;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6.edgt-course-info-wrapper .edgt-course-categories .edgt-course-categories-wrapper {
+    vertical-align: top;
+    text-align: left;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-grid-col-6 .edgt-course-price-detail {
+    float: none;
+  }
+  .edgt-course-single-wrapper .edgt-course-basic-info-wrapper .edgt-course-action {
+    text-align: left;
+  }
+  .edgt-course-single-wrapper .edgt-course-tabs-wrapper .edgt-tabs-standard ul li:not(:last-child) {
+    border-bottom: 0;
+  }
+  .edgt-course-single-wrapper .edgt-course-tabs-wrapper .edgt-tabs-standard .edgt-tab-icon {
+    padding: 0 15px;
+  }
+  .edgt-course-single-wrapper .edgt-course-curriculum .edgt-section-elements .edgt-section-lesson .edgt-element-info {
+    display: block;
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+}
+
+/* ==========================================================================
+   Instructor list shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edgt-instructor-list-holder.edgt-tl-four-columns .edgt-instructor {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edgt-instructor-list-holder.edgt-tl-four-columns .edgt-instructor:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edgt-instructor-list-holder.edgt-tl-five-columns .edgt-instructor {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edgt-instructor-list-holder.edgt-tl-five-columns .edgt-instructor:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-instructor-list-holder.edgt-tl-three-columns .edgt-instructor {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-instructor-list-holder.edgt-tl-three-columns .edgt-instructor:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-instructor-list-holder.edgt-tl-four-columns .edgt-instructor {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-instructor-list-holder.edgt-tl-four-columns .edgt-instructor:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-instructor-list-holder.edgt-tl-five-columns .edgt-instructor {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-instructor-list-holder.edgt-tl-five-columns .edgt-instructor:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-instructor-list-holder .edgt-tl-inner .edgt-instructor {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Instructor list shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+# Instructor responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-instructor.info-bellow .edgt-instructor-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-instructor.info-hover {
+    margin-bottom: 30px;
+  }
+}
+
+/* ==========================================================================
+# Instructor responsive style - end
+========================================================================== */
+/* ==========================================================================
+# Instructor slider responsive - begin
+	========================================================================== */
+@media only screen and (max-width: 680px) {
+  .edgt-instructor-slider-holder .edgt-owl-slider .owl-nav .owl-prev {
+    left: -20px;
+  }
+  .edgt-instructor-slider-holder .edgt-owl-slider .owl-nav .owl-next {
+    right: -20px;
+  }
+}
+
+/* ==========================================================================
+# Instructor slider responsive - end
+	========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-ts-insturctor-bio-holder {
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder {
+    margin-bottom: 37px;
+    border: 0;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-instructor-image,
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-ts-insturctor-bio-holder {
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 22px;
+  }
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-instructor-image {
+    padding-right: 5px;
+    box-sizing: border-box;
+    padding-top: 7px;
+  }
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-ts-insturctor-bio-holder {
+    box-sizing: border-box;
+    padding-left: 20px;
+    float: right;
+  }
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-ts-insturctor-bio-holder .edgt-name {
+    margin-top: 0;
+  }
+  .edgt-instructor-single-info-holder .edgt-ts-content-holder {
+    padding: 0;
+  }
+  .edgt-instructor-single-info-holder .edgt-ts-content-holder .edgt-tabs {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-instructor-single-info-holder .edgt-ts-content-holder {
+    margin-top: 24px;
+  }
+  .edgt-instructor-single-info-holder .edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder {
+    padding-left: 1px;
+  }
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-instructor-image,
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-ts-insturctor-bio-holder {
+    display: block;
+    width: 100%;
+  }
+  .edgt-instructor-single-info-holder .edgt-ts-info-holder .edgt-ts-insturctor-bio-holder {
+    padding: 0 10px;
+    padding-top: 20px;
+  }
+  .edgt-instructor-single-info-holder .edgt-tabs.edgt-tabs-standard {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .edgt-instructor-single-info-holder .edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-instructor-single-info-holder .edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li a {
+    padding: 13px 22px 11px 20px;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/edge-lms/assets/css/lms-map-responsive.css.map */

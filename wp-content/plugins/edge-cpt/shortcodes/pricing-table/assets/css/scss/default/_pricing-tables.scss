@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+
+.edgt-pricing-tables {
+    @include edgtRelativeHolderLayout();
+    clear: both;
+	
+	.edgt-pt-wrapper {
+        position: relative;
+    }
+    
+    $pricing_table_space_label: ('no', 'tiny', 'small', 'normal');
+    $pricing_table_space_width: (0, 5, 10, 15);
+    
+    @for $i from 0 to length($pricing_table_space_label) {
+        &.edgt-pt-#{nth($pricing_table_space_label,$i+1)}-space {
+            $column_width: nth($pricing_table_space_width,$i+1);
+            $column_width_margin: $column_width * 2;
+	
+	        .edgt-pt-wrapper {
+		        @if($column_width == 0) {
+			        margin: 0;
+		        } @else {
+			        margin: 0 -#{$column_width}px;
+		        }
+	        }
+	
+	        .edgt-price-table {
+                padding: 0 #{$column_width}px;
+                margin: 0 0 #{$column_width_margin}px;
+            }
+        }
+    }
+	
+	$pricing_table_columns: ('edgt-two-columns', 'edgt-three-columns', 'edgt-four-columns', 'edgt-five-columns');
+    @for $i from 0 to length($pricing_table_columns) {
+        &.#{nth($pricing_table_columns, $i+1)} {
+            $column_width: 100%/($i+2);
+	
+	        .edgt-price-table {
+                width: $column_width;
+            }
+        }
+    }
+}
+
+.edgt-price-table {
+    position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+    box-sizing: border-box;
+
+    .edgt-pt-inner {
+        @include edgtRelativeHolderLayout();
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 6px 30px 2px;
+                text-align: center;
+
+                &.edgt-pt-title-holder {
+                    position: relative;
+                    color: $default-heading-color;
+                    font-family: $default-heading-font;
+                    font-size: 30px;
+                    line-height: 36px;
+                    font-weight: 700;
+	                letter-spacing: 0;
+	                
+                    .edgt-pt-title {
+                        margin: 20px 0 0;
+                        padding: 22px 0 0;
+                        display: block;
+	                    box-sizing: border-box;
+                    }
+                }
+
+                &.edgt-pt-prices {
+                    position: relative;
+					padding: 3px 15px 27px;
+                    border-bottom: 1px solid #e1e1e1;
+	                
+                    .edgt-pt-value {
+                        margin: 0;
+                        position: relative;
+                        vertical-align: top;
+                        bottom: 0;
+                        color: $first-main-color;
+                        display: inline-block;
+                    }
+
+                    .edgt-pt-price {
+                        margin: 0;
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+	                    left: -5px;
+                        color: $first-main-color;
+                    }
+
+                    .edgt-pt-mark {
+                        position: relative;
+                        display: block;
+                        font-family: $default-text-font;
+                        font-weight: 600;
+                        color: #ababab;
+                        text-transform: uppercase;
+	                    margin: 13px 0 0;
+                    }
+                }
+
+                &.edgt-pt-content {
+	                padding: 23px 15px;
+                }
+
+                &.edgt-pt-button {
+                    padding: 11px 15px 50px;
+                }
+            }
+        }
+    }
+
+    &.edgt-price-table-active {
+        .edgt-pt-inner{
+            background-color: #fafafa;
+        }
+    }
+}
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */

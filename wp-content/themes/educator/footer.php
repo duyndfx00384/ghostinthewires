@@ -1,0 +1,1 @@
+<?php do_action('educator_edge_get_footer_template');

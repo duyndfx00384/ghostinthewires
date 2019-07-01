@@ -1,0 +1,26 @@
+.edgt-comment-rating-box {
+	display: inline-block;
+	float: right;
+	margin-left: 18px;
+
+	.edgt-star-rating {
+		cursor: pointer;
+		display: inline-block;
+		font-family: 'ElegantIcons';
+		letter-spacing: 5px;
+		font-size: 16px;
+		overflow: hidden;
+		position: relative;
+		@include edgtTransition(all 0.3s ease);
+		color: #c8c8c8;
+
+		&.active {
+			color: $second-main-color;
+		}
+
+		&:before {
+			content: '\e033';
+		}
+	}
+
+}

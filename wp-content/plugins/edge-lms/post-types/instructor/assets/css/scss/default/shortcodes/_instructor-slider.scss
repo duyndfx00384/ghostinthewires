@@ -1,0 +1,50 @@
+/* ==========================================================================
+# Instructor slider - begin
+	========================================================================== */
+
+.edgt-instructor-slider-holder {
+    .edgt-instructor-slider-holder {
+        .edgt-tl-inner {
+            margin: 0!important;
+        }
+    }
+    .edgt-owl-slider {
+        .owl-nav {
+            .owl-prev {
+                left: -47px;
+            }
+
+            .owl-next {
+                right: -47px;
+            }
+        }
+
+        .owl-dots {
+            margin: 15px 0 0;
+            .owl-dot {
+                span {
+                    width: 9px;
+                    height: 9px;
+                    margin: 0 9px;
+                    background-color: #cbcbcb;
+                }
+
+                &:hover,
+                &.active {
+
+                    span {
+                        background-color: $first-main-color;
+                    }
+                }
+            }
+        }
+    }
+    .edgt-tl-normal-space .edgt-instructor {
+        margin-bottom: 0;
+    }
+}
+
+
+/* ==========================================================================
+# Instructor slider - end
+	========================================================================== */

@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Events styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+.edgt-events-list {
+  text-align: left;
+}
+
+.edgt-events-list-item {
+  margin-bottom: 30px;
+}
+
+.edgt-events-list-item.edgt-events-light-date-skin .edgt-events-list-item-date-holder {
+  background-color: #fff;
+}
+
+.edgt-events-list-item.edgt-events-light-date-skin .edgt-events-list-item-date-holder .edgt-events-list-item-date-day {
+  color: #000;
+}
+
+.edgt-events-list-item.edgt-events-light-date-skin .edgt-events-list-item-date-holder .edgt-events-list-item-date-month {
+  color: #000;
+}
+
+.edgt-events-list-item.edgt-events-light-date-skin .edgt-events-list-item-image-holder:hover .edgt-events-list-item-date-holder {
+  background-color: #2d76b2;
+  color: #fff;
+}
+
+.edgt-events-list-item-image-holder {
+  position: relative;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 26px;
+  overflow: hidden;
+}
+
+.edgt-events-list-item-image-holder img {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.edgt-events-list-item-image-holder:hover img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.edgt-events-list-item-image-holder:hover .edgt-events-list-item-date-holder {
+  background-color: #212121;
+}
+
+.edgt-events-list-item-date-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: #2d76b2;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -moz-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.edgt-events-list-item-date-holder .edgt-events-list-item-date-inner {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edgt-events-list-item-date-holder .edgt-events-list-item-date-day {
+  display: block;
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+}
+
+.edgt-events-list-item-date-holder .edgt-events-list-item-date-month {
+  margin: 0;
+  color: #fff;
+  line-height: 1;
+}
+
+.edgt-events-list-item-title-holder {
+  position: relative;
+}
+
+.edgt-events-list-item-title-holder .edgt-events-list-item-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.edgt-events-list-item-info {
+  margin-top: 15px;
+  padding-top: 19px;
+  border-top: 1px solid #e1e1e1;
+  font-weight: 400;
+  color: #808080;
+  font-size: 14px;
+}
+
+.edgt-events-list-item-info .edgt-events-list-item-date {
+  margin-bottom: 4px;
+}
+
+.edgt-events-list-item-info .edgt-events-list-item-date .tribe-event-date-start {
+  font-size: 15px;
+}
+
+.edgt-events-list-item-info .edgt-events-item-info-icon {
+  padding-right: 3px;
+  width: 22px;
+  display: inline-block;
+  text-align: center;
+}
+
+.edgt-events-list-item-info .qpdef-events-list-item-location {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-events-list .edgt-events-list-item.edgt-grid-col-4 {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-events-list .edgt-events-list-item.edgt-grid-col-4 {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* ==========================================================================
+   Events styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/events-list-map.css.map */

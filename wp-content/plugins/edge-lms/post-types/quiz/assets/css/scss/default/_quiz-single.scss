@@ -1,0 +1,52 @@
+.edgt-quiz-single-holder {
+	padding: 21px 3.9%;
+    @include ipad-portrait {
+        padding: 20px 10%;
+    }
+    @include phone-portrait {
+        padding: 20px 5%;
+    }
+	.edgt-quiz-single-title {
+		margin-bottom: 10px;
+	}
+
+	.edgt-quiz-info-top-wrapper {
+		margin-bottom: 42px;
+	}
+
+	.edgt-quiz-questions-number,
+	.edgt-quiz-duration {
+		i {
+			margin-right: 4px;
+		}
+	}
+
+	.edgt-question-single-title {
+		margin-bottom: 11px;
+	}
+
+	.edgt-question-text-wrapper {
+		margin-bottom: 18px;
+	}
+
+	.edgt-question-answer-wrapper {
+		margin-bottom: 41px;
+	}
+
+	.edgt-question-actions-wrapper {
+		display: inline;
+		form {
+			display: inline-block;
+            margin-bottom: 5px;
+            margin-right: 2px;
+		}
+	}
+
+	.edgt-quiz-finish-wrapper {
+		display: inline;
+	}
+
+    .edgt-quiz-old-results-wrapper {
+        margin-top: 39px;
+    }
+}

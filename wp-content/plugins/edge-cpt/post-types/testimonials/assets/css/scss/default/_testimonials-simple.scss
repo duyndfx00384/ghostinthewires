@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Testimonials simple style - begin
+   ========================================================================== */
+
+.edgt-testimonials-holder {
+
+    &.edgt-testimonials-simple {
+        text-align: center;
+
+        .edgt-testimonial-image {
+            @include edgtRelativeHolderLayout();
+            margin: 0 0 15px;
+
+            img {
+                display: block;
+                margin: 0;
+            }
+        }
+
+        .edgt-testimonial-title {
+            margin: 0;
+        }
+
+        .edgt-testimonial-author {
+            margin: 38px 0 4px;
+            text-align: left;
+            font-size: 17px;
+            color: #303030;
+
+            span{
+                &:not(:last-child):after{
+                    content: ",";
+                }
+            }
+        }
+
+        .edgt-testimonials-author-job {
+            font-size: 17px;
+            text-transform: capitalize;
+            color: #303030;
+        }
+
+        .edgt-testimonial-text {
+            margin: 47px 0 0;
+            padding: 0 20% 0 0;
+            text-align: left;
+        }
+
+        .owl-dots {
+            margin: 21px 0 0;
+            text-align: left;
+
+            .owl-dot {
+
+                span {
+                    width: 12px;
+                    height: 12px;
+                    background-color: #cbcbcb;
+                }
+
+                &:hover,
+                &.active {
+
+                    span {
+                        background-color: #3b447d;
+                    }
+                }
+            }
+        }
+
+        /* Light/Dark styles */
+        &.edgt-testimonials-navigation-light {
+
+            .edgt-owl-slider .owl-nav .edgt-next-icon,
+            .edgt-owl-slider .owl-nav .edgt-prev-icon{
+                color: #fff;
+            }
+
+            .owl-dots {
+
+                .owl-dot {
+
+                    span {
+                        background-color: rgba(255,255,255,.5);
+                    }
+
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+/* ==========================================================================
+   Testimonials simple style - end
+   ========================================================================== */

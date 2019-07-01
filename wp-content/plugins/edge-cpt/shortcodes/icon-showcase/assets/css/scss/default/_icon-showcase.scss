@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Interactive Icon Showcase start styles
+   ========================================================================== */
+
+.edgt-int-icon-showcase{
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	position: relative;
+
+	.edgt-int-icon-showcase-inner{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: calc(100% - 100px);
+		height: calc(100% - 100px);
+		margin: 50px;
+	}
+
+	.edgt-int-icon-circle{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: calc(100% - 100px);
+		height: calc(100% - 100px);
+		margin: 50px;
+		background-color: transparent;
+		border: 1px dashed #a6a6a6;
+		border-radius: 50%;
+		@include edgtTransition(all .85s cubic-bezier(0.18, 0.89, 0.32, 1.28));
+		@include edgtTransform(scale(.1,.1));
+		.touch .edgt-no-animations-on-touch  & {
+			@include edgtTransition(none);
+			@include edgtTransform(scale(1,1));
+		}
+	}
+
+	&.edgt-appeared{
+		.edgt-int-icon-circle{
+			@include edgtTransform(scale(1,1));
+		}
+	}
+
+	.edgt-showcase-content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		text-align: center;
+		@include edgtTransition(opacity .15s ease-out .15s);
+
+		.edgt-section-subtitle{
+			text-transform: capitalize;
+		}
+
+		.edgt-showcase-content-inner{
+			margin-top: 10px;
+		}
+	}
+
+	.edgt-showcase-content-table{
+		display: table;
+		height: 100%;
+		width: 100%;
+		table-layout: fixed;
+	}
+
+
+	.edgt-showcase-content-cell{
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 20%;
+
+		.edgt-showcase-title{
+			margin: 20px 0 12px;;
+		}
+	}
+}
+
+.edgt-showcase-icon{
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	@include edgtTransform(translate(-50%,-50%) scale(1.01));
+
+	.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase & {
+		-webkit-transition:opacity .2s ease !important;
+		transition:opacity .2s ease !important;
+		-webkit-transition-delay: 0s !important;
+		transition-delay: 0s !important;
+	}
+
+	.edgt-icon-shortcode.edgt-circle{
+		width: 94px;
+		height: 94px;
+		line-height: 94px;
+		font-size: 42px;
+		top: 50%;
+		@include edgtTransform(translateY(-50%));
+	}
+}
+
+.edgt-showcase-item-holder{
+
+	&.edgt-showcase-active{
+		.edgt-showcase-icon {
+			border: 1px solid #e3e3e3;
+		}
+
+		.edgt-icon-element{
+			color: $first-main-color;			
+		}
+
+		.edgt-showcase-content{
+			opacity: 1;
+		}
+	}
+
+	.edgt-showcase-icon {
+		background: #fff;
+		text-align: center;
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		top:50%;
+		left:50%;
+		opacity: 0;
+		@include edgtTransform(translate(-50%,-50%));
+		-webkit-transition:opacity .2s ease, top .5s cubic-bezier(0.18, 0.89, 0.32, 1), left .5s cubic-bezier(0.18, 0.89, 0.32, 1), -webkit-transform .5s ease;
+		transition:opacity .2s ease, top .5s cubic-bezier(0.18, 0.89, 0.32, 1), left .5s cubic-bezier(0.18, 0.89, 0.32, 1), transform .5s ease;
+	}
+
+	.edgt-int-icon-showcase.edgt-appeared &,
+	.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase & {
+		.edgt-showcase-icon{
+			opacity: 1;
+		}
+		&:first-child .edgt-showcase-icon{
+			top: 0;
+			left: 50%;
+			-webkit-transition-delay:.65s;
+			transition-delay:.65s;
+		}
+		&:nth-child(2) .edgt-showcase-icon{
+			top: 14.6%;
+			left: 85.4%;
+			-webkit-transition-delay:.85s;
+			transition-delay:.85s;
+		}
+
+		&:nth-child(3) .edgt-showcase-icon{
+			top: 50%;
+			left: 100%;
+			-webkit-transition-delay: 1.05s;
+			transition-delay: 1.05s;
+		}
+
+		&:nth-child(4) .edgt-showcase-icon{
+			top: 85.4%;
+			left: 85.4%;
+			-webkit-transition-delay: 1.25s;
+			transition-delay: 1.25s;
+		}
+
+		&:nth-child(5) .edgt-showcase-icon{
+			top: 100%;
+			left: 50%;
+			-webkit-transition-delay:1.45s;
+			transition-delay:1.45s;
+		}
+
+		&:nth-child(6) .edgt-showcase-icon{
+			top: 85.4%;
+			left: 14.6%;
+			-webkit-transition-delay:1.65s;
+			transition-delay:1.65s;
+		}
+
+		&:nth-child(7) .edgt-showcase-icon{
+			top: 50%;
+			left: 0;
+			-webkit-transition-delay:1.85s;
+			transition-delay:1.85s;
+		}
+
+		&:nth-child(8) .edgt-showcase-icon{
+			top: 14.6%;
+			left: 14.6%;
+			-webkit-transition-delay:2.05s;
+			transition-delay:2.05s;
+		}
+	}
+}
+

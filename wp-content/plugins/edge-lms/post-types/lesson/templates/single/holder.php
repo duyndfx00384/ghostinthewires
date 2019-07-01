@@ -1,0 +1,20 @@
+<?php
+	$args = array(
+		'p' => $item_id,
+		'post_type' => 'lesson'
+	);
+	$lesson_query = new WP_Query($args);
+?>
+<?php if ($lesson_query->have_posts()) : while ($lesson_query->have_posts()) : $lesson_query->the_post(); ?>
+	<div class="edgt-lesson-single-holder">
+		<?php if(post_password_required()) {
+			echo get_the_password_form();
+		} else {
+			do_action('educator_edge_lesson_page_before_content');
+
+			edgt_lms_get_cpt_single_module_template_part('templates/single/layout-collections/' . $lesson_type, 'lesson', '', $params);
+
+			do_action('educator_edge_lesson_page_after_content');
+		} ?>
+	</div>
+<?php endwhile; endif; wp_reset_postdata();?>

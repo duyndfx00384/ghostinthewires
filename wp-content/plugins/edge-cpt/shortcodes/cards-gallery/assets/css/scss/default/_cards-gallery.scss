@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Cards Gallery shortcode style - begin
+   ========================================================================== */
+
+.edgt-cards-gallery-holder {
+    padding: 10px 0;
+
+    .edgt-cards-gallery {
+        width: 100%;
+        position: relative;
+    }
+
+    img {
+        position: relative;
+        display: block;
+        -webkit-box-shadow: 0 9px 21px 3px rgba(19,117,154,.07);
+        -moz-box-shadow: 0 9px 21px 3px rgba(19,117,154,.07);
+        box-shadow: 0 9px 21px 3px rgba(19,117,154,.07);
+    }
+
+    .fake_card {
+        position: relative;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .card {
+        box-sizing: border-box;
+        position: absolute;
+        @include edgtTransition(all .2s ease-in-out);
+        width: auto;
+
+        &.animating {
+            @include edgtTransition(all 1s cubic-bezier(.19,1,.22,1));
+            pointer-events:none;
+        }
+
+        &.animating-siblings {
+            @include edgtTransition(all .6s cubic-bezier(0,0,0,1));
+            pointer-events:none;
+        }
+    }
+
+    &.edgt-shuffled-left .card {
+        will-change:transform;
+
+        &.out {
+            @include edgtTransform(translateX(-100%));
+        }
+
+        &:nth-last-child(6) {
+            @include edgtTransform(scale(.5) translateX(80%));
+        }
+
+        &:nth-last-child(5) {
+            @include edgtTransform(scale(.6) translateX(54%));
+        }
+
+        &:nth-last-child(4) {
+            @include edgtTransform(scale(.7) translateX(35%));
+        }
+
+        &:nth-last-child(3) {
+            @include edgtTransform(scale(.8) translateX(30%));
+        }
+
+        &:nth-last-child(2) {
+            @include edgtTransform(scale(.9) translateX(14%));
+        }
+
+        &:not(:last-of-type) {
+            cursor: pointer;
+        }
+
+        &:not(:last-of-type):not(.active):hover {
+            margin-left: 10px !important;
+        }
+    }
+
+    &.edgt-shuffled-right .card {
+        will-change:transform;
+
+        &.out {
+            @include edgtTransform(translateX(100%));
+        }
+
+        &:nth-last-child(6) {
+            @include edgtTransform(scale(.5) translateX(-80%));
+        }
+
+        &:nth-last-child(5) {
+            @include edgtTransform(scale(.6) translateX(-54%));
+        }
+
+        &:nth-last-child(4) {
+            @include edgtTransform(scale(.7) translateX(-35%));
+        }
+
+        &:nth-last-child(3) {
+            @include edgtTransform(scale(.8) translateX(-21%));
+        }
+
+        &:nth-last-child(2) {
+            @include edgtTransform(scale(.9) translateX(-9.2%));
+        }
+
+        &:not(:last-of-type) {
+            cursor: pointer;
+        }
+
+        &:not(:last-of-type):not(.active):hover {
+            margin-left: -10px !important;
+        }
+    }
+
+    .no-touch &.edgt-appear-effect-yes {
+        img {
+            visibility: hidden;
+        }
+
+        &.edgt-shuffled-right.edgt-appeared {
+            @include keyframes(edgtCardAppearFromRight) {
+                0% {
+                    @include edgtTransform(translate3d(100%,0,0));
+                    opacity:0;
+                    visibility: visible;
+                }
+
+                30% {
+                    opacity:1;
+                    visibility: visible;
+                }
+
+                100% {
+                    visibility: visible;
+                    @include edgtTransform(translate3d(0,0,0));
+                }
+            }
+
+            img:not([data-lazy="true"]) {
+                @include edgtAnimation(edgtCardAppearFromRight 1s cubic-bezier(.19,1,.22,1) forwards);
+            }
+
+            .card {
+                @for $i from 1 through 8 {
+                    &:nth-child(#{$i}) {
+                        img:not([data-lazy="true"]):not(.edgt-animation-done) {
+                            -webkit-animation-delay: $i * .2s;
+                            animation-delay: $i * .2s;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.edgt-shuffled-left.edgt-appeared {
+            @include keyframes(edgtCardAppearFromLeft) {
+                0% {
+                    visibility: visible;
+                    @include edgtTransform(translate3d(-100%,0,0));
+                    opacity:0;
+                }
+
+                30% {
+                    visibility: visible;
+                    opacity:1;
+                }
+
+                100% {
+                    visibility: visible;
+                    @include edgtTransform(translate3d(0,0,0));
+                }
+            }
+
+            img:not([data-lazy="true"]) {
+                @include edgtAnimation(edgtCardAppearFromLeft 1s cubic-bezier(.19,1,.22,1) forwards);
+            }
+
+            .card {
+                @for $i from 1 through 8 {
+                    &:nth-child(#{$i}) {
+                        img:not([data-lazy="true"]):not(.edgt-animation-done) {
+                            -webkit-animation-delay: $i * .2s;
+                            animation-delay: $i * .2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Cards Gallery shortcode style - end
+   ========================================================================== */

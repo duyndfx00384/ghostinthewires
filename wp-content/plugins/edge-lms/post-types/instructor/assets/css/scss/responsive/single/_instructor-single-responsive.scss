@@ -1,0 +1,84 @@
+.edgt-instructor-single-info-holder {
+
+    @include laptop-landscape-large{
+        .edgt-ts-info-holder{
+            .edgt-ts-insturctor-bio-holder{
+                padding: 0 25px;
+            }
+        }
+    }
+
+	@include ipad-landscape {
+		.edgt-ts-info-holder {
+            margin-bottom: 37px;
+            border: 0;
+            border-bottom: 1px solid #e1e1e1;
+			.edgt-instructor-image,
+			.edgt-ts-insturctor-bio-holder{
+				width: 50%;
+				display: inline-block;
+				margin-bottom: 22px;
+			}
+            .edgt-instructor-image{
+                padding-right: 5px;
+                box-sizing: border-box;
+                padding-top: 7px;
+            }
+
+			.edgt-ts-insturctor-bio-holder {
+				box-sizing: border-box;
+				padding-left: 20px;
+				float: right;
+				.edgt-name {
+					margin-top: 0;
+				}
+			}
+		}
+        .edgt-ts-content-holder{
+            padding: 0;
+            .edgt-tabs{
+                padding: 0;
+            }
+        }
+	}
+
+
+	@include ipad-portrait {
+		.edgt-ts-content-holder {
+			margin-top: 24px;
+		}
+
+		.edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li {
+			display: inline-block;
+		}
+	}
+
+	@include phone-landscape {
+		.edgt-ts-info-holder {
+            padding-left: 1px;
+			.edgt-instructor-image,
+			.edgt-ts-insturctor-bio-holder {
+				display: block;
+				width: 100%;
+			}
+
+			.edgt-ts-insturctor-bio-holder {
+				padding: 0 10px;
+				padding-top: 20px;
+			}
+		}
+        .edgt-tabs.edgt-tabs-standard{
+            padding: 0 10px;
+            box-sizing: border-box;
+            .edgt-tabs-nav li {
+                float: left;
+            }
+        }
+	}
+
+    @include phone-portrait{
+        .edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li a{
+            padding: 13px 22px 11px 20px;
+        }
+    }
+}

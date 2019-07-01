@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+.edgt-twitter-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+  /***** Columns Space style - begin *****/
+  /***** Columns Space style - end *****/
+}
+
+.edgt-twitter-list-holder:not(.edgt-tl-one-column) .edgt-tl-item {
+  float: left;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edgt-twitter-list-holder .edgt-tl-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.edgt-twitter-list-holder .edgt-tli-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+.edgt-twitter-list-holder .edgt-tli-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 35px 23px;
+  border: 1px solid #f2f2f2;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.edgt-twitter-list-holder .edgt-tli-content:hover {
+  border: 1px solid #888888;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-content-top {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-link-over a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-user {
+  display: inline-block;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-user .edgt-twitter-image {
+  display: inline-block;
+  float: left;
+  width: 56px;
+  height: 56px;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-user .edgt-twitter-image img {
+  border-radius: 50%;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-user .edgt-twitter-name {
+  display: inline-block;
+  float: left;
+  width: calc(100% - 56px);
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-user .edgt-twitter-name * {
+  margin: 0;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-icon {
+  display: inline-block;
+  width: 20px;
+  text-align: right;
+  position: absolute;
+  top: -7px;
+  right: 3px;
+  font-size: 24px;
+  color: #2d76b2;
+}
+
+.edgt-twitter-list-holder .edgt-tweet-text {
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.edgt-twitter-list-holder .edgt-tweet-text a {
+  color: #808080;
+  position: relative;
+  z-index: 2;
+}
+
+.edgt-twitter-list-holder .edgt-tweet-text a:hover {
+  color: #2d76b2;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-profile a {
+  font-size: 14px;
+  color: #808080;
+  position: relative;
+  z-index: 2;
+}
+
+.edgt-twitter-list-holder .edgt-twitter-profile a:hover {
+  color: #2d76b2;
+}
+
+.edgt-twitter-list-holder.edgt-tl-two-columns .edgt-tl-item {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-twitter-list-holder.edgt-tl-two-columns .edgt-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edgt-twitter-list-holder.edgt-tl-three-columns .edgt-tl-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edgt-twitter-list-holder.edgt-tl-three-columns .edgt-tl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edgt-twitter-list-holder.edgt-tl-four-columns .edgt-tl-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .edgt-twitter-list-holder.edgt-tl-four-columns .edgt-tl-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edgt-twitter-list-holder.edgt-tl-five-columns .edgt-tl-item {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .edgt-twitter-list-holder.edgt-tl-five-columns .edgt-tl-item:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.edgt-twitter-list-holder.edgt-tl-no-space .edgt-tl-wrapper {
+  margin: 0;
+}
+
+.edgt-twitter-list-holder.edgt-tl-no-space .edgt-tl-item {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edgt-twitter-list-holder.edgt-tl-tiny-space .edgt-tl-wrapper {
+  margin: 0 -5px;
+}
+
+.edgt-twitter-list-holder.edgt-tl-tiny-space .edgt-tl-item {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edgt-twitter-list-holder.edgt-tl-small-space .edgt-tl-wrapper {
+  margin: 0 -10px;
+}
+
+.edgt-twitter-list-holder.edgt-tl-small-space .edgt-tl-item {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edgt-twitter-list-holder.edgt-tl-normal-space .edgt-tl-wrapper {
+  margin: 0 -15px;
+}
+
+.edgt-twitter-list-holder.edgt-tl-normal-space .edgt-tl-item {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+/*# sourceMappingURL=../../../../plugins/edge-twitter-feed/assets/css/shortcodes-map.css.map */

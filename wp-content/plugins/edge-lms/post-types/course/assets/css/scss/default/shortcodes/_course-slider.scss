@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Course Slider shortcode style - begin
+   ========================================================================== */
+
+.edgt-course-slider-holder {
+    @include edgtRelativeHolderLayout();
+
+    .edgt-cl-inner {
+        margin: 0 !important;
+    }
+
+    article {
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        float: none !important;
+    }
+
+    .edgt-course-list-holder {
+
+        .edgt-owl-slider .owl-nav {
+            .owl-next,
+            .owl-prev{
+                position: absolute;
+                top: -45px;
+
+                .edgt-prev-icon,
+                .edgt-next-icon{
+
+                    .edgt-icon-arrow {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .owl-next{
+                right: 9px;
+            }
+            .owl-prev{
+                left: auto;
+                right: 51px;
+            }
+        }
+
+        &.edgt-nav-light-skin {
+
+            .owl-nav {
+
+                .owl-prev,
+                .owl-next {
+
+                    &:hover {
+
+                        .edgt-prev-icon,
+                        .edgt-next-icon {
+                            color: $header-light-hover-color;
+                        }
+                    }
+                }
+
+                .edgt-prev-icon,
+                .edgt-next-icon {
+                    color: $header-light-color;
+                }
+            }
+        }
+
+        &.edgt-nav-dark-skin {
+
+            .owl-nav {
+
+                .owl-prev,
+                .owl-next {
+
+                    &:hover {
+
+                        .edgt-prev-icon,
+                        .edgt-next-icon {
+                            color: $header-dark-hover-color;
+                        }
+                    }
+                }
+
+                .edgt-prev-icon,
+                .edgt-next-icon {
+                    color: $header-dark-color;
+                }
+            }
+        }
+
+        .owl-dots {
+            margin: 15px 0 0;
+            .owl-dot {
+                span {
+                    width: 9px;
+                    height: 9px;
+                    margin: 0 9px;
+                }
+            }
+        }
+
+        &.edgt-pag-light-skin {
+
+            .owl-dots {
+
+                .owl-dot {
+
+                    span {
+                        background-color: rgba($header-light-color, .2);
+                    }
+
+                    &.active,
+                    &:hover {
+
+                        span {
+                            background-color: $header-light-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.edgt-pag-dark-skin {
+
+            .owl-dots{
+                .owl-dot {
+
+                    span {
+                        background-color: #cbcbcb;
+                    }
+
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: $first-main-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.edgt-pag-on-slider {
+
+            .owl-nav {
+
+                .owl-prev,
+                .owl-next {
+                    @include edgtTransform(translateY(-50%));
+                }
+
+                .owl-prev {
+                    left: -47px;
+                }
+                .owl-next {
+                    right: -47px;
+                }
+            }
+
+            .owl-dots {
+                position: absolute;
+                left: 0;
+                bottom: 20px;
+                width: 100%;
+                margin: 0;
+            }
+
+            @include phone-portrait {
+                .owl-nav {
+                    display: none!important;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Course Slider shortcode style - end
+   ========================================================================== */

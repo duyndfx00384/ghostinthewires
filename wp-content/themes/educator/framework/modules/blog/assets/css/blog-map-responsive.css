@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Blog Masonry general style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns .edgt-blog-masonry-grid-sizer {
+    width: 25%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article.edgt-post-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns .edgt-blog-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article.edgt-post-size-large-width-height {
+    width: 66.66667%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns .edgt-blog-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article.edgt-post-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-three-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-three-columns .edgt-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-three-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-three-columns article.edgt-post-size-large-width-height {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns .edgt-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article.edgt-post-size-large-width-height {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns .edgt-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article.edgt-post-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-two-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-two-columns .edgt-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-two-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-two-columns article.edgt-post-size-large-width-height {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-three-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-three-columns .edgt-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-three-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-three-columns article.edgt-post-size-large-width-height {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns .edgt-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-four-columns article.edgt-post-size-large-width-height {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article,
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns .edgt-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+  .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article.edgt-post-size-large-width, .edgt-blog-holder.edgt-blog-type-masonry.edgt-blog-five-columns article.edgt-post-size-large-width-height {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog Masonry general style - end
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  .edgt-blog-holder.edgt-blog-standard article .edgt-post-info-bottom .edgt-post-info-bottom-right,
+  .edgt-blog-holder.edgt-blog-standard article .edgt-post-info-bottom .edgt-post-info-bottom-left {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-related-posts-holder .edgt-related-post {
+    width: 50% !important;
+  }
+  .edgt-blog-single-navigation .edgt-blog-single-next .edgt-blog-single-nav-title,
+  .edgt-blog-single-navigation .edgt-blog-single-prev .edgt-blog-single-nav-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-related-posts-holder .edgt-related-post {
+    width: 100% !important;
+  }
+  .edgt-blog-single-navigation .edgt-blog-single-navigation-inner {
+    margin: 20px 0 0;
+  }
+  .edgt-blog-single-navigation .edgt-blog-single-navigation-inner .edgt-blog-single-prev .edgt-nav-blog-post-image,
+  .edgt-blog-single-navigation .edgt-blog-single-navigation-inner .edgt-blog-single-next .edgt-nav-blog-post-image {
+    display: none;
+  }
+  .edgt-blog-single-navigation .edgt-blog-single-navigation-inner .edgt-blog-single-next .edgt-nav-blog-post-label-wrapper {
+    position: relative;
+    top: auto;
+    right: 0;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-five-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-five-columns .edgt-bl-grid-sizer {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-four-columns .edgt-bl-item, .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-four-columns .edgt-bl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-four-columns .edgt-bl-item:nth-child(3n+1), .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-four-columns .edgt-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-five-columns .edgt-bl-item, .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-five-columns .edgt-bl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-five-columns .edgt-bl-item:nth-child(3n+1), .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-five-columns .edgt-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-four-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-four-columns .edgt-bl-grid-sizer {
+    width: 33.33333%;
+  }
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-five-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-five-columns .edgt-bl-grid-sizer {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-three-columns .edgt-bl-item, .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-three-columns .edgt-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-three-columns .edgt-bl-item:nth-child(2n+1), .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-three-columns .edgt-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-four-columns .edgt-bl-item, .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-four-columns .edgt-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-four-columns .edgt-bl-item:nth-child(2n+1), .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-four-columns .edgt-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-five-columns .edgt-bl-item, .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-five-columns .edgt-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-blog-list-holder.edgt-bl-standard.edgt-bl-five-columns .edgt-bl-item:nth-child(2n+1), .edgt-blog-list-holder.edgt-bl-boxed.edgt-bl-five-columns .edgt-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-three-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-three-columns .edgt-bl-grid-sizer {
+    width: 50%;
+  }
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-four-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-four-columns .edgt-bl-grid-sizer {
+    width: 50%;
+  }
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-five-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-five-columns .edgt-bl-grid-sizer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-blog-list-holder.edgt-bl-standard .edgt-bl-item, .edgt-blog-list-holder.edgt-bl-boxed .edgt-bl-item {
+    width: 100% !important;
+  }
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-two-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-two-columns .edgt-bl-grid-sizer {
+    width: 100%;
+  }
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-three-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-three-columns .edgt-bl-grid-sizer {
+    width: 100%;
+  }
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-four-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-four-columns .edgt-bl-grid-sizer {
+    width: 100%;
+  }
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-five-columns .edgt-bl-item,
+  .edgt-blog-list-holder.edgt-bl-masonry.edgt-bl-five-columns .edgt-bl-grid-sizer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-blog-list-holder.edgt-bl-simple .edgt-post-image {
+    display: inline-block;
+    width: 100%;
+  }
+  .edgt-blog-list-holder.edgt-bl-simple .edgt-bli-content:not(:first-child) {
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-blog-slider-holder .active .edgt-blog-slider-item .edgt-item-image:after,
+  .edgt-blog-slider-holder .active .edgt-blog-slider-item .edgt-item-text-wrapper {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edgt-blog-holder.edgt-blog-single article .edgt-post-info-bottom .edgt-post-info-bottom-left,
+  .edgt-blog-holder.edgt-blog-single article .edgt-post-info-bottom .edgt-post-info-bottom-right {
+    width: 100%;
+    float: none;
+  }
+  .edgt-blog-holder.edgt-blog-single article .edgt-post-info-bottom .edgt-post-info-bottom-right {
+    text-align: inherit;
+    margin: 10px 0 0;
+  }
+}
+
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/blog-map-responsive.css.map */

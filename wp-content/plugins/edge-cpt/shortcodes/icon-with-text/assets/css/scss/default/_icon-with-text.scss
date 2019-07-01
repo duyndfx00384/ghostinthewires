@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+
+.edgt-iwt {
+	@include edgtRelativeHolderLayout();
+	
+	.edgt-iwt-icon {
+		@include edgtTransition(all 0.25s ease-in-out);
+		@include edgtTransform(translate3d(0,0,0));
+
+        img{
+            display: block;
+        }
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		.edgt-icon-shortcode {
+			line-height: 1;
+			
+			&.edgt-circle,
+			&.edgt-square {
+				line-height: 2;
+			}
+		}
+	}
+	
+	.edgt-iwt-title {
+		margin: 0;
+		line-height: 1.2em;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+
+			&:hover {
+				color: $default-heading-color;
+			}
+		}
+	}
+	
+	.edgt-iwt-title-text {
+		display: block;
+	}
+	
+	.edgt-iwt-text {
+		margin: 16px 0 0;
+	}
+	
+	&.edgt-iwt-icon-left {
+		width: auto;
+		
+		.edgt-iwt-icon,
+		.edgt-iwt-content {
+			display: table-cell;
+			vertical-align: top;
+		}
+		
+		.edgt-iwt-icon {
+			position: relative;
+			top: 1px;
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.edgt-iwt-content {
+			padding: 0 0 0 13px;
+		}
+	}
+	
+	&.edgt-iwt-icon-left-from-title {
+		
+		.edgt-iwt-icon,
+		.edgt-iwt-title-text {
+			position: relative;
+			display: table-cell;
+			vertical-align: bottom;
+		}
+		
+		.edgt-iwt-icon {
+			
+			.edgt-icon-element {
+				@include edgtTransition(none);
+			}
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.edgt-iwt-title-text {
+			padding: 0 0 0 17px;
+		}
+	}
+	
+	&.edgt-iwt-icon-top {
+		text-align: center;
+
+        .edgt-iwt-icon{
+            img{
+                margin: 0 auto;
+            }
+        }
+		
+		.edgt-iwt-content {
+			padding: 23px 0 0;
+		}
+	}
+
+	&.edgt-iwt-hover {
+		.edgt-iwt-icon {
+			@include edgtTransform(translate3d(0,-6px,0));
+		}
+	}
+}
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Shadow Title shortcode responsive styles - begin
+   ========================================================================== */
+
+@include ipad-portrait {
+	
+	.edgt-shadow-title-holder {
+		padding: 0 !important; // it can be set inline in shortcode options
+
+			.edgt-st-title{
+				width: 100%;
+				float: none !important;
+			}
+	}
+}
+/* ==========================================================================
+   Shadow Title shortcode responsive styles - end
+   ========================================================================== */
+
+

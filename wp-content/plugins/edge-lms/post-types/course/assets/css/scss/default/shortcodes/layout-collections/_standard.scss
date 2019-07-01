@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Course Item Layout - Standard style - begin
+   ========================================================================== */
+
+.edgt-course-list-holder {
+
+    &.edgt-cl-standard{
+        article {
+            &:hover {
+                .edgt-course-wishlist,
+                .edgt-cli-image:after {
+                    opacity: 1;
+                }
+
+                .edgt-cli-image img {
+                    @include edgtTransform(scale(1.02));
+                }
+            }
+
+            .edgt-cl-item-inner{
+                border: 1px solid #e1e1e1;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .edgt-cli-image-wrapper {
+                overflow: hidden;
+            }
+
+            .edgt-cli-image {
+
+                img {
+                    display: block;
+                    @include edgtTransition(transform .5s ease);
+                    @include edgtTransform(translateZ(0));
+                    backface-visibility: hidden;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(7,7,7, 0.1);
+                    opacity: 0;
+                    @include edgtTransition(opacity 0.2s ease-in-out);
+                }
+            }
+
+            .edgt-course-wishlist {
+                padding: 4px 9px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 9999;
+                color: #fff;
+                background-color: $first-main-color;
+                font-size: 15px;
+                opacity: 0;
+                @include edgtTransition(opacity 0.2s ease-in-out);
+            }
+
+            .edgt-cli-text-holder {
+                text-align: left;
+                background-color: #fff;
+
+                .edgt-cli-text {
+                    position: relative;
+                }
+
+                .edgt-cli-top-info {
+                    padding: 25px 21px 0 23px;
+                    .edgt-cli-title {
+                        padding-right: 65px;
+                    }
+                    .edgt-instructor-name {
+                        font-size: 14px;
+                        color: #b9b9b9;
+                        font-weight: 400;
+                        @include edgtTransition(color 0.2s ease-in-out);
+
+                        &:hover {
+                            color: #606264;
+                        }
+                    }
+
+                    .edgt-cli-category-holder {
+                        display: inline;
+                        text-align: right;
+                        position: relative;
+                        bottom: 2px;
+
+                        .edgt-category-delimiter{
+                            font-size: 15px;
+                            color: #b9b9b9;
+                            top: 2px;
+                            position: relative;
+                        }
+
+                        .edgt-cli-category {
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            color: #b9b9b9;
+                            @include edgtTransition(color 0.2s ease-in-out);
+                        }
+
+                        &:hover {
+                            .edgt-cli-category{
+                                color: #606264;
+                            }
+                        }
+                    }
+
+                    .edgt-ci-price-holder {
+                        position: absolute;
+                        top: 25px;
+                        right: 21px;
+                        span {
+                            color: #ffffff;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                        }
+                        .edgt-ci-price-value,
+                        .edgt-ci-price-free{
+                            padding: 4px 9px;
+                            background-color: $first-main-color;
+                        }
+
+                    }
+                }
+
+                .edgt-cli-excerpt {
+                    margin: 13px 0 38px;
+                    padding: 0 23px;
+                }
+
+                .edgt-cli-bottom-info {
+                    padding: 14px 26px;
+                    color: #b9b9b9;
+                    border-top: 1px solid #e1e1e1;
+
+                    .edgt-students-number-holder {
+                        display: inline;
+                        .edgt-student-icon {
+                            font-size: 19px;
+                            position: relative;
+                            top: 1px;
+                        }
+                    }
+
+                    .edgt-cli-duration-holder{
+                        display: inline-block;
+                        text-align: right;
+                        margin: 0 0 0 20px;
+
+                        .edgt-duration-icon {
+                            margin-right: 4px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+/* ==========================================================================
+   Course Item Layout - Standard style - end
+   ========================================================================== */

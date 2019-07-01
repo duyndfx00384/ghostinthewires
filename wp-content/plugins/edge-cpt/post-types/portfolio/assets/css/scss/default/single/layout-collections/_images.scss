@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Portfolio Single - Images layout style - begin
+   ========================================================================== */
+
+.edgt-portfolio-single-holder {
+    
+    &.edgt-ps-images-layout {
+    
+        .edgt-ps-image-holder {
+            margin: 0 0 50px;
+	        
+            .edgt-ps-image {
+                margin: 0 0 30px;
+                
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Images layout style - end
+   ========================================================================== */

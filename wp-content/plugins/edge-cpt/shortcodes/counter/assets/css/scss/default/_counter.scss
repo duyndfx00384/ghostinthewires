@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+
+.edgt-counter-holder {
+    @include edgtRelativeHolderLayout();
+    opacity: 0;
+    @include edgtTransition(opacity 0.2s ease-in);
+	
+	.edgt-counter-inner {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+    .edgt-counter-icon{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .edgt-counter {
+        margin: 0;
+	    vertical-align: middle;
+	    color: $first-main-color;
+	    font-size: 48px;
+	    line-height: 1em;
+	    font-weight: 700;
+	    overflow: hidden;
+    }
+
+    .edgt-counter-title {
+        margin: 6px 0 0;
+		color: #555555;
+    }
+
+    .edgt-counter-text {
+	    margin: 14px 0 0;
+    }
+}
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */

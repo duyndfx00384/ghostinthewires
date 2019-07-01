@@ -1,0 +1,243 @@
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+
+.edgt-social-share-holder {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* List type - begin
+========================================================================== */
+.edgt-social-share-holder.edgt-list {
+
+    .edgt-social-title {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        color: #434343;
+        font-weight: 400;
+        margin-right: 6px;
+    }
+
+    li {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0 13px 3px 0;
+
+        &:last-child {
+            margin: 0 0 3px;
+        }
+
+        a {
+            font-size: 15px;
+            color: #757575;
+        }
+
+        &.edgt-facebook-share {
+            a {
+                color: #3b5998;
+            }
+        }
+
+        &.edgt-twitter-share {
+            a {
+                color: #55acee;
+            }
+        }
+
+        &.edgt-google_plus-share {
+            a {
+                color: #dc4e41;
+            }
+        }
+
+        &.edgt-linkedin-share {
+            a {
+                color: #007bb5;
+            }
+        }
+
+        &.edgt-tumblr-share {
+            a {
+                color: #3a485d;
+            }
+        }
+
+        &.edgt-pinterest-share {
+            a {
+                color: #bd081b;
+            }
+        }
+
+        &.edgt-vk-share {
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+/* List type - end
+========================================================================== */
+
+/* Dropdown type - begin
+========================================================================== */
+
+$socialShareWidth: 84px;
+$socialShareHeight: 28px;
+
+.edgt-social-share-holder.edgt-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+    .edgt-social-share-dropdown-opener {
+        display: block;
+        color: $default-text-color;
+
+        .edgt-social-share-title {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 5px;
+        }
+
+        .social_share {
+            font-size: 12px;
+            color: $default-heading-color;
+        }
+
+        &:hover {
+            color: $first-main-color;
+
+            .social_share {
+                color: inherit;
+            }
+        }
+    }
+
+    .edgt-social-share-dropdown {
+        position: relative;
+        visibility: hidden;
+        z-index: 950;
+
+        ul {
+            position: relative;
+            display: block;
+            z-index: 990;
+            margin: 0;
+            padding: 0 !important;
+        }
+
+        ul li {
+            width: $socialShareWidth;
+            height: $socialShareHeight;
+            line-height: $socialShareHeight;
+            visibility: hidden;
+            position: absolute;
+            text-align: center;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            border: 1px solid $default-border-color;
+            background-color: #fff;
+            font-size: 12px;
+            color: $default-text-color;
+            box-sizing: border-box;
+            @include edgtTransition( opacity .2s ease-out 0s, visibility .2s ease-out 0s, background-color .2s ease-out 0s);
+	
+	        &:not(:first-child) {
+		        border-top: none;
+	        }
+
+            &.edgt-facebook-share:hover {
+                background-color: #3b5998;
+                color: #fff;
+            }
+
+            &.edgt-twitter-share:hover {
+                background-color: #00aced;
+                color: #fff;
+            }
+
+            &.edgt-google_plus-share:hover {
+                background-color: #dd4b39;
+                color: #fff;
+            }
+
+            &.edgt-linkedin-share:hover {
+                background-color: #007bb5;
+                color: #fff;
+            }
+
+            &.edgt-tumblr-share:hover {
+                background-color: #32506d;
+                color: #fff;
+            }
+
+            &.edgt-pinterest-share:hover {
+                background-color: #cb2027;
+                color: #fff;
+            }
+
+            &.edgt-vk-share:hover {
+                background-color: #45668e;
+                color: #fff;
+            }
+            
+            * {
+                display: block;
+                line-height: inherit;
+            }
+
+            a {
+                color: inherit !important;
+            }
+
+            @for $i from 1 through 7 {
+                &:nth-child(#{$i}) {
+                    bottom: #{-$i*(($socialShareHeight))};
+                }
+            }
+        }
+    }
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover {
+
+    .edgt-social-share-dropdown ul li {
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .edgt-social-share-dropdown ul li {
+
+        /* opacity and visibility need to be different, but not background-color */
+        @for $i from 2 through 7 {
+            &:nth-child(#{$i}) {
+                @include edgtTransition( opacity .2s ease-out #{($i)/10+s}, visibility .2s ease-out #{($i)/10+s}, background-color .2s ease-out);
+            }
+        }
+    }
+}
+
+/* Dropdown type - end
+========================================================================== */
+
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,911 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+/* ==========================================================================
+   Edgef Membership Plugin Style - begin
+   ========================================================================== */
+.edgt-modal-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1002;
+}
+
+.edgt-modal-holder .edgt-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 400px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-modal-content-inner {
+  padding: 5px 30px 30px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-modal-content-inner h3 {
+  text-align: center;
+  margin: 27px 0 19px;
+  text-transform: capitalize;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-checbox-label,
+.edgt-modal-holder .edgt-modal-content .edgt-lost-pass-holder a {
+  vertical-align: top;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-title {
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-title span {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #434343;
+  display: inline-block;
+  position: relative;
+  line-height: 1em;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-title span:before, .edgt-modal-holder .edgt-modal-content .edgt-login-social-title span:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #eaeaea;
+  top: 8px;
+  width: 90px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-title span:before {
+  right: 100%;
+  margin-right: 25px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-title span:after {
+  left: 100%;
+  margin-left: 25px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-button-holder button {
+  margin: 26px 0 10px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-networks {
+  text-align: center;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-networks .edgt-facebook-login-holder,
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-networks .edgt-google-login-holder {
+  display: inline-block;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-networks button {
+  width: 40px;
+  height: 40px;
+  line-height: 34px;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-networks button > i {
+  margin: 0;
+  font-size: 18px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-networks button .edgt-btn-text {
+  display: none;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-login-social-info {
+  font-size: 13px;
+  color: #595959;
+  text-align: center;
+  margin: 13px 0 10px;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-username-label,
+.edgt-modal-holder .edgt-modal-content .edgt-password-label {
+  position: relative;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-username-label:after,
+.edgt-modal-holder .edgt-modal-content .edgt-password-label:after {
+  content: '*';
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  color: #ffd740;
+  font-size: 12px;
+  height: 1em;
+}
+
+.edgt-modal-holder .edgt-modal-content input[type="text"],
+.edgt-modal-holder .edgt-modal-content input[type="email"],
+.edgt-modal-holder .edgt-modal-content input[type="password"] {
+  position: relative;
+  width: 100%;
+  margin: 0 0 14px;
+  padding: 14px 20px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: inherit;
+  color: #888888;
+  background-color: #f8f7f7;
+  border: 1px solid #f2f2f2;
+  outline: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+
+.edgt-modal-holder .edgt-modal-content input[type="text"]:focus,
+.edgt-modal-holder .edgt-modal-content input[type="email"]:focus,
+.edgt-modal-holder .edgt-modal-content input[type="password"]:focus {
+  background-color: #f8f7f7;
+  border: 1px solid #f2f2f2;
+}
+
+.edgt-modal-holder .edgt-modal-content input[type="text"]::-webkit-input-placeholder,
+.edgt-modal-holder .edgt-modal-content input[type="email"]::-webkit-input-placeholder,
+.edgt-modal-holder .edgt-modal-content input[type="password"]::-webkit-input-placeholder {
+  color: #888888;
+}
+
+.edgt-modal-holder .edgt-modal-content input[type="text"]:-moz-placeholder,
+.edgt-modal-holder .edgt-modal-content input[type="email"]:-moz-placeholder,
+.edgt-modal-holder .edgt-modal-content input[type="password"]:-moz-placeholder {
+  color: #888888;
+}
+
+.edgt-modal-holder .edgt-modal-content input[type="text"]::-moz-placeholder,
+.edgt-modal-holder .edgt-modal-content input[type="email"]::-moz-placeholder,
+.edgt-modal-holder .edgt-modal-content input[type="password"]::-moz-placeholder {
+  color: #888888;
+}
+
+.edgt-modal-holder .edgt-modal-content input[type="text"]:-ms-input-placeholder,
+.edgt-modal-holder .edgt-modal-content input[type="email"]:-ms-input-placeholder,
+.edgt-modal-holder .edgt-modal-content input[type="password"]:-ms-input-placeholder {
+  color: #888888;
+}
+
+.edgt-modal-holder .edgt-modal-content label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #353535;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-remember-holder,
+.edgt-modal-holder .edgt-modal-content .edgt-lost-pass-holder {
+  display: inline-block;
+  width: 50%;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-lost-pass-holder {
+  float: right;
+  text-align: right;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-lost-pass-holder a {
+  font-size: 12px;
+  color: #2d76b2;
+  font-weight: 600;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-register-link-holder {
+  font-size: 12px;
+  font-weight: 600;
+  color: #353535;
+}
+
+.edgt-modal-holder .edgt-modal-content .edgt-register-link-holder .edgt-modal-opener {
+  color: #2d76b2;
+}
+
+.edgt-membership-main-wrapper input[type="text"],
+.edgt-membership-main-wrapper input[type="email"],
+.edgt-membership-main-wrapper input[type="password"] {
+  position: relative;
+  width: 100%;
+  margin: 0 0 12px;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: inherit;
+  color: #888888;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  outline: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+
+.edgt-membership-main-wrapper input[type="text"]:focus,
+.edgt-membership-main-wrapper input[type="email"]:focus,
+.edgt-membership-main-wrapper input[type="password"]:focus {
+  border-color: #434343;
+}
+
+.edgt-membership-main-wrapper input[type="text"]::-webkit-input-placeholder,
+.edgt-membership-main-wrapper input[type="email"]::-webkit-input-placeholder,
+.edgt-membership-main-wrapper input[type="password"]::-webkit-input-placeholder {
+  color: #888888;
+}
+
+.edgt-membership-main-wrapper input[type="text"]:-moz-placeholder,
+.edgt-membership-main-wrapper input[type="email"]:-moz-placeholder,
+.edgt-membership-main-wrapper input[type="password"]:-moz-placeholder {
+  color: #888888;
+}
+
+.edgt-membership-main-wrapper input[type="text"]::-moz-placeholder,
+.edgt-membership-main-wrapper input[type="email"]::-moz-placeholder,
+.edgt-membership-main-wrapper input[type="password"]::-moz-placeholder {
+  color: #888888;
+}
+
+.edgt-membership-main-wrapper input[type="text"]:-ms-input-placeholder,
+.edgt-membership-main-wrapper input[type="email"]:-ms-input-placeholder,
+.edgt-membership-main-wrapper input[type="password"]:-ms-input-placeholder {
+  color: #888888;
+}
+
+.edgt-membership-response-holder .edgt-membership-response {
+  display: block;
+  margin: 14px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.edgt-membership-response-holder .edgt-membership-response.edgt-membership-message-succes {
+  color: #000;
+}
+
+.edgt-membership-response-holder .edgt-membership-response.edgt-membership-message-error {
+  color: #ff3d27;
+}
+
+/* ==========================================================================
+   Edgef Membership Plugin Style - end
+   ========================================================================== */
+/* Dashboard page - start
+   ========================================================================== */
+.edgt-membership-main-wrapper {
+  margin-bottom: 100px;
+  display: table;
+  width: 100%;
+}
+
+.edgt-membership-dashboard-nav-holder,
+.edgt-membership-dashboard-content-holder {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.edgt-membership-dashboard-nav-holder {
+  width: 30%;
+  padding: 0 15px 0 0;
+  margin: 0 0 75px;
+}
+
+.edgt-membership-dashboard-nav-holder ul {
+  padding: 0 15px 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+.edgt-membership-dashboard-nav-holder ul li {
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.edgt-membership-dashboard-nav-holder ul li:last-child {
+  margin: 0;
+}
+
+.edgt-membership-dashboard-content-holder {
+  width: 70%;
+  padding: 0 0 0 45px;
+  margin: 0 0 60px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.edgt-membership-dashboard-content-holder .edgt-profile-image {
+  border-radius: 100%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.edgt-membership-dashboard-content-holder .edgt-profile-image img {
+  display: block;
+  position: relative;
+}
+
+.edgt-membership-dashboard-content-holder .edgt-membership-dashboard-page-title {
+  margin: 0 0 23px;
+}
+
+.edgt-membership-dashboard-content-holder .edgt-membership-dashboard-page-content p span {
+  color: #434343;
+  font-weight: 400;
+}
+
+/* Dashboard page - end
+   ========================================================================== */
+.edgt-login-register-content .edgt-social-login-holder-outer {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edgt-login-register-content .edgt-social-login-holder-inner,
+.edgt-login-register-content .edgt-login-form-social-login {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.edgt-login-register-content .edgt-lost-pass-remember-holder .edgt-remember-holder,
+.edgt-login-register-content .edgt-lost-pass-remember-holder .edgt-lost-pass-holder {
+  width: 50%;
+  display: inline-block;
+}
+
+.edgt-login-register-content .edgt-lost-pass-remember-holder .edgt-lost-pass-holder {
+  float: right;
+  text-align: right;
+}
+
+.edgt-login-register-content .edgt-lost-pass-remember-holder .edgt-lost-pass-holder a {
+  font-size: 12px;
+  color: #2d76b2;
+  font-weight: 600;
+}
+
+.edgt-login-register-content .edgt-register-link-holder {
+  font-size: 12px;
+  font-weight: 600;
+  color: #353535;
+}
+
+.edgt-login-register-content .edgt-register-link-holder .edgt-modal-opener {
+  color: #2d76b2;
+}
+
+.edgt-login-register-content .edgt-social-login-holder-inner {
+  padding-right: 15%;
+  border-right: 1px solid #dadada;
+}
+
+.edgt-login-register-content .edgt-login-form label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #353535;
+}
+
+.edgt-login-register-content .edgt-login-form input[type=text],
+.edgt-login-register-content .edgt-login-form input[type=password] {
+  background-color: #f8f7f7;
+}
+
+.edgt-login-register-content .edgt-login-form input[type=text]:focus,
+.edgt-login-register-content .edgt-login-form input[type=password]:focus {
+  border-color: #e5e5e5;
+}
+
+.edgt-login-register-content .edgt-login-form .edgt-login-button-holder button {
+  margin-top: 22px;
+}
+
+.edgt-login-register-content .edgt-login-form-social-login {
+  padding: 0 10%;
+}
+
+.edgt-login-register-content .edgt-login-form-social-login .edgt-facebook-login-holder,
+.edgt-login-register-content .edgt-login-form-social-login .edgt-google-login-holder {
+  width: 47%;
+  display: inline-block;
+}
+
+.edgt-login-register-content .edgt-login-form-social-login .edgt-facebook-login-holder button,
+.edgt-login-register-content .edgt-login-form-social-login .edgt-google-login-holder button {
+  padding: 12px 24px;
+}
+
+.edgt-login-register-content .edgt-login-form-social-login .edgt-facebook-login-holder {
+  margin-right: 6%;
+  float: left;
+}
+
+.edgt-login-register-content .edgt-login-social-title {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.edgt-login-register-content .edgt-login-social-title span {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #434343;
+  display: inline-block;
+  position: relative;
+}
+
+.edgt-login-register-content .edgt-login-social-title span:before, .edgt-login-register-content .edgt-login-social-title span:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-bottom: 1px solid #eaeaea;
+  top: 13px;
+  width: 80px;
+}
+
+.edgt-login-register-content .edgt-login-social-title span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.edgt-login-register-content .edgt-login-social-title span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.edgt-login-register-content .edgt-login-social-info {
+  text-align: center;
+  font-size: 17px;
+  color: #595959;
+  margin-top: 30px;
+}
+
+.edgt-login-register-content .edgt-membership-response-holder {
+  text-align: center;
+}
+
+.edgt-login-register-content .edgt-membership-response-holder p {
+  padding: 15px 0;
+  font-size: 22px;
+}
+
+/* Login/Register/Password form - start
+   ========================================================================== */
+.edgt-wp-reset-pass-holder .edgt-btn {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.edgt-wp-reset-pass-holder .edgt-btn.edgt-facebook-login {
+  margin-bottom: 0;
+}
+
+.edgt-wp-login-holder .edgt-btn {
+  margin: 17px 0 15px;
+  width: 100%;
+}
+
+.edgt-wp-login-holder .edgt-btn.edgt-facebook-login {
+  margin-bottom: 0;
+}
+
+.edgt-wp-register-holder .edgt-btn {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.edgt-wp-register-holder .edgt-btn.edgt-facebook-login {
+  margin-bottom: 0;
+}
+
+/* Login/Register/Password form - end
+   ========================================================================== */
+/* Login/Register widget - start
+   ========================================================================== */
+/* User not logged in */
+.edgt-login-register-widget.edgt-user-not-logged-in {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-not-logged-in {
+  height: 100%;
+  line-height: 0;
+}
+
+.edgt-sidebar .edgt-login-register-widget.edgt-user-not-logged-in {
+  width: 100%;
+}
+
+.edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener {
+  /* Menu area */
+  /* Sidebar */
+  /* Footer */
+  /* Side area */
+  /* Top bar */
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener {
+  top: 50%;
+  font-family: inherit;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  outline: none;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: color 0.15s ease-out, background-color 0.15s ease-out, border-color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out, background-color 0.15s ease-out, border-color 0.15s ease-out;
+  transition: color 0.15s ease-out, background-color 0.15s ease-out, border-color 0.15s ease-out;
+  padding: 10px 29px;
+  font-size: 13px;
+  margin: 0 6px;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener.edgt-login-opener {
+  color: #8a8a8a;
+  background-color: transparent;
+  border: 1px solid #8a8a8a;
+  border-color: #2d76b2;
+  color: #2d76b2;
+  padding: 13px 51px;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener.edgt-login-opener:hover {
+  color: #fff;
+  background-color: #2d76b2;
+  border-color: #2d76b2;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener.edgt-register-opener {
+  color: #fff;
+  background-color: #2d76b2;
+  border: 2px solid transparent;
+  padding: 13px 42px;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener.edgt-register-opener:hover {
+  color: #fff;
+  background-color: #434343;
+}
+
+.edgt-menu-area.edgt-menu-right .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edgt-sidebar .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.edgt-sidebar .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener:hover {
+  color: #ffec13;
+}
+
+footer .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+}
+
+footer .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener:hover {
+  color: #ffec13;
+}
+
+.edgt-side-menu .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.edgt-side-menu .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener:hover {
+  color: #ffec13;
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener {
+  font-size: 12px;
+  color: #212121;
+  font-weight: 400;
+  padding: 0 14px;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 50px;
+  text-transform: capitalize;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-not-logged-in .edgt-modal-opener.edgt-register-opener {
+  padding-right: 0;
+}
+
+/* User logged in */
+.edgt-login-register-widget.edgt-user-logged-in {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  /* Top bar and menu area dropdown position */
+  /* Menu area style */
+  /* Top bar style */
+  /* Sidebar style */
+  /* Footer style */
+  /* Sidearea style */
+}
+
+.edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user {
+  height: 100%;
+  line-height: 46px;
+}
+
+.edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+  margin: 0 5px 0 0;
+  border-radius: 100%;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown,
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown {
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  right: 0;
+  opacity: 0;
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  width: 180px;
+  box-sizing: border-box;
+  visibility: hidden;
+  z-index: 100;
+  -webkit-transition: opacity 0.35s cubic-bezier(0.53, 0.01, 0.18, 1);
+  -moz-transition: opacity 0.35s cubic-bezier(0.53, 0.01, 0.18, 1);
+  transition: opacity 0.35s cubic-bezier(0.53, 0.01, 0.18, 1);
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown li,
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown li {
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown li a,
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown li a {
+  display: block;
+  position: relative;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in:hover .edgt-login-dropdown,
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in:hover .edgt-login-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in {
+  cursor: pointer;
+  /* User part */
+  /* Dropdown part */
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user {
+  height: 100%;
+  display: table;
+  vertical-align: middle;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span {
+  color: #9c9c9c;
+  font-size: 13px;
+  line-height: 23px;
+  margin: 0 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in:hover .edgt-logged-in-user .edgt-logged-in-user-inner > span {
+  color: #000;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown {
+  background-color: #fff;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown li a {
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #9c9c9c;
+  padding: 5px 20px;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown li a:hover {
+  color: #000;
+}
+
+.edgt-menu-area .edgt-login-register-widget.edgt-user-logged-in:hover .edgt-login-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.edgt-dark-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span span,
+.edgt-dark-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span i {
+  color: #000 !important;
+}
+
+.edgt-dark-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span span:hover,
+.edgt-dark-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span i:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.edgt-light-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span span,
+.edgt-light-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span i {
+  color: #fff !important;
+}
+
+.edgt-light-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span span:hover,
+.edgt-light-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span i:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in {
+  cursor: pointer;
+  /* User part */
+  /* Dropdown part */
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user {
+  padding-top: 2px;
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span {
+  color: #212121;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown {
+  background-color: #ffffff;
+  padding: 9px 0;
+  border: 1px solid #ebebeb;
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown li a {
+  color: #929292;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 6px 17px;
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in .edgt-login-dropdown li a:hover {
+  color: #212121;
+}
+
+.edgt-top-bar .edgt-login-register-widget.edgt-user-logged-in:hover .edgt-login-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.edgt-sidebar .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.edgt-sidebar .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.edgt-sidebar .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span i {
+  display: none;
+}
+
+footer .edgt-login-register-widget.edgt-user-logged-in {
+  height: auto;
+}
+
+footer .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+footer .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span i {
+  display: none;
+}
+
+footer .dark .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span {
+  color: #313131;
+}
+
+.edgt-side-menu .edgt-login-register-widget.edgt-user-logged-in {
+  height: auto;
+}
+
+.edgt-side-menu .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.edgt-side-menu .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span {
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.edgt-side-menu .edgt-login-register-widget.edgt-user-logged-in .edgt-logged-in-user .edgt-logged-in-user-inner > span i {
+  display: none;
+}
+
+/* Login/Register widget - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-membership/assets/css/membership.css.map */

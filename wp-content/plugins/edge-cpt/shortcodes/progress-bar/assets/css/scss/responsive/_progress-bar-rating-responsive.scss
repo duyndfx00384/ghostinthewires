@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Progress Bar Rating shortcode responsive style - begin
+   ========================================================================== */
+
+.edgt-progress-bar {
+    &.rating {
+        @include laptop-landscape-medium {
+            .edgt-pb-content-holder {
+                margin: 0 3.5% 0 3.1%;
+                width: 75%;
+            }
+        }
+
+        @include phone-portrait{
+            .edgt-pb-content-holder {
+                margin: 0 3.5% 0 3.1%;
+                width: 68%;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Progress Bar Rating shortcode responsive style - end
+   ========================================================================== */

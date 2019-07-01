@@ -1,0 +1,92 @@
+@include laptop-landscape-large {
+    .edgt-process-holder {
+        .edgt-process-item-holder {
+            &.edgt-pi-highlighted {
+                .edgt-pi-image-holder {
+                    width: 275px;
+                    height: 275px;
+                    margin-top: -20px;
+                }
+
+                .edgt-pi-holder-inner {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include laptop-landscape {
+    .edgt-process-holder {
+        .edgt-process-bg-holder {
+            display: none;
+        }
+
+        .edgt-process-item-holder {
+            .edgt-pi-image-holder {
+                width: 171px;
+                height: 171px;
+            }
+
+            &.edgt-pi-highlighted {
+                .edgt-pi-image-holder {
+                    width: 237px;
+                    height: 237px;
+                    margin-top: -30px;
+                }
+
+                .edgt-pi-holder-inner {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+    .edgt-process-holder {
+        &.edgt-process-holder-items-four {
+            .edgt-process-item-holder {
+                width: 50%;
+                margin-bottom: 30px;
+
+                &.edgt-pi-highlighted {
+                    .edgt-pi-image-holder {
+                        margin-top: 0;
+                    }
+                }
+
+                .edgt-pi-holder-inner {
+                    width: 100%;
+
+                    .edgt-pi-content-holder {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    .edgt-process-holder {
+        &.edgt-process-holder-items-three {
+            .edgt-process-item-holder {
+                &.edgt-pi-highlighted {
+                    .edgt-pi-image-holder {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        .edgt-process-item-holder {
+            width: 100% !important;
+            margin-bottom: 30px;
+
+            .edgt-pi-holder-inner {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.edgt-linked-images-list {
+	@include  ipad-landscape {
+
+		$category_columns_number: ('four', 'five', 'six');
+
+		@for $i from 0 to length($category_columns_number) {
+			&.edgt-#{nth($category_columns_number,$i+1)}-columns {
+				$column_margin_width: 2%*($i+1);
+				$column_width: (100%-$column_margin_width) / 3;
+
+				.edgt-linked-images-item{
+					width: $column_width;
+				}
+
+				@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+					.edgt-linked-images-item{
+
+						&:nth-child(3n) {
+							margin-right: 0;
+						}
+
+						&:nth-child(3n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include ipad-portrait {
+		$category_columns_number: ('four', 'five', 'six');
+
+		@for $i from 0 to length($category_columns_number) {
+			&.edgt-#{nth($category_columns_number,$i+1)}-columns {
+				$column_margin_width: 2%*($i+2);
+				$column_width: (100%-$column_margin_width) / 2;
+
+				.edgt-linked-images-item{
+					width: $column_width;
+				}
+
+				@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+					.edgt-linked-images-item{
+
+						&:nth-child(2n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include phone-portrait {
+		$category_columns_number: ('two','three','four', 'five', 'six');
+
+		@for $i from 0 to length($category_columns_number) {
+			&.edgt-#{nth($category_columns_number,$i+1)}-columns {
+
+				$column_width: 100%;
+
+				.edgt-linked-images-item{
+					width: $column_width;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+}

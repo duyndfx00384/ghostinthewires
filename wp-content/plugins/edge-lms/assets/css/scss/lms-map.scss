@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+@import '../../../../../themes/educator/assets/css/scss/variables';
+@import '../../../../../themes/educator/assets/css/scss/mixins';
+
+/* ==========================================================================
+   Common styles
+   ========================================================================== */
+@import '../../../reviews/assets/css/scss/default/*.scss';
+@import '../../../post-types/**/assets/css/scss/default/**/*.scss';

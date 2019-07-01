@@ -1,0 +1,205 @@
+.edgt-course-popup {
+    .edgt-course-popup-inner {
+        @include ipad-landscape {
+            .edgt-grid-col-8 {
+                float: none;
+            }
+        }
+    }
+}
+
+
+.edgt-course-single-wrapper {
+    @include laptop-landscape-medium {
+        .edgt-course-basic-info-wrapper {
+            .edgt-course-categories,
+            .edgt-course-instructor,
+            .edgt-course-reviews {
+                min-height: 80px;
+            }
+            .edgt-post-info-comments {
+                display: block;
+            }
+
+            .edgt-instructor-name,
+            .edgt-course-category,
+            .edgt-post-info-comments {
+                display: block;
+                line-height: 20px;
+            }
+        }
+    }
+
+    @include ipad-landscape {
+        .edgt-course-basic-info-wrapper {
+            .edgt-grid-col-6 {
+                width: 50%;
+                float: left;
+                &.edgt-course-info-wrapper {
+                    width: 50%;
+                    float: left;
+                    .edgt-course-instructor{
+                        padding-right: 8px;
+                    }
+                }
+            }
+            .edgt-course-action {
+                text-align: left;
+            }
+        }
+    }
+
+    @include ipad-portrait {
+        .edgt-course-basic-info-wrapper {
+            .edgt-grid-col-6 {
+                width: 100%;
+                float: left;
+                &.edgt-course-info-wrapper {
+                    width: 50%;
+                    float: left;
+                    .edgt-course-instructor{
+                        padding-right: 0;
+                    }
+                }
+
+                .edgt-course-price-detail{
+                    float: none;
+                }
+            }
+            .edgt-course-action {
+                text-align: left;
+            }
+        }
+    }
+
+    @include phone-landscape {
+        .edgt-course-single-holder {
+            .edgt-course-title-wrapper {
+                .edgt-course-right-section {
+                    text-align: left;
+                }
+            }
+        }
+        .edgt-course-basic-info-wrapper {
+            .edgt-course-action {
+                text-align: center;
+            }
+            margin-top: 25px;
+            .edgt-course-instructor {
+                display: block;
+                text-align: center;
+                .edgt-instructor-image,
+                .edgt-instructor-info{
+                    display: block;
+                }
+                .edgt-instructor-image {
+                    padding-right: 0;
+                    margin: 0 auto;
+                }
+            }
+
+            .edgt-grid-col-4 {
+                &.edgt-course-info-wrapper {
+                    width: 100%;
+                    float: none;
+                }
+            }
+            .edgt-course-reviews,
+            .edgt-course-categories{
+                text-align: center;
+                padding-left: 0;
+                border-left: 0;
+            }
+        }
+        .edgt-course-title-wrapper {
+            display: block;
+            text-align: center;
+            .edgt-course-left-section{
+                display: block;
+                width: 100%;
+                .edgt-course-single-type {
+                    margin-left:0;
+                }
+            }
+            .edgt-course-right-section {
+                text-align: center;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .edgt-course-reviews-list-top{
+            .edgt-course-reviews-number-wrapper,
+            .edgt-course-rating-percente-wrapper{
+                display: block;
+                width: 100%;
+            }
+
+            .edgt-course-reviews-number-wrapper{
+                border-bottom: 0;
+            }
+
+            .edgt-course-rating-separator{
+                display: none;
+            }
+        }
+    }
+
+    @include phone-portrait{
+        .edgt-course-basic-info-wrapper {
+            .edgt-grid-col-6 {
+                &.edgt-course-info-wrapper {
+                    display: inline-flex;
+                    .edgt-course-instructor{
+                        min-height: 50px;
+                        text-align: left;
+                        .edgt-instructor-image{
+                            display: none;
+                        }
+                    }
+                    .edgt-course-categories{
+                        min-height: 50px;
+                        left: -19px;
+                        .edgt-course-categories-wrapper{
+                            vertical-align: top;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .edgt-course-price-detail{
+                    float: none;
+                }
+            }
+            .edgt-course-action {
+                text-align: left;
+            }
+        }
+        .edgt-course-tabs-wrapper {
+            .edgt-tabs-standard {
+                ul{
+                    li{
+                        &:not(:last-child){
+                            border-bottom: 0;
+                        }
+                    }
+                }
+                .edgt-tab-icon {
+                    padding: 0 15px;
+                }
+            }
+        }
+        .edgt-course-curriculum{
+            .edgt-section-elements{
+                .edgt-section-lesson {
+                    .edgt-element-info {
+                        display: block;
+                        width: 100%;
+                        clear: both;
+                        float: none;
+                    }
+                }
+            }
+        }
+    }
+}

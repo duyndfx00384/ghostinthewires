@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Cards Gallery responsive shortcode style - begin
+   ========================================================================== */
+
+.edgt-cards-gallery-holder {
+
+    .card {
+        @include ipad-portrait {
+            &:nth-last-child(8) {
+                @include edgtTransform(scale(0.3));
+                top: -70%;
+            }
+
+            &:nth-last-child(7) {
+                @include edgtTransform(scale(0.4));
+                top: -60%;
+            }
+
+            &:nth-last-child(6) {
+                @include edgtTransform(scale(0.5));
+                top: -50%;
+            }
+
+            &:nth-last-child(5) {
+                @include edgtTransform(scale(0.6));
+                top: -40%;
+            }
+
+            &:nth-last-child(4) {
+                @include edgtTransform(scale(0.7));
+                top: -30%;
+            }
+
+            &:nth-last-child(3) {
+                @include edgtTransform(scale(0.8));
+                top: -20%;
+            }
+
+            &:nth-last-child(2) {
+                @include edgtTransform(scale(0.9));
+                top: -10%;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Cards Gallery responsive shortcode style - end
+   ========================================================================== */

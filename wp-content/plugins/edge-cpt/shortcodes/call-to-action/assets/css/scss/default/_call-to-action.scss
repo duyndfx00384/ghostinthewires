@@ -1,0 +1,135 @@
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+
+.edgt-call-to-action-holder {
+    @include edgtRelativeHolderLayout();
+	
+	.edgt-cta-text-holder,
+	.edgt-cta-button-holder {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.edgt-cta-text-holder {
+		
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0;
+		}
+	}
+	
+	.edgt-cta-button-holder {
+		
+		.edgt-btn {
+			white-space: nowrap;
+		}
+	}
+	
+	/***** Layout Style - begin *****/
+	
+	&.edgt-normal-layout {
+		
+		.edgt-cta-inner {
+			display: table;
+		}
+		
+		&:not(.edgt-content-in-grid) {
+			
+			.edgt-cta-inner {
+				width: 100%;
+			}
+		}
+		
+		.edgt-cta-text-holder,
+		.edgt-cta-button-holder {
+			display: table-cell;
+			box-sizing: border-box;
+		}
+		
+		.edgt-cta-button-holder {
+			text-align: right;
+		}
+	}
+
+    &.edgt-block-layout{
+        .edgt-cta-inner{
+            text-align: center;
+        }
+        .edgt-cta-button-holder,
+        .edgt-cta-text-holder{
+            display: block;
+        }
+
+        .edgt-cta-text-holder{
+            margin: 0 0 34px
+        }
+
+    }
+	
+	&.edgt-simple-layout {
+		
+		.edgt-cta-inner {
+			text-align: center;
+		}
+		
+		.edgt-cta-text-holder,
+		.edgt-cta-button-holder {
+			width: 100%;
+		}
+		
+		.edgt-cta-button-holder {
+			margin: 28px 0 0;
+		}
+	}
+	
+	/***** Layout Style - end *****/
+	
+	/***** Columns Space - begin *****/
+	
+	&.edgt-two-halves-columns {
+		
+		.edgt-cta-text-holder,
+		.edgt-cta-button-holder {
+			width: 50%;
+		}
+	}
+	
+	&.edgt-two-thirds-columns {
+		
+		.edgt-cta-text-holder {
+			width: 66.66666666666667%;
+		}
+		
+		.edgt-cta-button-holder {
+			width: 33.33333333333333%;
+		}
+	}
+	
+	&.edgt-three-quarters-columns {
+		
+		.edgt-cta-text-holder {
+			width: 75%;
+		}
+		
+		.edgt-cta-button-holder {
+			width: 25%;
+		}
+	}
+	
+	&.edgt-four-fifths-columns {
+		
+		.edgt-cta-text-holder {
+			width: 80%;
+		}
+		
+		.edgt-cta-button-holder {
+			width: 20%;
+		}
+	}
+	
+	/***** Columns Space - end *****/
+}
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */

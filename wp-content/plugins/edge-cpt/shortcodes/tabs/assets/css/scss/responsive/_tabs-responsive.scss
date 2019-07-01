@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.edgt-tabs {
+
+        .edgt-tab-content-holder {
+            display: block;
+            height: auto;
+
+            .edgt-tab-content {
+                display: block;
+                width: 100%;
+            }
+            .edgt-tab-image {
+                display: block;
+                width: 100%;
+            }
+        }
+
+		&.edgt-tabs-standard {
+
+			.edgt-tabs-nav {
+
+				li {
+
+					a {
+						padding: 7px 21px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+	
+	.edgt-tabs {
+		
+		&.edgt-tabs-vertical {
+			
+			.edgt-tabs-nav,
+			.edgt-tab-container {
+				display: inline-block;
+				width: 100%;
+				height: auto;
+			}
+			
+			.edgt-tabs-nav {
+				li {
+					display: block;
+                    width: 100%;
+				}
+			}
+			
+			.edgt-tab-container {
+				padding: 0;
+                margin-top: 50px;
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+	
+	.edgt-tabs {
+
+        &.edgt-tabs-standard {
+
+            .edgt-tabs-nav {
+                width: 100%;
+                border-bottom: 0;
+                li {
+                    border-bottom: 1px solid #ebebeb;
+                    display: block;
+                    float: none;
+
+                    a {
+                        padding: 10px 0 7px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+	}
+}
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */

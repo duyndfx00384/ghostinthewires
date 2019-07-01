@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.edgt-banner-holder {
+    @include edgtRelativeHolderLayout();
+	
+	.touch & {
+		cursor: pointer;
+	}
+
+	&.edgt-visible-on-default {
+		overflow: hidden;
+
+		.edgt-banner-image {
+			img {
+				display: block;
+				@include edgtTransition(transform .5s ease);
+				@include edgtTransform(translateZ(0));
+				backface-visibility: hidden;
+			}
+		}
+
+		&:hover {
+			.edgt-banner-image img {
+				@include edgtTransform(scale(1.02));
+			}
+		}
+	}
+	
+	&.edgt-visible-on-hover {
+		
+		&:hover {
+			
+			.edgt-banner-text-holder {
+				opacity: 1;
+			}
+		}
+		
+		.edgt-banner-text-holder {
+			opacity: 0;
+			@include edgtTransition(opacity .2s ease-out);
+		}
+	}
+	
+	&.edgt-disabled {
+		
+		.edgt-banner-text-holder {
+			display: none;
+		}
+	}
+	
+	&.edgt-banner-info-centered {
+		
+		.edgt-banner-text-holder {
+			padding: 70px 20px;
+			text-align: center;
+		}
+	}
+	
+	.edgt-banner-image {
+		@include edgtRelativeHolderLayout();
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.edgt-banner-text-holder {
+		@include edgtAbsoluteHolderLayout();
+		padding: 35px;
+		background-color: rgba($default-heading-color, .4);
+		box-sizing: border-box;
+		
+		@include ipad-portrait {
+			padding: 25px;
+		}
+	}
+	
+	.edgt-banner-text-outer {
+		@include edgtTableLayout();
+	}
+	
+	.edgt-banner-text-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		vertical-align: middle;
+	}
+	
+	.edgt-banner-subtitle {
+		margin: 0 0 4px;
+		color: #fff;
+	}
+	
+	.edgt-banner-title {
+		margin: 0;
+		color: #fff;
+		
+		.edgt-banner-title-light {
+			font-weight: 300;
+		}
+	}
+	
+	.edgt-banner-link-text {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: 11px 0 0;
+		color: #fff;
+		line-height: 1em;
+		z-index: 2;
+		@include edgtTransform(translateZ(0));
+		
+		&:hover {
+			
+			.edgt-banner-link-hover {
+				width: 100%;
+			}
+		}
+		
+		.edgt-banner-link-original {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			
+			span {
+				color: inherit;
+			}
+		}
+		
+		.edgt-banner-link-hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0.1%;
+			height: 100%;
+			display: inline-block;
+			vertical-align: top;
+			white-space: nowrap;
+			overflow: hidden;
+			@include edgtTransition(width .4s ease-in-out);
+			
+			span {
+				color: $first-main-color;
+			}
+		}
+		
+		.edgt-banner-link-icon,
+		.edgt-banner-link-label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.edgt-banner-link-icon {
+			margin: 0 2px 0 0;
+			font-size: 15px;
+		}
+		
+		.edgt-banner-link-label {
+			font-size: 14px;
+			line-height: inherit;
+		}
+	}
+
+	.edgt-banner-link {
+		@include edgtAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

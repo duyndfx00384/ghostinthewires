@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Icon List Item shortcode style - begin
+   ========================================================================== */
+
+.edgt-icon-list-holder {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    height: auto;
+    width: 100%;
+    margin-bottom: 12px;
+	
+	.edgt-il-icon-holder,
+	.edgt-il-text {
+		position: relative;
+		display: table-cell;
+		vertical-align: top;
+	}
+
+    .edgt-il-icon-holder {
+	    width: 1%;
+	    
+	    > * {
+		    position: relative;
+		    display: inline-block;
+		    vertical-align: top;
+		    color: $first-main-color;
+		    font-size: 16px;
+		    line-height: inherit;
+		
+		    &:before {
+			    display: block;
+			    line-height: inherit;
+		    }
+	    }
+    }
+
+    .edgt-il-text {
+	    width: 99%;
+	    padding: 0 0 0 28px;
+	    box-sizing: border-box;
+		font-size: 17px;
+    }
+}
+/* ==========================================================================
+   Icon List Item shortcode style - end
+   ========================================================================== */

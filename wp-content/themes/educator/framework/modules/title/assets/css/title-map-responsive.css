@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Title responsive styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-title-holder.edgt-has-bg-image {
+    height: auto !important;
+    padding: 0 !important;
+    background-image: none !important;
+  }
+  .edgt-title-holder.edgt-has-bg-image .edgt-title-image {
+    display: block;
+  }
+  .edgt-title-holder.edgt-has-bg-image .edgt-title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100% !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Centered Title type responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-title-holder.edgt-centered-type .edgt-page-subtitle {
+    padding: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Centered Title type responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-title-info,
+  .edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs-info {
+    width: 100%;
+  }
+  .edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-title-info {
+    display: block;
+  }
+  .edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs-info {
+    margin: 14px 0 0;
+    text-align: initial;
+    white-space: inherit;
+    position: relative;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-title-info {
+    margin-top: 14px;
+  }
+  .edgt-title-holder.edgt-standard-with-breadcrumbs-type .edgt-breadcrumbs-info {
+    font-size: 12px;
+  }
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Title responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/title-map-responsive.css.map */

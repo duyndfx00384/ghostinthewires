@@ -1,0 +1,2094 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+/* ==========================================================================
+   Masonry Gallery shortcodes style - begin
+   ========================================================================== */
+.edgt-masonry-gallery-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Masonry Gallery Columns Space - begin *****/
+  /***** Masonry Gallery Columns Space - end *****/
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-no-space {
+  margin: 0;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-no-space .edgt-mg-inner {
+  margin: 0;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-no-space .edgt-mg-item {
+  padding: 0px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-tiny-space {
+  margin: 0 -5px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-tiny-space .edgt-mg-inner {
+  margin: 0 -5px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-tiny-space .edgt-mg-item {
+  padding: 5px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-small-space {
+  margin: 0 -10px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-small-space .edgt-mg-inner {
+  margin: 0 -10px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-small-space .edgt-mg-item {
+  padding: 10px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-normal-space {
+  margin: 0 -15px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-normal-space .edgt-mg-inner {
+  margin: 0 -15px;
+}
+
+.edgt-masonry-gallery-holder.edgt-mg-normal-space .edgt-mg-item {
+  padding: 15px;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-inner {
+  opacity: 0;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-grid-gutter {
+  width: 0;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-grid-sizer {
+  width: 25%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item {
+  position: relative;
+  width: 25%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-square-big {
+  width: 50%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-rectangle-landscape {
+  width: 50%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-rectangle-landscape .edgt-mg-image img {
+  max-height: inherit;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-rectangle-portrait .edgt-mg-image img {
+  max-width: inherit;
+  width: auto;
+  height: 100%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-inner {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-content {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  padding: 10px 11%;
+  text-align: left;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-masonry-gallery-item-icon {
+  margin-bottom: 8px;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-masonry-gallery-item-icon span {
+  font-size: 30px;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-icon {
+  margin: 0 0 1px;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-title {
+  margin: 0;
+  color: #fff;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-subtitle {
+  color: #fff;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-text {
+  margin: 14px 0 0;
+  color: #fff;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-button {
+  padding: 13px 45px;
+  margin: 47px 0 0;
+  font-size: 13px;
+  background-color: #ffffff;
+  color: #535359;
+}
+
+body .edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-button:hover {
+  background-color: #2d76b2 !important;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item .edgt-mg-item-link {
+  text-transform: uppercase;
+  color: #2d76b2;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-mg-item-outer {
+  z-index: 3;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-mg-image-overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-mg-image {
+  z-index: 1;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-mg-item-content {
+  padding: 10px 11%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-mg-item-subtitle {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-mg-item-text {
+  margin-top: 28px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-mg-link-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended img {
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended:hover img {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-btn {
+  display: table;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-btn span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-extended .edgt-btn span:before {
+  font-size: 22px;
+  padding-right: 20px;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-item-outer {
+  z-index: 3;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-image-overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-image {
+  z-index: 1;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-item-title,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-item-text,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-masonry-gallery-item-icon,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-item-link {
+  color: #fff;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-item-link {
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  letter-spacing: .05em;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-item-link:after {
+  content: "\f105";
+  position: absolute;
+  top: 1px;
+  right: -15px;
+  font-family: 'FontAwesome', serif;
+  font-size: 15px;
+  line-height: 1em;
+  color: inherit;
+  opacity: 0;
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  transform: translateX(-3px);
+  -webkit-transition: transform 0.2s ease-in-out, opacity 0.1s;
+  -moz-transition: transform 0.2s ease-in-out, opacity 0.1s;
+  transition: transform 0.2s ease-in-out, opacity 0.1s;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-item-link:hover:after {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-link-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard .edgt-mg-item-title {
+  margin: 19px 0;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard img {
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-standard:hover img {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple .edgt-masonry-gallery-item-icon {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-hover .edgt-masonry-gallery-item-icon {
+  -webkit-transform: translate3d(0, -6px, 0);
+  -moz-transform: translate3d(0, -6px, 0);
+  transform: translate3d(0, -6px, 0);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple .edgt-mg-item-title {
+  margin: 19px 0;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple .edgt-mg-item-link {
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple .edgt-mg-item-link:after {
+  content: "\f105";
+  position: absolute;
+  top: 1px;
+  right: -15px;
+  font-family: 'FontAwesome', serif;
+  font-size: 15px;
+  line-height: 1em;
+  color: inherit;
+  opacity: 0;
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  transform: translateX(-3px);
+  -webkit-transition: transform 0.2s ease-in-out, opacity 0.1s;
+  -moz-transition: transform 0.2s ease-in-out, opacity 0.1s;
+  transition: transform 0.2s ease-in-out, opacity 0.1s;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple .edgt-mg-item-link:hover:after {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple .edgt-mg-link-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-default .edgt-mg-item-inner {
+  background-color: #2d76b2;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-default .edgt-mg-item-title,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-default .edgt-mg-item-text,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-default .edgt-mg-item-link,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-default .edgt-masonry-gallery-item-icon {
+  color: #fff;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-light .edgt-mg-item-inner {
+  background-color: #f9f9f9;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-light .edgt-mg-item-title,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-light .edgt-mg-item-text,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-light .edgt-mg-item-link,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-light .edgt-masonry-gallery-item-icon {
+  color: #353535;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-dark .edgt-mg-item-inner {
+  background-color: #fed072;
+}
+
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-dark .edgt-mg-item-title,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-dark .edgt-mg-item-text,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-dark .edgt-mg-item-link,
+.edgt-masonry-gallery-holder .edgt-mg-item.edgt-mg-simple.edgt-mg-skin-dark .edgt-masonry-gallery-item-icon {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio shortcode style - begin
+   ========================================================================== */
+.edgt-portfolio-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Article Global Style - begin *****/
+  /***** Article Global Style - end *****/
+  /***** Specific Global Style - begin *****/
+  /***** Specific Global Style - end *****/
+  /***** Portfolio Columns Space - begin *****/
+  /***** Portfolio Columns Space - end *****/
+  /***** Portfolio Types - begin *****/
+  /***** Portfolio Types - end *****/
+  /***** Additional Features - begin *****/
+  /***** Additional Features - end *****/
+}
+
+.edgt-portfolio-list-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.touch .edgt-portfolio-list-holder article {
+  cursor: pointer;
+}
+
+.edgt-portfolio-list-holder article .edgt-pl-item-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-image img {
+  display: block;
+  width: 100%;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text .edgt-pli-title {
+  margin: 0;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text .edgt-pli-category-holder {
+  position: relative;
+  display: block;
+  margin: 0;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text .edgt-pli-category-holder a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px 0 0;
+  margin: 0 3px 0 0;
+  z-index: 8;
+  color: #818181;
+  text-transform: capitalize;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text .edgt-pli-category-holder a:after {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  content: '/';
+  color: inherit;
+  font-size: 15px;
+  line-height: inherit;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text .edgt-pli-category-holder a:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text .edgt-pli-category-holder a:last-child:after {
+  display: none;
+}
+
+.edgt-portfolio-list-holder article .edgt-pli-text .edgt-pli-excerpt {
+  margin: 3px 0 0;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-has-shadow article .edgt-pli-image {
+  box-shadow: 6px 8px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.edgt-portfolio-list-holder.edgt-pl-has-filter .edgt-pl-inner {
+  overflow: hidden;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-no-content .edgt-pli-text-holder {
+  display: none;
+}
+
+.edgt-portfolio-list-holder.edgt-no-space .edgt-pl-inner {
+  margin: 0;
+}
+
+.edgt-portfolio-list-holder.edgt-no-space article {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edgt-portfolio-list-holder.edgt-tiny-space .edgt-pl-inner {
+  margin: 0 -5px;
+}
+
+.edgt-portfolio-list-holder.edgt-tiny-space article {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edgt-portfolio-list-holder.edgt-small-space .edgt-pl-inner {
+  margin: 0 -10px;
+}
+
+.edgt-portfolio-list-holder.edgt-small-space article {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edgt-portfolio-list-holder.edgt-normal-space .edgt-pl-inner {
+  margin: 0 -15px;
+}
+
+.edgt-portfolio-list-holder.edgt-normal-space article {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-list-holder.edgt-large-space .edgt-pl-inner {
+  margin: 0 -20px;
+}
+
+.edgt-portfolio-list-holder.edgt-large-space article {
+  padding: 0 20px;
+  margin: 0 0 40px;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery:not(.edgt-pl-one-column) article {
+  float: left;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery.edgt-pl-two-columns article {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-portfolio-list-holder.edgt-pl-gallery.edgt-pl-two-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery.edgt-pl-three-columns article {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-portfolio-list-holder.edgt-pl-gallery.edgt-pl-three-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery.edgt-pl-four-columns article {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .edgt-portfolio-list-holder.edgt-pl-gallery.edgt-pl-four-columns article:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery.edgt-pl-five-columns article {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .edgt-portfolio-list-holder.edgt-pl-gallery.edgt-pl-five-columns article:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry .edgt-pl-inner {
+  opacity: 0;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry article,
+.edgt-portfolio-list-holder.edgt-pl-masonry .edgt-pl-grid-sizer {
+  width: 100%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry .edgt-pl-grid-gutter {
+  width: 0;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-two-columns article,
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-two-columns .edgt-pl-grid-sizer {
+  width: 50%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-two-columns article.edgt-pl-masonry-large-width, .edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-two-columns article.edgt-pl-masonry-large-width-height {
+  width: 100%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-three-columns article,
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-three-columns .edgt-pl-grid-sizer {
+  width: 33.33333%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-three-columns article.edgt-pl-masonry-large-width, .edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-three-columns article.edgt-pl-masonry-large-width-height {
+  width: 66.66667%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-four-columns article,
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-four-columns .edgt-pl-grid-sizer {
+  width: 25%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-four-columns article.edgt-pl-masonry-large-width, .edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-four-columns article.edgt-pl-masonry-large-width-height {
+  width: 50%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-five-columns article,
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-five-columns .edgt-pl-grid-sizer {
+  width: 20%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-five-columns article.edgt-pl-masonry-large-width, .edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-five-columns article.edgt-pl-masonry-large-width-height {
+  width: 40%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-images-fixed article .edgt-pl-item-inner {
+  height: 100%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-images-fixed article .edgt-pli-image {
+  height: 100%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-masonry.edgt-pl-images-fixed article .edgt-pli-image img {
+  height: 100%;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-has-animation article {
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  transform: translateY(80px);
+  -webkit-transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+  -moz-transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+  transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+}
+
+.edgt-portfolio-list-holder.edgt-pl-has-animation article.edgt-item-show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.edgt-portfolio-list-holder.edgt-pl-has-animation article.edgt-item-show.edgt-item-shown {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.touch .edgt-portfolio-list-holder.edgt-pl-has-animation article {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Portfolio shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio filter style - begin
+   ========================================================================== */
+.edgt-pl-filter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.edgt-pl-filter-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edgt-pl-filter-holder ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 10px;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+  .edgt-pl-filter-holder ul li {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-pl-filter-holder ul li {
+    padding: 0 10px;
+  }
+}
+
+.edgt-pl-filter-holder ul li span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #434343;
+  font-size: 12px;
+  line-height: 22px;
+  white-space: nowrap;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.edgt-pl-filter-holder ul li.edgt-pl-current span, .edgt-pl-filter-holder ul li:hover span {
+  color: #2d76b2;
+}
+
+/* ==========================================================================
+   Portfolio filter style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio standard pagination style - begin
+   ========================================================================== */
+.edgt-portfolio-list-holder.edgt-pl-pag-standard .edgt-pl-inner {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-pag-standard.edgt-pl-pag-standard-animate .edgt-pl-inner {
+  opacity: 0;
+}
+
+.edgt-pl-standard-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+  clear: both;
+}
+
+.edgt-pl-standard-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.edgt-pl-standard-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+  padding: 0;
+}
+
+.edgt-pl-standard-pagination ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-active a {
+  color: #2d76b2;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-prev, .edgt-pl-standard-pagination ul li.edgt-pl-pag-next {
+  position: absolute;
+  top: 0;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-prev a, .edgt-pl-standard-pagination ul li.edgt-pl-pag-next a {
+  font-size: 30px;
+  -webkit-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  transition: color 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-prev a span, .edgt-pl-standard-pagination ul li.edgt-pl-pag-next a span {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-prev a span:before, .edgt-pl-standard-pagination ul li.edgt-pl-pag-next a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-prev {
+  left: 0;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-prev a {
+  opacity: 0;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-next {
+  right: 0;
+}
+
+.edgt-pl-standard-pagination ul li.edgt-pl-pag-next a {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Portfolio standard pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio load more pagination style - begin
+   ========================================================================== */
+.edgt-pl-load-more-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-pl-load-more-holder .edgt-pl-load-more {
+  margin: 40px 0 0;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Portfolio load more pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio loading element style - begin
+   ========================================================================== */
+.edgt-pl-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  color: #434343;
+  text-align: center;
+}
+
+.edgt-pl-loading.edgt-filter-trigger {
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.edgt-pl-loading.edgt-standard-pag-trigger {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.edgt-pl-has-filter .edgt-pl-loading.edgt-standard-pag-trigger {
+  top: 150px;
+}
+
+.edgt-pl-loading.edgt-showing {
+  display: block;
+}
+
+.edgt-pl-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #434343;
+  border-radius: 100%;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.edgt-pl-loading .edgt-pl-loading-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.edgt-pl-loading .edgt-pl-loading-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay.edgt-pl-has-shadow .edgt-pl-item-inner {
+  box-shadow: 6px 8px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay article:hover .edgt-pli-text-holder {
+  opacity: 1;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay article:hover .edgt-pli-image img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay article .edgt-pl-item-inner {
+  overflow: hidden;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay article .edgt-pli-image {
+  overflow: hidden;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay article .edgt-pli-image img {
+  display: block;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay article .edgt-pli-text .edgt-pli-title,
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay article .edgt-pli-text .edgt-pli-excerpt {
+  color: #fff;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay article .edgt-pli-text .edgt-pli-category-holder a {
+  color: #fff;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-gallery-overlay .edgt-pli-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Standard Shader style - begin
+   ========================================================================== */
+.edgt-portfolio-list-holder.edgt-pl-standard-shader article:hover .edgt-pli-image img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.edgt-portfolio-list-holder.edgt-pl-standard-shader article:hover .edgt-pli-image:after {
+  opacity: 1;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-standard-shader article .edgt-pli-image {
+  overflow: hidden;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-standard-shader article .edgt-pli-image:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-standard-shader article .edgt-pli-image img {
+  display: block;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-standard-shader article .edgt-pli-link {
+  z-index: 2;
+}
+
+.edgt-portfolio-list-holder.edgt-pl-standard-shader .edgt-pli-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Standard Shader style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 50px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder .edgt-ps-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder .edgt-ps-image a, .edgt-portfolio-single-holder .edgt-ps-image-holder .edgt-ps-image img {
+  position: relative;
+  display: block;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 10px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item p, .edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item a {
+  margin: 0;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item a:not(:last-child):after {
+  content: ',';
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-custom-field .edgt-ps-info-title,
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-custom-field .share-text,
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item .edgt-ps-info-title,
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item .share-text {
+  margin: 0;
+  color: #434343;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-custom-field .edgt-ps-info-title a,
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item .edgt-ps-info-title a {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-custom-field .edgt-ps-info-title a:not(:last-child):after,
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item .edgt-ps-info-title a:not(:last-child):after {
+  content: ',';
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-custom-field p,
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-info-item p {
+  display: inline-block;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-social-share {
+  border-top: 1px solid #e1e1e1;
+  margin: 16px 0 0;
+  padding: 16px 0 0;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-social-share .share-text {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-info-holder .edgt-ps-social-share .edgt-social-share-holder.edgt-list li {
+  margin: 0 25px 3px 0;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-title {
+  margin: 0 0 15px;
+  padding: 0 0 0 15px;
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+  /***** Space Between Columns Space - begin *****/
+  /***** Space Between Columns Space - end *****/
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-two-columns .edgt-ps-image {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-two-columns .edgt-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-three-columns .edgt-ps-image {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-three-columns .edgt-ps-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-four-columns .edgt-ps-image {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-four-columns .edgt-ps-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-no-space .edgt-ps-image-inner {
+  margin: 0;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-no-space .edgt-ps-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-tiny-space {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-tiny-space .edgt-ps-image-inner {
+  margin: 0 -5px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-tiny-space .edgt-ps-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-small-space {
+  margin: 0 0 20px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-small-space .edgt-ps-image-inner {
+  margin: 0 -10px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-small-space .edgt-ps-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-normal-space {
+  margin: 0 0 10px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-normal-space .edgt-ps-image-inner {
+  margin: 0 -15px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-gallery-images.edgt-ps-normal-space .edgt-ps-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+  /***** Space Between Columns Space - begin *****/
+  /***** Space Between Columns Space - end *****/
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images .edgt-ps-image,
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images .edgt-ps-grid-sizer {
+  width: 25%;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images .edgt-ps-grid-gutter {
+  width: 0;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-two-columns .edgt-ps-image,
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-two-columns .edgt-ps-grid-sizer {
+  width: 50%;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-two-columns .edgt-ps-image.edgt-ps-masonry-large-item {
+  width: 100%;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-three-columns .edgt-ps-image,
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-three-columns .edgt-ps-grid-sizer {
+  width: 33.33333%;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-three-columns .edgt-ps-image.edgt-ps-masonry-large-item {
+  width: 66.66667%;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-four-columns .edgt-ps-image,
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-four-columns .edgt-ps-grid-sizer {
+  width: 25%;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-four-columns .edgt-ps-image.edgt-ps-masonry-large-item {
+  width: 50%;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-no-space .edgt-ps-image-inner {
+  margin: 0;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-no-space .edgt-ps-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-tiny-space {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-tiny-space .edgt-ps-image-inner {
+  margin: 0 -5px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-tiny-space .edgt-ps-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-small-space {
+  margin: 0 0 20px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-small-space .edgt-ps-image-inner {
+  margin: 0 -10px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-small-space .edgt-ps-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-normal-space {
+  margin: 0 0 10px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-normal-space .edgt-ps-image-inner {
+  margin: 0 -15px;
+}
+
+.edgt-portfolio-single-holder .edgt-ps-image-holder.edgt-ps-masonry-images.edgt-ps-normal-space .edgt-ps-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-gallery-layout .edgt-ps-image-holder {
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-gallery-layout .edgt-ps-image-holder .edgt-ps-image {
+  float: left;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-gallery-layout .edgt-ps-image-holder .edgt-ps-image a:hover:after {
+  opacity: 1;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-gallery-layout .edgt-ps-image-holder .edgt-ps-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(67, 67, 67, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-huge-images-layout {
+  padding: 0 4%;
+  box-sizing: border-box;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-huge-images-layout .edgt-ps-image-holder {
+  margin: 0 0 40px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-huge-images-layout .edgt-ps-image-holder .edgt-ps-image {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-huge-images-layout .edgt-ps-image-holder .edgt-ps-image:last-child {
+  margin: 0;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-huge-images-layout .edgt-ps-title {
+  padding: 0;
+  margin: 15px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .edgt-portfolio-single-holder.edgt-ps-huge-images-layout {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-portfolio-single-holder.edgt-ps-huge-images-layout {
+    padding: 0 30px;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Images layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-images-layout .edgt-ps-image-holder {
+  margin: 0 0 50px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-images-layout .edgt-ps-image-holder .edgt-ps-image {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-images-layout .edgt-ps-image-holder .edgt-ps-image:last-child {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-masonry-layout .edgt-ps-image-holder {
+  margin: 0 0 22px !important;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-masonry-layout .edgt-ps-image-holder .edgt-ps-image-inner {
+  opacity: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Slider layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-slider-layout .edgt-ps-image-holder {
+  margin: 0 0 50px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-slider-layout .edgt-ps-image-holder .edgt-ps-image-inner {
+  visibility: hidden;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-slider-layout .edgt-ps-image-holder .edgt-ps-image img {
+  width: 100%;
+}
+
+/* ==========================================================================
+   Portfolio Single - Slider layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-small-gallery-layout .edgt-ps-image-holder {
+  width: 100%;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-gallery-layout .edgt-ps-image-holder .edgt-ps-image {
+  float: left;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-gallery-layout .edgt-ps-image-holder .edgt-ps-image a:hover:after {
+  opacity: 1;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-gallery-layout .edgt-ps-image-holder .edgt-ps-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(67, 67, 67, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-gallery-layout .edgt-ps-content-item {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-gallery-layout .edgt-ps-title {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-small-images-layout .edgt-ps-image-holder .edgt-ps-image {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-images-layout .edgt-ps-image-holder .edgt-ps-image:last-child {
+  margin: 0;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-images-layout .edgt-ps-content-item {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-images-layout .edgt-ps-title {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-small-masonry-layout .edgt-ps-image-holder .edgt-ps-image-inner {
+  opacity: 0;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-masonry-layout .edgt-ps-content-item {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-masonry-layout .edgt-ps-title {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - begin
+   ========================================================================== */
+.edgt-portfolio-single-holder.edgt-ps-small-slider-layout .edgt-ps-image-holder .edgt-ps-image-inner {
+  visibility: hidden;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-slider-layout .edgt-ps-image-holder .edgt-ps-image img {
+  width: 100%;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-slider-layout .edgt-ps-content-item {
+  margin: 0 0 30px;
+}
+
+.edgt-portfolio-single-holder.edgt-ps-small-slider-layout .edgt-ps-title {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+.edgt-ps-navigation {
+  position: relative;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  margin: 82px 0 0;
+  padding: 60px 0 0;
+  clear: both;
+  box-sizing: border-box;
+  border-top: 1px solid #e1e1e1;
+}
+
+.edgt-ps-full-width-custom-layout .edgt-ps-navigation {
+  padding: 0 40px;
+}
+
+.edgt-ps-navigation .edgt-ps-back-btn {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.edgt-ps-navigation .edgt-ps-back-btn a {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 29px;
+  line-height: 1;
+  color: #888888;
+}
+
+.edgt-ps-navigation .edgt-ps-back-btn a span {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-ps-navigation .edgt-ps-back-btn a span:before, .edgt-ps-navigation .edgt-ps-back-btn a span:after {
+  display: block;
+  line-height: 14px;
+}
+
+.edgt-ps-navigation .edgt-ps-back-btn a:hover {
+  color: #2d76b2;
+}
+
+.edgt-ps-navigation .edgt-ps-prev,
+.edgt-ps-navigation .edgt-ps-next {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 49%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a,
+.edgt-ps-navigation .edgt-ps-next a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 46px;
+  line-height: 55px;
+  width: 300px;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a .edgt-next-ps-text-wrapper,
+.edgt-ps-navigation .edgt-ps-prev a .edgt-prev-ps-text-wrapper,
+.edgt-ps-navigation .edgt-ps-next a .edgt-next-ps-text-wrapper,
+.edgt-ps-navigation .edgt-ps-next a .edgt-prev-ps-text-wrapper {
+  display: inline-block;
+  width: calc(100% - 100px);
+  box-sizing: border-box;
+  padding-top: 4px;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a .edgt-next-ps-text-wrapper,
+.edgt-ps-navigation .edgt-ps-next a .edgt-next-ps-text-wrapper {
+  padding-right: 32px;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a .edgt-prev-ps-text-wrapper,
+.edgt-ps-navigation .edgt-ps-next a .edgt-prev-ps-text-wrapper {
+  padding-left: 32px;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a .edgt-ps-nav-prev-title,
+.edgt-ps-navigation .edgt-ps-prev a .edgt-ps-nav-next-title,
+.edgt-ps-navigation .edgt-ps-next a .edgt-ps-nav-prev-title,
+.edgt-ps-navigation .edgt-ps-next a .edgt-ps-nav-next-title {
+  display: block;
+  line-height: 1.2em;
+  color: #808080;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a .prev-text,
+.edgt-ps-navigation .edgt-ps-prev a .next-text,
+.edgt-ps-navigation .edgt-ps-next a .prev-text,
+.edgt-ps-navigation .edgt-ps-next a .next-text {
+  margin: 10px 0;
+  display: block;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 600;
+  color: #303030;
+  text-transform: capitalize;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a .edgt-next-ps-img-wrapper,
+.edgt-ps-navigation .edgt-ps-next a .edgt-next-ps-img-wrapper {
+  float: right;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a .edgt-prev-ps-img-wrapper,
+.edgt-ps-navigation .edgt-ps-next a .edgt-prev-ps-img-wrapper {
+  float: left;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a:hover .edgt-next-ps-text-wrapper .edgt-ps-nav-prev-title,
+.edgt-ps-navigation .edgt-ps-prev a:hover .edgt-next-ps-text-wrapper .edgt-ps-nav-next-title,
+.edgt-ps-navigation .edgt-ps-prev a:hover .edgt-prev-ps-text-wrapper .edgt-ps-nav-prev-title,
+.edgt-ps-navigation .edgt-ps-prev a:hover .edgt-prev-ps-text-wrapper .edgt-ps-nav-next-title,
+.edgt-ps-navigation .edgt-ps-next a:hover .edgt-next-ps-text-wrapper .edgt-ps-nav-prev-title,
+.edgt-ps-navigation .edgt-ps-next a:hover .edgt-next-ps-text-wrapper .edgt-ps-nav-next-title,
+.edgt-ps-navigation .edgt-ps-next a:hover .edgt-prev-ps-text-wrapper .edgt-ps-nav-prev-title,
+.edgt-ps-navigation .edgt-ps-next a:hover .edgt-prev-ps-text-wrapper .edgt-ps-nav-next-title {
+  color: #2d76b2;
+}
+
+.edgt-ps-navigation .edgt-ps-prev a:hover .edgt-next-ps-text-wrapper .prev-text,
+.edgt-ps-navigation .edgt-ps-prev a:hover .edgt-next-ps-text-wrapper .next-text,
+.edgt-ps-navigation .edgt-ps-prev a:hover .edgt-prev-ps-text-wrapper .prev-text,
+.edgt-ps-navigation .edgt-ps-prev a:hover .edgt-prev-ps-text-wrapper .next-text,
+.edgt-ps-navigation .edgt-ps-next a:hover .edgt-next-ps-text-wrapper .prev-text,
+.edgt-ps-navigation .edgt-ps-next a:hover .edgt-next-ps-text-wrapper .next-text,
+.edgt-ps-navigation .edgt-ps-next a:hover .edgt-prev-ps-text-wrapper .prev-text,
+.edgt-ps-navigation .edgt-ps-next a:hover .edgt-prev-ps-text-wrapper .next-text {
+  color: #2d76b2;
+}
+
+.edgt-ps-navigation .edgt-ps-next {
+  text-align: right;
+}
+
+.edgt-ps-navigation img {
+  display: inline-block;
+  width: 100px;
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+.edgt-ps-related-posts-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 30px 0 0;
+  clear: both;
+}
+
+.edgt-ps-related-posts-holder .edgt-ps-related-posts {
+  margin: 0 -15px;
+}
+
+.edgt-ps-related-posts-holder .edgt-ps-related-post {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  float: left;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-ps-related-posts-holder .edgt-ps-related-post {
+    width: 50%;
+  }
+  .edgt-ps-related-posts-holder .edgt-ps-related-post:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-ps-related-posts-holder .edgt-ps-related-post {
+    width: 100%;
+  }
+}
+
+.edgt-ps-related-posts-holder .edgt-ps-related-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-ps-related-posts-holder .edgt-ps-related-image a, .edgt-ps-related-posts-holder .edgt-ps-related-image img {
+  display: block;
+}
+
+.edgt-ps-related-posts-holder .edgt-ps-related-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+}
+
+.edgt-ps-related-posts-holder .edgt-ps-related-text .edgt-ps-related-title {
+  margin: 0;
+}
+
+.edgt-ps-related-posts-holder .edgt-ps-related-text .edgt-ps-related-categories {
+  margin: 6px 0 0;
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials simple style - begin
+   ========================================================================== */
+.edgt-testimonials-holder.edgt-testimonials-simple {
+  text-align: center;
+  /* Light/Dark styles */
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .edgt-testimonial-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 15px;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .edgt-testimonial-image img {
+  display: block;
+  margin: 0;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .edgt-testimonial-title {
+  margin: 0;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .edgt-testimonial-author {
+  margin: 38px 0 4px;
+  text-align: left;
+  font-size: 17px;
+  color: #303030;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .edgt-testimonial-author span:not(:last-child):after {
+  content: ",";
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .edgt-testimonials-author-job {
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #303030;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .edgt-testimonial-text {
+  margin: 47px 0 0;
+  padding: 0 20% 0 0;
+  text-align: left;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .owl-dots {
+  margin: 21px 0 0;
+  text-align: left;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  background-color: #cbcbcb;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple .owl-dots .owl-dot:hover span, .edgt-testimonials-holder.edgt-testimonials-simple .owl-dots .owl-dot.active span {
+  background-color: #3b447d;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple.edgt-testimonials-navigation-light .edgt-owl-slider .owl-nav .edgt-next-icon,
+.edgt-testimonials-holder.edgt-testimonials-simple.edgt-testimonials-navigation-light .edgt-owl-slider .owl-nav .edgt-prev-icon {
+  color: #fff;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple.edgt-testimonials-navigation-light .owl-dots .owl-dot span {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.edgt-testimonials-holder.edgt-testimonials-simple.edgt-testimonials-navigation-light .owl-dots .owl-dot:hover span, .edgt-testimonials-holder.edgt-testimonials-simple.edgt-testimonials-navigation-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+}
+
+/* ==========================================================================
+   Testimonials simple style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+.edgt-testimonials-holder.edgt-testimonials-standard {
+  text-align: center;
+  /* Light/Dark styles */
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard .edgt-testimonial-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 15px;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard .edgt-testimonial-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard .edgt-testimonial-title {
+  margin: 0;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard .edgt-testimonial-author {
+  margin: 19px 0 4px;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard .edgt-testimonials-author-job {
+  font-size: 14px;
+  color: #8d8b8b;
+  text-transform: capitalize;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard .edgt-testimonial-text {
+  margin: 13px 0 0;
+  padding: 0 3%;
+  color: #888888;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard .owl-dots .owl-dot span {
+  background-color: #cbcbcb;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard .owl-dots .owl-dot:hover span, .edgt-testimonials-holder.edgt-testimonials-standard .owl-dots .owl-dot.active span {
+  background-color: #2d76b2;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .edgt-testimonial-title,
+.edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .edgt-testimonial-text,
+.edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .edgt-testimonial-author,
+.edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .edgt-testimonials-author-job,
+.edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .edgt-owl-slider .owl-nav .edgt-next-icon,
+.edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .edgt-owl-slider .owl-nav .edgt-prev-icon {
+  color: #fff;
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .owl-dots .owl-dot span {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .owl-dots .owl-dot:hover span, .edgt-testimonials-holder.edgt-testimonials-standard.edgt-testimonials-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+}
+
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+.edgt-testimonials-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-testimonials-holder .edgt-testimonials,
+.edgt-testimonials-holder .edgt-testimonial-content,
+.edgt-testimonials-holder .edgt-testimonial-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-testimonials-holder .edgt-testimonials {
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.edgt-testimonials-holder .edgt-testimonial-image img {
+  width: auto !important;
+  border-radius: 50%;
+}
+
+.edgt-testimonials-holder .owl-dots {
+  margin: 15px 0 0;
+}
+
+.edgt-testimonials-holder .owl-dots .owl-dot span {
+  width: 9px;
+  height: 9px;
+  margin: 0 9px;
+}
+
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-cpt/assets/css/custom-post-types-map.css.map */

@@ -1,0 +1,1 @@
+<?php echo do_shortcode('[edgt_progress_bar percent="'.$percent.'"]') ?>

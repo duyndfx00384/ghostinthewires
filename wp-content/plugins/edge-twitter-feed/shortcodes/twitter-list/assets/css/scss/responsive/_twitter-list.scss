@@ -1,0 +1,63 @@
+@include laptop-landscape-medium {
+
+    .edgt-twitter-list-holder {
+
+        $columns_number: ('four', 'five');
+
+        @for $i from 0 to length($columns_number) {
+            &.edgt-tl-#{nth($columns_number,$i+1)}-columns {
+                $column_width: 100% / 3;
+
+                .edgt-tl-item {
+                    width: $column_width;
+                }
+
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .edgt-tl-item {
+
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+
+    .edgt-twitter-list-holder {
+
+        $columns_number: ('three', 'four', 'five');
+
+        @for $i from 0 to length($columns_number) {
+            &.edgt-tl-#{nth($columns_number,$i+1)}-columns {
+
+                .edgt-tl-item {
+                    width: 50%;
+                }
+
+                @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                    .edgt-tl-item {
+
+                        &:nth-child(2n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+
+    .edgt-twitter-list-holder {
+        .edgt-tl-item {
+            width: 100% !important; // !important is set to override all other stronger selectors
+        }
+    }
+}

@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Education Timeline shortcode style - begin
+   ========================================================================== */
+.edgt-tml-holder {
+	.edgt-timeline {
+		position: relative;
+		&:before {
+
+		}
+
+		.edgt-tml-item-holder {
+			position: relative;
+			padding-bottom: 38px;
+			&.edgt-appeared {
+				&:not(:last-of-type)::after {
+					height: 100%;
+				}
+
+				.edgt-tml-item-content {
+					opacity: 1;
+					@include edgtTransform(translateX(0));
+				}
+			}
+			&:not(:last-of-type)::after {
+				content: "";
+				position: absolute;
+				top: .6em;
+				width: 3px;
+				height: 0;
+				background: $first-main-color;
+				z-index: 1;
+				@include edgtTransition(linear height .5s);
+			}
+			.edgt-tml-item-circle {
+				width: 12px;
+				height: 12px;
+				background-color: $first-main-color;
+				position: absolute;
+				top: 0;
+				-webkit-border-radius:50%;
+				-moz-border-radius:50%;
+				border-radius:50%;
+				margin-left: -5px;
+			}
+			.edgt-tml-item-content {
+				padding-left: 27px;
+				opacity: 0;
+				@include edgtTransform(translateX(-20px));
+				@include edgtTransition(all .5s);
+				div {
+					font-size: 14px;
+				}
+				.edgt-tml-item-title {
+					margin: 0;
+					line-height: 1em;
+					font-weight: 600;
+					margin-bottom: 7px;
+					color: #303030;
+				}
+
+				.edgt-tml-item-subtitle {
+
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Education Timeline shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Course Item Layout - Minimal style - begin
+   ========================================================================== */
+
+.edgt-course-list-holder {
+
+    &.edgt-cl-minimal{
+
+        article {
+            margin-bottom: 16px;
+            .edgt-cl-item-inner {
+                @include edgtTableLayout();
+            }
+            .edgt-cli-image {
+                @include edgtTableCellLayout();
+                width: 105px;
+                padding-right: 17px;
+            }
+
+            .edgt-cli-text-holder {
+                @include edgtTableCellLayout();
+            }
+            .edgt-cli-text {
+                vertical-align: text-top;
+                .edgt-instructor-name {
+                    font-size: 14px;
+                    color: #b9b9b9;
+                    font-weight: 600;
+                    @include edgtTransition(color 0.2s ease-in-out);
+
+                    &:hover {
+                        color: #606264;
+                    }
+                }
+            }
+            .edgt-ci-price-holder {
+                font-size: 12px;
+                color: $first-main-color;
+                font-weight: 600;
+                .edgt-ci-price-free {
+                    color: $first-main-color;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Course Item Layout - Minimal style - end
+   ========================================================================== */

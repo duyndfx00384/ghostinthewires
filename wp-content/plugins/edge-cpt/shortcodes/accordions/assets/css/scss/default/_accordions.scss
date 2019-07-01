@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+
+.edgt-accordion-holder {
+    @include edgtRelativeHolderLayout();
+
+    .edgt-accordion-title {
+        position: relative;
+        cursor: pointer;
+        margin: 0;
+        box-sizing: border-box;
+        @include edgtTransform(translateZ(0px));
+        @include edgtTransition(color .2s ease-out, background-color .2s ease-out, border-color 1.6s);
+	
+	    .edgt-tab-title {
+			font-family: $default-text-font;
+		    display: block;
+		    line-height: inherit;
+            color: #212121;
+            font-size: 15px;
+            font-weight: 600;
+	    }
+
+        .edgt-accordion-mark {
+            position: absolute;
+            top: 50%;
+	        left: 0;
+            width: 25px;
+	        height: 25px;
+	        margin: -1px 0 0;
+	        font-size: 25px;
+	        line-height: 25px;
+            text-align: center;
+			color: $first-main-color;
+            @include edgtTransform(translateY(-50%));
+	
+	        span {
+		        position: absolute;
+		        display: block;
+		        width: 100%;
+		        height: 100%;
+		        font-size: inherit;
+		        line-height: inherit;
+				@include edgtTransform(translateZ(0px));
+		        @include edgtTransition(transform .3s ease-out);
+		
+		        &:before {
+			        display: block;
+			        line-height: inherit;
+		        }
+		        
+		        &.edgt_icon_minus {
+			        opacity: 0;
+		        }
+		        
+		        &.edgt_icon_plus {
+			        opacity: 1;
+		        }
+	        }
+        }
+	    
+	    &.ui-state-active,
+	    &.ui-state-hover {
+		
+		    .edgt-accordion-mark {
+			    
+			    span {
+				    
+				    &.edgt_icon_minus {
+					    opacity: 0;
+				    }
+				    
+				    &.edgt_icon_plus {
+					    opacity: 1;
+						@include edgtTransform(rotate(90deg));
+				    }
+			    }
+		    }
+
+
+	    }
+    }
+
+    .edgt-accordion-content {
+        margin: 0;
+		background-color: #ffffff;
+
+	    
+	    p {
+		    margin: 0;
+	    }
+    }
+	
+	&.edgt-ac-boxed {
+
+		
+		.edgt-accordion-title {
+			margin: 19px 0 0;
+			padding: 16px 20px 16px 53px;
+			background-color: #ffffff;
+			border: 1px solid #e5e5e5;
+			
+			&:first-child {
+				margin: 0;
+			}
+			
+			.edgt-accordion-mark {
+				left: 14px;
+			}
+
+			&.ui-state-active {
+				border-bottom-color: transparent;
+				@include  edgtTransition(border-color .1s);
+			}
+
+		}
+		
+		.edgt-accordion-content {
+			padding: 0 53px 29px 53px;
+			&.ui-accordion-content-active {
+				border-left: 1px solid #e5e5e5;
+				border-right: 1px solid #e5e5e5;
+				border-bottom: 1px solid #e5e5e5;
+			}
+		}
+	}
+	
+	&.edgt-ac-simple {
+		border-bottom: 1px solid $default-border-color;
+		
+		.edgt-accordion-title {
+			padding: 17px 0 17px 30px;
+			border-top: 1px solid $default-border-color;
+		}
+		
+		.edgt-accordion-content {
+			border-top: 1px solid transparent;
+			
+			&.ui-accordion-content-active {
+				border-color: $default-border-color;
+			}
+		}
+		
+		.edgt-accordion-content {
+			padding: 21px 0 16px;
+		}
+	}
+}
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */

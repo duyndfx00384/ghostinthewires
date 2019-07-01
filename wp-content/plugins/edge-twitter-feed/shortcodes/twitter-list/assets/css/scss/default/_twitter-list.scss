@@ -1,0 +1,189 @@
+.edgt-twitter-list-holder {
+    @include edgtRelativeHolderLayout();
+    clear: both;
+
+    &:not(.edgt-tl-one-column) {
+
+        .edgt-tl-item {
+            float: left;
+        }
+    }
+
+    .edgt-twitter-list {
+        @include edgtRelativeHolderLayout();
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .edgt-tl-item {
+        @include edgtRelativeHolderLayout();
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .edgt-tli-inner {
+        @include edgtRelativeHolderLayout();
+        background-color: #ffffff;
+    }
+
+    .edgt-tli-content {
+        @include edgtRelativeHolderLayout();
+        box-sizing: border-box;
+        padding: 35px 23px;
+        border: 1px solid #f2f2f2;
+        @include edgtTransition(all .15s ease-out);
+
+        &:hover {
+            border: 1px solid $default-text-color;
+        }
+    }
+
+    .edgt-twitter-content-top {
+        @include edgtRelativeHolderLayout();
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
+
+    .edgt-twitter-link-over {
+        a {
+            @include edgtAbsoluteHolderLayout();
+            z-index: 1;
+        }
+    }
+
+    .edgt-twitter-user {
+        display: inline-block;
+        padding-right: 30px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .edgt-twitter-image {
+            display: inline-block;
+            float: left;
+            width: 56px;
+            height: 56px;
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .edgt-twitter-name {
+            display: inline-block;
+            float: left;
+            width: calc(100% - 56px);
+            padding-left: 15px;
+            box-sizing: border-box;
+            * {
+                margin: 0;
+            }
+        }
+    }
+
+    .edgt-twitter-icon {
+        display: inline-block;
+        width: 20px;
+        text-align: right;
+        position: absolute;
+        top: -7px;
+        right: 3px;
+        font-size: 24px;
+        color: $first-main-color;
+    }
+
+    .edgt-tweet-text {
+        padding-left: 12px;
+        box-sizing: border-box;
+        a {
+            color:#808080;
+            position: relative;
+            z-index: 2;
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+
+    .edgt-twitter-profile {
+        a {
+            font-size: 14px;
+            color: #808080;
+            position: relative;
+            z-index: 2;
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+
+    $columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($columns_number) {
+        &.edgt-tl-#{nth($columns_number,$i+1)}-columns {
+
+            .edgt-tl-item {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) { // set different break point for four and five columns
+                @media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+                    .edgt-tl-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else if ($i == 1 ) { // set different break point for three columns
+                @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                    .edgt-tl-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .edgt-tl-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /***** Columns Space style - begin *****/
+
+    $columns_space_label: ('no', 'tiny', 'small', 'normal');
+    $columns_space: (0, 5, 10, 15);
+
+    @for $i from 0 to length($columns_space_label) {
+        &.edgt-tl-#{nth($columns_space_label,$i+1)}-space {
+            $column_width: nth($columns_space, $i+1);
+            $column_width_margin: $column_width * 2;
+
+            .edgt-tl-wrapper {
+                @if($column_width == 0) {
+                    margin: 0;
+                } @else {
+                    margin: 0 -#{$column_width}px;
+                }
+            }
+
+            .edgt-tl-item {
+                padding: 0 #{$column_width}px;
+                margin: 0 0 #{$column_width_margin}px;
+            }
+        }
+    }
+
+    /***** Columns Space style - end *****/
+}

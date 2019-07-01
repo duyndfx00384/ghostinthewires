@@ -1,0 +1,116 @@
+.edgt-course-table-holder {
+	thead {
+		background-color: #fafafa;
+		td {
+			font-size: 16px;
+			font-weight: 600;
+			color: #282727;
+			padding: 26px 33px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+	}
+
+	tbody {
+		background-color: #ffffff;
+		.edgt-ct-item {
+			td {
+				font-size: 16px;
+				font-family: $default-heading-font;
+				font-weight: 600;
+				padding: 26px 33px;
+				text-align: left;
+				vertical-align: middle;
+				.edgt-btn {
+					font-size: 13px;
+					letter-spacing: .05em;
+					font-weight: 700;
+					font-family: $default-text-font;
+				}
+
+				&.edgt-tc-button-field {
+					text-align: right;
+				}
+			}
+			.edgt-tc-course-field {
+				.edgt-ci-price-holder {
+					display: inline-block;
+					margin-left: 10px;
+					span {
+						color: #ffffff;
+						font-family: $default-text-font;
+						font-weight: 600;
+						text-transform: uppercase;
+						font-size: 12px;
+						-webkit-border-radius:12px;
+						-moz-border-radius:12px;
+						border-radius:12px;
+					}
+					.edgt-ci-price-value {
+						padding: 2px 21px;
+						background-color: $first-main-color;
+					}
+					.edgt-ci-price-free {
+						background-color: $second-main-color;
+						padding: 2px 18px;
+					}
+				}
+
+				.edgt-cli-title-holder {
+					color: #808080;
+
+					&:hover {
+						color: $first-main-color;
+					}
+				}
+			}
+
+			.edgt-tc-instructor-field {
+				a {
+					display: table;
+
+					&:hover {
+						.edgt-instructor-name {
+							color: $first-main-color;
+						}
+					}
+				}
+				img {
+					display: table-cell;
+					width: 45px;
+					-webkit-border-radius:50%;
+					-moz-border-radius:50%;
+					border-radius:50%;
+				}
+				.edgt-instructor-name {
+					display: table-cell;
+					vertical-align: middle;
+					color: #808080;
+					padding-left: 28px;
+					@include edgtTransition(color .2s ease-out);
+				}
+			}
+
+			.edgt-tc-category-field {
+				.edgt-cli-category-holder {
+					span {
+						display: none;
+					}
+					a {
+						color: #808080;
+
+						&:hover {
+							color: $first-main-color;
+						}
+					}
+				}
+			}
+
+			.edgt-tc-button-field {
+				a.edgt-btn {
+					padding: 13px 36px 14px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+/* Dashboard page - start
+   ========================================================================== */
+.edgt-membership-main-wrapper {
+    margin-bottom: 100px;
+    display: table;
+    width: 100%;
+}
+.edgt-membership-dashboard-nav-holder,
+.edgt-membership-dashboard-content-holder {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.edgt-membership-dashboard-nav-holder {
+    width: 30%;
+    padding: 0 15px 0 0;
+    margin: 0 0 75px;
+
+    ul {
+        padding: 0 15px 0 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            margin: 0 0 18px;
+            padding: 0;
+            &:last-child {
+                margin: 0;
+
+            }
+        }
+    }
+
+}
+
+.edgt-membership-dashboard-content-holder {
+    width: 70%;
+    padding: 0 0 0 45px;
+    margin: 0 0 60px;
+    border-left: 1px solid $default-border-color;
+
+    .edgt-profile-image{
+        border-radius: 100%;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+
+        img{
+            display: block;
+            position: relative;
+        }
+    }
+
+    .edgt-membership-dashboard-page-title {
+        margin: 0 0 23px;
+    }
+
+    .edgt-membership-dashboard-page-content p span {
+        color: $default-heading-color;
+        font-weight: 400;
+    }
+}
+
+/* Dashboard page - end
+   ========================================================================== */

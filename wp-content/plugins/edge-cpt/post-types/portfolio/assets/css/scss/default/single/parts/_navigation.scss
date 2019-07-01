@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.edgt-ps-navigation {
+	position: relative;
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	margin: 82px 0 0;
+    padding: 60px 0 0;
+	clear: both;
+    box-sizing: border-box;
+    border-top: 1px solid #e1e1e1;
+
+    .edgt-ps-full-width-custom-layout & {
+        padding: 0 40px;
+    }
+	
+	.edgt-ps-back-btn {
+		position: absolute;
+		top: 69%;
+		left: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		@include edgtTransform(translateX(-50%) translateY(-50%));
+		
+		a {
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			cursor: pointer;
+			font-size: 29px;
+			line-height: 1;
+            color: #888888;
+			
+			span {
+				display: block;
+				line-height: inherit;
+				
+				&:before,
+				&:after {
+					display: block;
+					line-height: 14px;
+				}
+			}
+
+            &:hover{
+                color: $first-main-color;
+            }
+		}
+	}
+	
+	.edgt-ps-prev,
+	.edgt-ps-next {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		width: 49%;
+		padding: 0;
+		box-sizing: border-box;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 46px;
+			line-height: 55px;
+            width: 300px;
+
+            .edgt-next-ps-text-wrapper,
+            .edgt-prev-ps-text-wrapper{
+                display: inline-block;
+                width: calc(100% - 100px);
+                box-sizing: border-box;
+                padding-top: 4px;
+            }
+
+            .edgt-next-ps-text-wrapper{
+                padding-right: 32px;
+            }
+
+            .edgt-prev-ps-text-wrapper{
+                padding-left: 32px;
+            }
+
+            .edgt-ps-nav-prev-title,
+            .edgt-ps-nav-next-title{
+                display: block;
+                line-height: 1.2em;
+                color: #808080;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            .prev-text,
+            .next-text{
+                margin: 10px 0;
+                display: block;
+                line-height: 1;
+                font-size: 14px;
+                font-weight: 600;
+                color: #303030;
+                text-transform: capitalize;
+            }
+
+            .edgt-next-ps-img-wrapper{
+                float: right;
+            }
+            .edgt-prev-ps-img-wrapper{
+                float: left;
+            }
+
+            &:hover{
+                .edgt-next-ps-text-wrapper,
+                .edgt-prev-ps-text-wrapper{
+                    .edgt-ps-nav-prev-title,
+                    .edgt-ps-nav-next-title{
+                        color: $first-main-color;
+                    }
+                    .prev-text,
+                    .next-text{
+                        color: $first-main-color;
+                    }
+                }
+            }
+
+		}
+	}
+
+	.edgt-ps-prev {
+
+		a {
+
+			.prev-text{
+
+            }
+		}
+	}
+
+	.edgt-ps-next {
+		text-align: right;
+
+		a {
+
+            .next-text{
+
+            }
+		}
+	}
+
+    img{
+        display: inline-block;
+        width: 100px;
+    }
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

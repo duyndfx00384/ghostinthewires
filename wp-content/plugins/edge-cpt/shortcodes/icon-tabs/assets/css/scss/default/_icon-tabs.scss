@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.edgt-icon-tabs {
+	@include edgtRelativeHolderLayout();
+
+	&.edgt-icon-tabs-one {
+		ul li {
+			width:100%;
+		}
+	}
+	&.edgt-icon-tabs-two {
+		ul li {
+			width:calc(50% - 2px);
+		}
+	}
+	&.edgt-icon-tabs-three {
+		ul li {
+			width:calc(33.33% - 3px);
+		}
+	}
+	&.edgt-icon-tabs-four {
+		ul li {
+			width: calc(25% - 4px);
+		}
+	}
+	&.edgt-icon-tabs-five {
+		ul li {
+			width:calc(20% - 5px);
+		}
+	}
+	&.edgt-icon-tabs-six {
+		ul li {
+			width:calc(16.66% - 6px);
+		}
+	}
+	
+	.edgt-icon-tabs-nav {
+		@include edgtRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+            border: 1px solid #e1e1e1;
+            margin-left: -1px;
+			
+			a {
+				width: 100%;
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				text-align: center;
+				color: $default-heading-color;
+				font-family: $default-text-font;
+				padding: 6px 26px;
+                font-weight: 400;
+				@include edgtTransition(color .15s ease-out, background-color .15s ease-out);
+
+				.edgt-icon-tabs-title-holder {
+                    padding-left: 5px;
+					font-size: 15px;
+					font-family: $default-text-font;
+					line-height: 40px;
+					color: $default-heading-color;
+				}
+				img {
+					display: block;
+					margin: 0 auto 18px;
+				}
+				.edgt-icon-shortcode {
+					display: inline-block;
+				}
+			}
+
+            &.ui-state-active,
+            &.ui-state-hover {
+                a{
+                    color: $first-main-color;
+                    background-color: #fff;
+                }
+                .edgt-icon-tabs-title-holder{
+                    color: $first-main-color;
+                }
+            }
+		}
+	}
+
+	
+	.edgt-icon-tab-container {
+		@include edgtRelativeHolderLayout();
+		visibility: hidden;
+		opacity:0;
+		@include edgtTransform(translateY(5px));
+		box-sizing: border-box;
+		margin: 6px 0 0;
+		padding-top: 27px;
+
+		p {
+			margin: 0;
+		}
+
+		&.edgt-visible {
+			visibility: visible;
+			opacity:1;
+			@include edgtTransform(translateY(0));
+			@include edgtTransition(all .35s cubic-bezier(0.22, 0.61, 0.36, 1));
+		}
+	}
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

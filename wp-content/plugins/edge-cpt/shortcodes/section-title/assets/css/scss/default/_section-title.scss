@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.edgt-section-title-holder {
+    @include edgtRelativeHolderLayout();
+	box-sizing: border-box;
+	
+	&.edgt-st-two-columns {
+		
+		$space_label: ('tiny', 'small', 'normal');
+		$space_width: (5, 10, 15);
+		
+		@for $i from 0 to length($space_label) {
+			&.edgt-st-#{nth($space_label,$i+1)}-space {
+				$column_width: nth($space_width,$i+1);
+				
+				.edgt-st-inner {
+					margin: 0 -#{$column_width}px;
+				}
+			
+				.edgt-st-title,
+				.edgt-st-text {
+					padding: 0 #{$column_width}px;
+				}
+			}
+		}
+		
+		.edgt-st-title,
+		.edgt-st-text {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+			float: left;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		&.edgt-st-title-left {
+			
+			.edgt-st-title {
+				text-align: right;
+			}
+			
+			.edgt-st-text {
+				text-align: left;
+			}
+		}
+		
+		&.edgt-st-title-right {
+			
+			.edgt-st-title {
+				float: right;
+				text-align: left;
+			}
+			
+			.edgt-st-text {
+				text-align: right;
+			}
+		}
+	}
+	
+    .edgt-st-title {
+	    display: block;
+        margin: 0;
+	    
+	    .edgt-st-title-bold {
+		    font-weight: 700;
+	    }
+	    
+	    .edgt-st-title-light {
+		    font-weight: 300;
+	    }
+    }
+    
+    .edgt-st-text {
+	    display: block;
+        margin: 16px 0 0;
+		font-size: 17px;
+		color: #595959;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

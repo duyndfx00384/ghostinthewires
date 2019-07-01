@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - begin
+   ========================================================================== */
+
+.edgt-portfolio-single-holder {
+    
+    &.edgt-ps-huge-images-layout {
+        padding: 0 4%;
+	    box-sizing: border-box;
+	    
+        .edgt-ps-image-holder {
+            margin: 0 0 40px;
+        
+            .edgt-ps-image {
+                margin: 0 0 30px;
+            
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .edgt-ps-title{
+            padding: 0;
+            margin: 15px 0;
+        }
+	    
+	    @include laptop-landscape {
+		    padding: 0 40px;
+	    }
+	
+	    @include ipad-portrait {
+		    padding: 0 30px;
+	    }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - end
+   ========================================================================== */

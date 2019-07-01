@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.edgt-video-button-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+
+	&:hover {
+		.edgt-video-button-image:after {
+			opacity: 1;
+		}
+
+		.edgt-video-button-image img {
+			@include edgtTransform(scale(1.02));
+		}
+	}
+	
+	.edgt-video-button-image {
+		@include edgtRelativeHolderLayout();
+		
+		img {
+			display: block;
+			@include edgtTransition(transform .5s ease);
+			@include edgtTransform(translateZ(0));
+			backface-visibility: hidden;
+		}
+
+		&:after {
+			content: '';
+			@include edgtAbsoluteHolderLayout();
+			background-color: rgba(#000,0.1);
+			opacity: 0;
+			@include edgtTransition(opacity 0.2s ease-in-out);
+		}
+	}
+	
+	.edgt-video-button-play,
+	.edgt-video-button-play-image {
+		@include edgtAbsoluteHolderLayout();
+		z-index: 1;
+		
+		.edgt-video-button-play-inner {
+			position: relative;
+			top: 50%;
+			left: 0;
+			display: block;
+			text-align: center;
+			@include edgtTransform(translateY(-50%));
+		}
+
+		.edgt-video-button-label {
+			font-size: 18px;
+			font-weight: 700;
+			color: #fff;
+			margin-top: 18px;
+		}
+	}
+	
+	.edgt-video-button-play {
+		color: #fff;
+		line-height: 1;
+		font-size: 120px;
+
+		span {
+			display: block;
+			line-height: inherit;
+			
+			&:before {
+				display: block;
+				line-height: inherit;
+			}
+
+			&.arrow_triangle-right {
+				display: inline-block;
+				padding: 15px;
+				background-color: #fff;
+				border-radius: 50%;
+				@include edgtTransition(all .25s);
+				backface-visibility: hidden;
+			}
+		}
+	}
+	
+	.edgt-video-button-play-image {
+		
+		&.edgt-vb-has-hover-image {
+			
+			&:hover {
+				
+				img {
+					&:first-child {
+						opacity: 0;
+					}
+					
+					&:nth-child(2) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			@include edgtTransition(opacity .3s ease-in-out);
+			
+			&:first-child {
+				position: relative;
+				opacity: 1;
+			}
+			
+			&:nth-child(2) {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				opacity: 0;
+				@include edgtTransform(translateX(-50%) translateZ(0));
+				
+				.rev_slider_wrapper & {
+					@include edgtTransform(translateZ(0));
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

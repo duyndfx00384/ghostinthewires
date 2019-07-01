@@ -1,0 +1,25 @@
+.edgt-lesson-single-holder {
+	.edgt-lms-lesson-content-wrapper {
+		padding: 28px 10% 24px;
+
+        .edgt-lms-lesson-content{
+            margin-bottom: 30px;
+        }
+
+        @include ipad-portrait {
+            padding: 28px 10% 24px;
+        }
+        @include phone-portrait {
+            padding: 28px 5% 24px;
+        }
+	}
+    .edgt-lms-message {
+        color: $first-main-color;
+        span {
+            vertical-align: middle;
+        }
+        .edgt-lms-message-text {
+            padding-left: 5px;
+        }
+    }
+}

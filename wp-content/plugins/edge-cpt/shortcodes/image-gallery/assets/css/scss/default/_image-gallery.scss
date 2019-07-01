@@ -1,0 +1,337 @@
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+
+.edgt-image-gallery {
+	@include edgtRelativeHolderLayout();
+	
+	&.edgt-has-shadow {
+	
+		.edgt-ig-image-inner {
+			box-shadow: 6px 8px 20px 0 rgba(0, 0, 0, .3);
+		}
+		
+		&.edgt-ig-slider-type {
+			
+			.owl-stage-outer {
+				padding: 0 0 20px;
+			}
+			
+			.edgt-ig-image {
+				box-shadow: 6px 8px 20px 0 rgba(0, 0, 0, .3);
+			}
+		}
+	}
+	
+	.edgt-ig-image {
+		@include edgtRelativeHolderLayout();
+		box-sizing: border-box;
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.edgt-ig-image-inner {
+		@include edgtRelativeHolderLayout();
+		overflow: hidden;
+	}
+	
+	.edgt-ig-slider {
+		@include edgtRelativeHolderLayout();
+	}
+	
+	/***** Image Gallery Space Between Columns Style - begin *****/
+	
+	.edgt-ig-inner {
+		$space_label: ('no', 'tiny', 'small', 'normal');
+		$space_width: (0, 5, 10, 15);
+		
+		@for $i from 0 to length($space_label) {
+			&.edgt-ig-#{nth($space_label,$i+1)}-space {
+				$column_width: nth($space_width,$i+1);
+				$column_width_margin: $column_width * 2;
+				
+				@if($column_width == 0) {
+					margin: 0;
+				} @else {
+					margin: 0 -#{$column_width}px;
+				}
+				
+				.edgt-ig-image {
+					padding: 0 #{$column_width}px;
+					margin: 0 0 #{$column_width_margin}px;
+				}
+			}
+		}
+	}
+	
+	/***** Image Gallery Space Between Columns Style - end *****/
+	
+	/***** Image Gallery Grid Style - begin *****/
+	
+	.edgt-ig-grid {
+		
+		.edgt-ig-image {
+			float: left;
+		}
+		
+		$gallery_columns: ('two', 'three', 'four', 'five', 'six');
+		@for $i from 0 to length($gallery_columns) {
+			&.edgt-ig-#{nth($gallery_columns, $i+1)}-columns {
+				$column_width: 100%/($i+2);
+				
+				.edgt-ig-image {
+					width: $column_width;
+					
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+						
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/***** Image Gallery Grid Style - end *****/
+	
+	/***** Image Gallery Masonry Style - begin *****/
+	
+	.edgt-ig-masonry {
+		opacity: 0;
+		@include edgtTransition(opacity .2s ease-out);
+		
+		.edgt-ig-grid-sizer {
+			width: 100%;
+		}
+		
+		.edgt-ig-grid-gutter {
+			width: 0;
+		}
+		
+		$masonry_columns: ('two', 'three', 'four', 'five', 'six');
+		
+		@for $i from 0 to length($masonry_columns) {
+			&.edgt-ig-#{nth($masonry_columns,$i+1)}-columns {
+				$column_width: 100%/($i+2);
+				
+				.edgt-ig-image,
+				.edgt-ig-grid-sizer {
+					width: $column_width;
+				}
+				
+				.edgt-ig-image.edgt-large-masonry-item {
+					width: $column_width * 2;
+				}
+			}
+		}
+	}
+	
+	/***** Image Gallery Masonry Style - end *****/
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-custom-link {
+		
+		.edgt-ig-image {
+
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-lightbox {
+		
+		.edgt-ig-image {
+			img {
+				@include edgtTransition(transform .5s ease);
+				@include edgtTransform(translateZ(0));
+				backface-visibility: hidden;
+			}
+
+			&:hover {
+				img {
+					@include edgtTransform(scale(1.02));
+				}
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-zoom {
+		
+		.edgt-ig-image {
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include edgtTransform(scale(1.02));
+				}
+			}
+			
+			.edgt-ig-image-inner {
+				overflow: hidden;
+			}
+			
+			img {
+				@include edgtTransition(transform .5s ease);
+				@include edgtTransform(translateZ(0));
+				backface-visibility: hidden;
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-grayscale {
+		
+		.edgt-ig-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include edgtTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+
+	&.edgt-ig-carousel-type {
+
+		&.edgt-active-item-enabled {
+			.owl-item{
+				&:not(.center) {
+					.edgt-ig-image {
+						@include edgtTransition(transform .3s ease-in-out .3s, -webkit-transform .3s ease-in-out .3s);
+						@include edgtTransform(translateZ(0) scale(0.898));
+					}
+				}
+				&.active {
+					.edgt-ig-image {
+						@include edgtTransition(transform .3s ease-in-out .3s, -webkit-transform .3s ease-in-out .3s);
+					}
+				}
+			}
+		}
+
+        &.edgt-image-no-behavior {
+            .edgt-owl-slider {
+                .owl-item {
+                    cursor: -webkit-grab;
+                }
+            }
+        }
+
+		&.edgt-has-shadow {
+			.edgt-ig-image {
+				padding: 20px 0;
+				img {
+					@include edgtBoxShadow(0 1px 13px 0px rgba(0,0,0,.11));
+					@include edgtTransform(translateZ(0));
+					@include edgtTransition(all .25s ease-out);
+				}
+
+				&:hover {
+					img {
+						@include edgtTransform(translateY(-3px));
+						@include edgtBoxShadow(0 1px 13px 0px rgba(0,0,0,.18));
+					}
+				}
+			}
+		}
+
+		.edgt-owl-slider .owl-dots {
+			margin: 10px 0 0;
+		}
+
+		.owl-nav {
+			.owl-prev,
+			.owl-next {
+				&:hover {
+					.edgt-prev-icon,
+					.edgt-next-icon {
+						color: $first-main-color;
+					}
+				}
+			}
+
+			.owl-prev {
+				left: 16%;
+			}
+
+			.owl-next {
+				right: 16%;
+			}
+
+			.edgt-prev-icon,
+			.edgt-next-icon {
+				color: $first-main-color;
+				background-color: #fff;
+				width: 88px;
+				height: 88px;
+				line-height: 88px;
+				text-align: center;
+				border-radius: 50%;
+                @include edgtBoxShadow(1px 1px 6px 5px rgba(0,0,0,0.15));
+
+				.edgt-icon-arrow {
+					font-size: 35px;
+				}
+			}
+		}
+
+        .owl-dots{
+            margin: 15px 0 0!important;
+            .owl-dot{
+                span{
+                    margin: 0 13px;
+                    width: 10px;
+                    height: 10px;
+                    background-color: #e1e1e1;
+                }
+
+                &.active,
+                &:hover{
+                    span{
+                        background-color: $first-main-color;
+                    }
+                }
+            }
+        }
+
+	}
+}
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */

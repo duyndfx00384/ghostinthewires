@@ -1,0 +1,122 @@
+/* ==========================================================================
+# Team style - begin
+========================================================================== */
+
+.touch .edgt-team .edgt-team-social-holder {
+	cursor: pointer;
+}
+
+.edgt-team {
+
+    p {
+        margin: 0;
+    }
+
+    .edgt-team-social-wrapp {
+        margin: 20px 0 0 0;
+
+        .edgt-icon-shortcode {
+            font-size: 16px;
+            margin: 0 7px;
+            i,
+            span {
+                color: #b9b9b9;
+                @include edgtTransition(color 0.15s ease-out);
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+
+        }
+
+        .edgt-icon-shortcode.circle,
+        .edgt-icon-shortcode.square {
+            border: 1px solid #dbdbdb;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 10px;
+        }
+    }
+
+    &.main-info-below-image {
+
+        .edgt-team-image {
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+
+            &:hover {
+                .edgt-team-image-overlay {
+                    opacity: 1;
+                }
+            }
+            .edgt-team-image-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                background-color: rgba(67, 74, 84, 0.35);
+                @include edgtTransition(opacity 0.2s ease-out);
+            }
+
+            img {
+                display: block;
+            }
+        }
+
+        .edgt-team-info {
+            .edgt-team-title-holder {
+                .edgt-team-name {
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                    color: #353535;
+                }
+            }
+
+            .edgt-team-position {
+                text-transform: capitalize;
+                font-size: 15px;
+                color: #9b9b9b;
+            }
+
+            .edgt-team-description {
+                margin-top: 12px;
+                padding: 0 20px;
+            }
+
+        }
+
+
+        &.light {
+            .edgt-team-info {
+                .edgt-team-title-holder {
+                    .edgt-team-name,
+                    .edgt-team-position {
+                        color: #ffffff;
+                    }
+                }
+                .edgt-team-text {
+                    .edgt-team-description p {
+                        color: #ffffff;
+                    }
+                }
+                .edgt-team-social-wrapp {
+                    .edgt-icon-shortcode {
+                        .edgt-icon-element {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* ==========================================================================
+# Team style - end
+========================================================================== */

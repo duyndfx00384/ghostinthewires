@@ -1,0 +1,39 @@
+@include ipad-portrait {
+    .edgt-membership-main-wrapper {
+        display: block;
+    }
+	.edgt-membership-dashboard-nav-holder {
+		width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #e1e1e1;
+        ul {
+            border-right: 0;
+            padding-right: 0;
+            padding-bottom: 35px;
+        }
+	}
+
+	.edgt-membership-dashboard-content-holder {
+		width: 100%;
+        padding: 0;
+        display: block;
+        border: none;
+	}
+}
+
+@include ipad-landscape {
+    .edgt-login-register-content {
+        .edgt-social-login-holder-outer {
+            display: block;
+        }
+        .edgt-social-login-holder-inner,
+        .edgt-login-form-social-login {
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+			border-right: none;
+        }
+    }
+}

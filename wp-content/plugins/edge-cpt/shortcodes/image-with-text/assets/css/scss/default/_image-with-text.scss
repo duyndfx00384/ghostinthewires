@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.edgt-image-with-text-holder {
+    @include edgtRelativeHolderLayout();
+	text-align: center;
+	
+	&.edgt-has-shadow {
+		.edgt-iwt-image {
+			img {
+				@include edgtBoxShadow(0 1px 13px 0px rgba(0,0,0,.11));
+			}
+		}
+	}
+	
+	.edgt-iwt-image {
+		@include edgtRelativeHolderLayout();
+		
+		a, img {
+			position: relative;
+			display: block;
+			@include edgtTransition(all .25s ease-out);
+		}
+
+        img{
+            margin: 0 auto;
+        }
+	}
+	
+	.edgt-iwt-text-holder {
+		@include edgtRelativeHolderLayout();
+	}
+	
+	.edgt-iwt-title {
+		margin: 18px 0 0;
+		color: $default-heading-color;
+		@include edgtTransition(color .2s ease-out);
+	}
+
+	&:hover {
+		.edgt-iwt-title {
+			color: $first-main-color;
+		}
+	}
+
+	.edgt-iwt-link-overlay {
+		@include edgtAbsoluteHolderLayout();
+	}
+
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-custom-link {
+		
+		.edgt-iwt-image {
+			img {
+				@include edgtTransform(translateZ(0));
+				backface-visibility: hidden;
+			}
+		}
+
+		&:hover {
+			.edgt-iwt-image {
+				img {
+					@include edgtBoxShadow(0 1px 13px 0px rgba(0,0,0,.18));
+					@include edgtTransform(translateY(-5px));
+				}
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-lightbox {
+		
+		.edgt-iwt-image {
+			
+			a {
+				
+				&:hover {
+					
+					&:after {
+						opacity: 1;
+					}
+				}
+				
+				&:after {
+					@include edgtAbsoluteHolderLayout();
+					content: '';
+					background-color: rgba($default-heading-color, .4);
+					opacity: 0;
+					@include edgtTransition(opacity .2s ease-in-out);
+				}
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-zoom {
+		
+		.edgt-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include edgtTransform(scale(1.04));
+				}
+			}
+			
+			img {
+				-webkit-transition: -webkit-transform .3s ease-in-out;
+				-moz-transition: -moz-transform .3s ease-in-out;
+				transition: transform .3s ease-in-out;
+				@include edgtTransform(scale(1));
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.edgt-image-behavior-grayscale {
+		
+		.edgt-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include edgtTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

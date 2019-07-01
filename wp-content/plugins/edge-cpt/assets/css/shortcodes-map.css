@@ -1,0 +1,4880 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+.edgt-accordion-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-accordion-holder .edgt-accordion-title {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 1.6s;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 1.6s;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 1.6s;
+}
+
+.edgt-accordion-holder .edgt-accordion-title .edgt-tab-title {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  line-height: inherit;
+  color: #212121;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.edgt-accordion-holder .edgt-accordion-title .edgt-accordion-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  margin: -1px 0 0;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #2d76b2;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edgt-accordion-holder .edgt-accordion-title .edgt-accordion-mark span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.edgt-accordion-holder .edgt-accordion-title .edgt-accordion-mark span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-accordion-holder .edgt-accordion-title .edgt-accordion-mark span.edgt_icon_minus {
+  opacity: 0;
+}
+
+.edgt-accordion-holder .edgt-accordion-title .edgt-accordion-mark span.edgt_icon_plus {
+  opacity: 1;
+}
+
+.edgt-accordion-holder .edgt-accordion-title.ui-state-active .edgt-accordion-mark span.edgt_icon_minus, .edgt-accordion-holder .edgt-accordion-title.ui-state-hover .edgt-accordion-mark span.edgt_icon_minus {
+  opacity: 0;
+}
+
+.edgt-accordion-holder .edgt-accordion-title.ui-state-active .edgt-accordion-mark span.edgt_icon_plus, .edgt-accordion-holder .edgt-accordion-title.ui-state-hover .edgt-accordion-mark span.edgt_icon_plus {
+  opacity: 1;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.edgt-accordion-holder .edgt-accordion-content {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.edgt-accordion-holder .edgt-accordion-content p {
+  margin: 0;
+}
+
+.edgt-accordion-holder.edgt-ac-boxed .edgt-accordion-title {
+  margin: 19px 0 0;
+  padding: 16px 20px 16px 53px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.edgt-accordion-holder.edgt-ac-boxed .edgt-accordion-title:first-child {
+  margin: 0;
+}
+
+.edgt-accordion-holder.edgt-ac-boxed .edgt-accordion-title .edgt-accordion-mark {
+  left: 14px;
+}
+
+.edgt-accordion-holder.edgt-ac-boxed .edgt-accordion-title.ui-state-active {
+  border-bottom-color: transparent;
+  -webkit-transition: border-color 0.1s;
+  -moz-transition: border-color 0.1s;
+  transition: border-color 0.1s;
+}
+
+.edgt-accordion-holder.edgt-ac-boxed .edgt-accordion-content {
+  padding: 0 53px 29px 53px;
+}
+
+.edgt-accordion-holder.edgt-ac-boxed .edgt-accordion-content.ui-accordion-content-active {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.edgt-accordion-holder.edgt-ac-simple {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.edgt-accordion-holder.edgt-ac-simple .edgt-accordion-title {
+  padding: 17px 0 17px 30px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.edgt-accordion-holder.edgt-ac-simple .edgt-accordion-content {
+  border-top: 1px solid transparent;
+}
+
+.edgt-accordion-holder.edgt-ac-simple .edgt-accordion-content.ui-accordion-content-active {
+  border-color: #e5e5e5;
+}
+
+.edgt-accordion-holder.edgt-ac-simple .edgt-accordion-content {
+  padding: 21px 0 16px;
+}
+
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+.edgt-banner-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .edgt-banner-holder {
+  cursor: pointer;
+}
+
+.edgt-banner-holder.edgt-visible-on-default {
+  overflow: hidden;
+}
+
+.edgt-banner-holder.edgt-visible-on-default .edgt-banner-image img {
+  display: block;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.edgt-banner-holder.edgt-visible-on-default:hover .edgt-banner-image img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.edgt-banner-holder.edgt-visible-on-hover:hover .edgt-banner-text-holder {
+  opacity: 1;
+}
+
+.edgt-banner-holder.edgt-visible-on-hover .edgt-banner-text-holder {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edgt-banner-holder.edgt-disabled .edgt-banner-text-holder {
+  display: none;
+}
+
+.edgt-banner-holder.edgt-banner-info-centered .edgt-banner-text-holder {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.edgt-banner-holder .edgt-banner-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-banner-holder .edgt-banner-image img {
+  display: block;
+}
+
+.edgt-banner-holder .edgt-banner-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 35px;
+  background-color: rgba(67, 67, 67, 0.4);
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-banner-holder .edgt-banner-text-holder {
+    padding: 25px;
+  }
+}
+
+.edgt-banner-holder .edgt-banner-text-outer {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edgt-banner-holder .edgt-banner-text-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-banner-holder .edgt-banner-subtitle {
+  margin: 0 0 4px;
+  color: #fff;
+}
+
+.edgt-banner-holder .edgt-banner-title {
+  margin: 0;
+  color: #fff;
+}
+
+.edgt-banner-holder .edgt-banner-title .edgt-banner-title-light {
+  font-weight: 300;
+}
+
+.edgt-banner-holder .edgt-banner-link-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 11px 0 0;
+  color: #fff;
+  line-height: 1em;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.edgt-banner-holder .edgt-banner-link-text:hover .edgt-banner-link-hover {
+  width: 100%;
+}
+
+.edgt-banner-holder .edgt-banner-link-text .edgt-banner-link-original {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.edgt-banner-holder .edgt-banner-link-text .edgt-banner-link-original span {
+  color: inherit;
+}
+
+.edgt-banner-holder .edgt-banner-link-text .edgt-banner-link-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.1%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.edgt-banner-holder .edgt-banner-link-text .edgt-banner-link-hover span {
+  color: #2d76b2;
+}
+
+.edgt-banner-holder .edgt-banner-link-text .edgt-banner-link-icon,
+.edgt-banner-holder .edgt-banner-link-text .edgt-banner-link-label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.edgt-banner-holder .edgt-banner-link-text .edgt-banner-link-icon {
+  margin: 0 2px 0 0;
+  font-size: 15px;
+}
+
+.edgt-banner-holder .edgt-banner-link-text .edgt-banner-link-label {
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.edgt-banner-holder .edgt-banner-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Boxes shortcode style - begin
+   ========================================================================== */
+.edgt-boxes {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.edgt-boxes.edgt-two-columns .edgt-boxes-item {
+  width: 50%;
+}
+
+.edgt-boxes.edgt-three-columns .edgt-boxes-item {
+  width: 33%;
+}
+
+.edgt-boxes.edgt-four-columns .edgt-boxes-item {
+  width: 25%;
+}
+
+.edgt-boxes .edgt-boxes-item {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.edgt-boxes .edgt-boxes-item.edgt-vertical-alignment-top {
+  vertical-align: top;
+}
+
+.edgt-boxes .edgt-boxes-item.edgt-vertical-alignment-bottom {
+  vertical-align: bottom;
+}
+
+.edgt-boxes .edgt-boxes-item.edgt-horizontal-alignment-center {
+  text-align: center;
+}
+
+.edgt-boxes .edgt-boxes-item.edgt-horizontal-alignment-right {
+  text-align: right;
+}
+
+.edgt-boxes .edgt-boxes-item .edgt-boxes-item-inner {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edgt-boxes .edgt-boxes-item .edgt-boxes-item-content {
+  padding: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.edgt-boxes .edgt-boxes-item .edgt-boxes-item-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.edgt-boxes .edgt-boxes-item .edgt-boxes-item-content-overlay {
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.edgt-boxes .edgt-boxes-item:hover .edgt-boxes-item-content-overlay {
+  opacity: 1;
+}
+
+.edgt-boxes.edgt-boxes-inner-float.edgt-three-columns .edgt-boxes-item {
+  width: 33.33333333333333%;
+}
+
+.edgt-boxes.edgt-boxes-inner-float .edgt-boxes-item {
+  float: left;
+}
+
+.edgt-boxes .edgt-boxes-inner-content {
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Boxes shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+.edgt-btn {
+  font-family: inherit;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  outline: none;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: color 0.15s ease-out, background-color 0.15s ease-out, border-color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out, background-color 0.15s ease-out, border-color 0.15s ease-out;
+  transition: color 0.15s ease-out, background-color 0.15s ease-out, border-color 0.15s ease-out;
+  padding: 16px 44px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edgt-btn.edgt-btn-simple {
+  padding: 0 !important;
+  color: #434343;
+  background-color: transparent;
+  border: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: transform 0.3s ease, color 0.15s ease-out;
+  -moz-transition: transform 0.3s ease, color 0.15s ease-out;
+  transition: transform 0.3s ease, color 0.15s ease-out;
+}
+
+.edgt-btn.edgt-btn-simple .edgt-btn-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edgt-btn.edgt-btn-simple:not(.edgt-btn-custom-hover-color):hover {
+  color: #434343 !important;
+}
+
+.edgt-btn.edgt-btn-simple:not(.edgt-btn-custom-hover-bg):hover {
+  background-color: transparent !important;
+}
+
+.edgt-btn.edgt-btn-simple:not(.edgt-btn-custom-border-hover):hover {
+  border-color: transparent !important;
+}
+
+.edgt-btn.edgt-btn-simple .edgt-btn-text {
+  padding-right: 3px;
+}
+
+.edgt-btn.edgt-btn-simple.edgt-btn-icon > i,
+.edgt-btn.edgt-btn-simple.edgt-btn-icon > span:not(.edgt-btn-text) {
+  vertical-align: middle;
+  margin: 0;
+  font-size: 18px;
+  opacity: 0;
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  transform: translateX(-3px);
+  -webkit-transition: transform 0.2s ease-in-out, opacity 0.1s;
+  -moz-transition: transform 0.2s ease-in-out, opacity 0.1s;
+  transition: transform 0.2s ease-in-out, opacity 0.1s;
+}
+
+.edgt-btn.edgt-btn-simple:hover.edgt-btn-icon > i,
+.edgt-btn.edgt-btn-simple:hover.edgt-btn-icon > span:not(.edgt-btn-text) {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.edgt-btn.edgt-btn-solid {
+  color: #fff;
+  background-color: #2d76b2;
+  border: 2px solid transparent;
+}
+
+.edgt-btn.edgt-btn-solid:not(.edgt-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.edgt-btn.edgt-btn-solid:not(.edgt-btn-custom-hover-bg):hover {
+  background-color: #434343 !important;
+}
+
+.edgt-btn.edgt-btn-solid:not(.edgt-btn-custom-border-hover):hover {
+  border-color: transparent  !important;
+}
+
+.edgt-btn.edgt-btn-outline {
+  color: #8a8a8a;
+  background-color: transparent;
+  border: 1px solid #8a8a8a;
+}
+
+.edgt-btn.edgt-btn-outline:not(.edgt-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.edgt-btn.edgt-btn-outline:not(.edgt-btn-custom-hover-bg):hover {
+  background-color: #2d76b2 !important;
+}
+
+.edgt-btn.edgt-btn-outline:not(.edgt-btn-custom-border-hover):hover {
+  border-color: #2d76b2 !important;
+}
+
+.edgt-btn.edgt-btn-small {
+  padding: 10px 29px;
+  font-size: 13px;
+}
+
+.edgt-btn.edgt-btn-large {
+  padding: 18px 51px;
+  font-size: 15px;
+}
+
+.edgt-btn.edgt-btn-huge {
+  display: block;
+  text-align: center;
+  padding: 22px 46px;
+}
+
+.edgt-btn.edgt-btn-icon > i,
+.edgt-btn.edgt-btn-icon > span:not(.edgt-btn-text) {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 4px;
+  font-size: 1.142857142857143em;
+  line-height: inherit;
+}
+
+.edgt-btn.edgt-btn-icon > i:before,
+.edgt-btn.edgt-btn-icon > span:not(.edgt-btn-text):before {
+  display: block;
+  line-height: inherit;
+}
+
+input[type=submit].edgt-btn,
+button.edgt-btn {
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+.edgt-call-to-action-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Layout Style - begin *****/
+  /***** Layout Style - end *****/
+  /***** Columns Space - begin *****/
+  /***** Columns Space - end *****/
+}
+
+.edgt-call-to-action-holder .edgt-cta-text-holder,
+.edgt-call-to-action-holder .edgt-cta-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edgt-call-to-action-holder .edgt-cta-text-holder h1, .edgt-call-to-action-holder .edgt-cta-text-holder h2, .edgt-call-to-action-holder .edgt-cta-text-holder h3, .edgt-call-to-action-holder .edgt-cta-text-holder h4, .edgt-call-to-action-holder .edgt-cta-text-holder h5, .edgt-call-to-action-holder .edgt-cta-text-holder h6 {
+  margin: 0;
+}
+
+.edgt-call-to-action-holder .edgt-cta-button-holder .edgt-btn {
+  white-space: nowrap;
+}
+
+.edgt-call-to-action-holder.edgt-normal-layout .edgt-cta-inner {
+  display: table;
+}
+
+.edgt-call-to-action-holder.edgt-normal-layout:not(.edgt-content-in-grid) .edgt-cta-inner {
+  width: 100%;
+}
+
+.edgt-call-to-action-holder.edgt-normal-layout .edgt-cta-text-holder,
+.edgt-call-to-action-holder.edgt-normal-layout .edgt-cta-button-holder {
+  display: table-cell;
+  box-sizing: border-box;
+}
+
+.edgt-call-to-action-holder.edgt-normal-layout .edgt-cta-button-holder {
+  text-align: right;
+}
+
+.edgt-call-to-action-holder.edgt-block-layout .edgt-cta-inner {
+  text-align: center;
+}
+
+.edgt-call-to-action-holder.edgt-block-layout .edgt-cta-button-holder,
+.edgt-call-to-action-holder.edgt-block-layout .edgt-cta-text-holder {
+  display: block;
+}
+
+.edgt-call-to-action-holder.edgt-block-layout .edgt-cta-text-holder {
+  margin: 0 0 34px;
+}
+
+.edgt-call-to-action-holder.edgt-simple-layout .edgt-cta-inner {
+  text-align: center;
+}
+
+.edgt-call-to-action-holder.edgt-simple-layout .edgt-cta-text-holder,
+.edgt-call-to-action-holder.edgt-simple-layout .edgt-cta-button-holder {
+  width: 100%;
+}
+
+.edgt-call-to-action-holder.edgt-simple-layout .edgt-cta-button-holder {
+  margin: 28px 0 0;
+}
+
+.edgt-call-to-action-holder.edgt-two-halves-columns .edgt-cta-text-holder,
+.edgt-call-to-action-holder.edgt-two-halves-columns .edgt-cta-button-holder {
+  width: 50%;
+}
+
+.edgt-call-to-action-holder.edgt-two-thirds-columns .edgt-cta-text-holder {
+  width: 66.66666666666667%;
+}
+
+.edgt-call-to-action-holder.edgt-two-thirds-columns .edgt-cta-button-holder {
+  width: 33.33333333333333%;
+}
+
+.edgt-call-to-action-holder.edgt-three-quarters-columns .edgt-cta-text-holder {
+  width: 75%;
+}
+
+.edgt-call-to-action-holder.edgt-three-quarters-columns .edgt-cta-button-holder {
+  width: 25%;
+}
+
+.edgt-call-to-action-holder.edgt-four-fifths-columns .edgt-cta-text-holder {
+  width: 80%;
+}
+
+.edgt-call-to-action-holder.edgt-four-fifths-columns .edgt-cta-button-holder {
+  width: 20%;
+}
+
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Cards Gallery shortcode style - begin
+   ========================================================================== */
+.edgt-cards-gallery-holder {
+  padding: 10px 0;
+}
+
+.edgt-cards-gallery-holder .edgt-cards-gallery {
+  width: 100%;
+  position: relative;
+}
+
+.edgt-cards-gallery-holder img {
+  position: relative;
+  display: block;
+  -webkit-box-shadow: 0 9px 21px 3px rgba(19, 117, 154, 0.07);
+  -moz-box-shadow: 0 9px 21px 3px rgba(19, 117, 154, 0.07);
+  box-shadow: 0 9px 21px 3px rgba(19, 117, 154, 0.07);
+}
+
+.edgt-cards-gallery-holder .fake_card {
+  position: relative;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.edgt-cards-gallery-holder .card {
+  box-sizing: border-box;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: auto;
+}
+
+.edgt-cards-gallery-holder .card.animating {
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+}
+
+.edgt-cards-gallery-holder .card.animating-siblings {
+  -webkit-transition: all 0.6s cubic-bezier(0, 0, 0, 1);
+  -moz-transition: all 0.6s cubic-bezier(0, 0, 0, 1);
+  transition: all 0.6s cubic-bezier(0, 0, 0, 1);
+  pointer-events: none;
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card {
+  will-change: transform;
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card.out {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card:nth-last-child(6) {
+  -webkit-transform: scale(0.5) translateX(80%);
+  -moz-transform: scale(0.5) translateX(80%);
+  transform: scale(0.5) translateX(80%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card:nth-last-child(5) {
+  -webkit-transform: scale(0.6) translateX(54%);
+  -moz-transform: scale(0.6) translateX(54%);
+  transform: scale(0.6) translateX(54%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card:nth-last-child(4) {
+  -webkit-transform: scale(0.7) translateX(35%);
+  -moz-transform: scale(0.7) translateX(35%);
+  transform: scale(0.7) translateX(35%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card:nth-last-child(3) {
+  -webkit-transform: scale(0.8) translateX(30%);
+  -moz-transform: scale(0.8) translateX(30%);
+  transform: scale(0.8) translateX(30%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card:nth-last-child(2) {
+  -webkit-transform: scale(0.9) translateX(14%);
+  -moz-transform: scale(0.9) translateX(14%);
+  transform: scale(0.9) translateX(14%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card:not(:last-of-type) {
+  cursor: pointer;
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-left .card:not(:last-of-type):not(.active):hover {
+  margin-left: 10px !important;
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card {
+  will-change: transform;
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card.out {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card:nth-last-child(6) {
+  -webkit-transform: scale(0.5) translateX(-80%);
+  -moz-transform: scale(0.5) translateX(-80%);
+  transform: scale(0.5) translateX(-80%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card:nth-last-child(5) {
+  -webkit-transform: scale(0.6) translateX(-54%);
+  -moz-transform: scale(0.6) translateX(-54%);
+  transform: scale(0.6) translateX(-54%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card:nth-last-child(4) {
+  -webkit-transform: scale(0.7) translateX(-35%);
+  -moz-transform: scale(0.7) translateX(-35%);
+  transform: scale(0.7) translateX(-35%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card:nth-last-child(3) {
+  -webkit-transform: scale(0.8) translateX(-21%);
+  -moz-transform: scale(0.8) translateX(-21%);
+  transform: scale(0.8) translateX(-21%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card:nth-last-child(2) {
+  -webkit-transform: scale(0.9) translateX(-9.2%);
+  -moz-transform: scale(0.9) translateX(-9.2%);
+  transform: scale(0.9) translateX(-9.2%);
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card:not(:last-of-type) {
+  cursor: pointer;
+}
+
+.edgt-cards-gallery-holder.edgt-shuffled-right .card:not(:last-of-type):not(.active):hover {
+  margin-left: -10px !important;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes img {
+  visibility: hidden;
+}
+
+@-webkit-keyframes edgtCardAppearFromRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+  30% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes edgtCardAppearFromRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+  30% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared img:not([data-lazy="true"]) {
+  -webkit-animation: edgtCardAppearFromRight 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: edgtCardAppearFromRight 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation: edgtCardAppearFromRight 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared .card:nth-child(1) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared .card:nth-child(2) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared .card:nth-child(3) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared .card:nth-child(4) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared .card:nth-child(5) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared .card:nth-child(6) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared .card:nth-child(7) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-right.edgt-appeared .card:nth-child(8) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+@-webkit-keyframes edgtCardAppearFromLeft {
+  0% {
+    visibility: visible;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes edgtCardAppearFromLeft {
+  0% {
+    visibility: visible;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared img:not([data-lazy="true"]) {
+  -webkit-animation: edgtCardAppearFromLeft 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: edgtCardAppearFromLeft 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation: edgtCardAppearFromLeft 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared .card:nth-child(1) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared .card:nth-child(2) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared .card:nth-child(3) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared .card:nth-child(4) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared .card:nth-child(5) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared .card:nth-child(6) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared .card:nth-child(7) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.no-touch .edgt-cards-gallery-holder.edgt-appear-effect-yes.edgt-shuffled-left.edgt-appeared .card:nth-child(8) img:not([data-lazy="true"]):not(.edgt-animation-done) {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+/* ==========================================================================
+   Cards Gallery shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+.edgt-clients-carousel-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Hover Types - begin *****/
+  /***** Hover Types - end *****/
+}
+
+.edgt-clients-carousel-holder .edgt-cc-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-clients-carousel-holder .edgt-cc-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .edgt-clients-carousel-holder .edgt-cc-item {
+  cursor: pointer;
+}
+
+.edgt-clients-carousel-holder .edgt-cc-item .edgt-cc-item {
+  position: relative;
+  display: block;
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-switch-images .edgt-cc-item:hover .edgt-cc-image {
+  opacity: 0;
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-switch-images .edgt-cc-item:hover .edgt-cc-hover-image {
+  opacity: 1;
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-switch-images .edgt-cc-item .edgt-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-switch-images .edgt-cc-item .edgt-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-roll-over .edgt-cc-item {
+  overflow: hidden;
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-roll-over .edgt-cc-item:hover .edgt-cc-image {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-roll-over .edgt-cc-item:hover .edgt-cc-hover-image {
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-roll-over .edgt-cc-item .edgt-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform .4s ease;
+  -moz-transition: -moz-transform .4s ease;
+  transition: transform .4s ease;
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-roll-over .edgt-cc-item .edgt-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  -webkit-transition: -webkit-transform .4s ease;
+  -moz-transition: -moz-transform .4s ease;
+  transition: transform .4s ease;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-pulse-image .edgt-cc-item {
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-pulse-image .edgt-cc-item.edgt-cc-hover {
+  -webkit-transform: translate3d(0, -6px, 0);
+  -moz-transform: translate3d(0, -6px, 0);
+  transform: translate3d(0, -6px, 0);
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-pulse-image .edgt-cc-item .edgt-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+
+.edgt-clients-carousel-holder.edgt-cc-hover-pulse-image .edgt-cc-item .edgt-cc-hover-image {
+  display: none;
+}
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */
+.edgt-comparision-pricing-tables-holder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #888888;
+  font-weight: 700;
+}
+
+.edgt-comparision-pricing-tables-holder:before, .edgt-comparision-pricing-tables-holder:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.edgt-comparision-pricing-tables-holder:after {
+  clear: both;
+}
+
+.edgt-comparision-pricing-tables-holder {
+  *zoom: 1;
+}
+
+.edgt-comparision-pricing-tables-holder ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.edgt-comparision-pricing-tables-holder h4, .edgt-comparision-pricing-tables-holder p {
+  margin: 0;
+}
+
+.edgt-comparision-pricing-tables-holder h4 {
+  color: #3e3e3e;
+}
+
+.edgt-comparision-pricing-tables-holder * {
+  box-sizing: border-box;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table {
+  float: left;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table-item-feature {
+  display: none;
+}
+
+.edgt-comparision-pricing-tables-holder.edgt-two-columns .edgt-cpt-table {
+  width: 33.33%;
+}
+
+.edgt-comparision-pricing-tables-holder.edgt-three-columns .edgt-cpt-table {
+  width: 25%;
+}
+
+.edgt-comparision-pricing-tables-holder.edgt-four-columns .edgt-cpt-table {
+  width: 20%;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-features-holder .edgt-cpt-features-title.edgt-cpt-table-head-holder {
+  padding-top: 143px;
+  padding-left: 32px;
+  background-color: #ffffff;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-features-holder .edgt-cpt-features-title.edgt-cpt-table-head-holder h4 {
+  font-size: 24px;
+  color: #3e3e3e;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-features-holder .edgt-cpt-features-list-holder,
+.edgt-comparision-pricing-tables-holder .edgt-cpt-features-holder .edgt-cpt-features-title {
+  border-right: none !important;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-features-holder .edgt-cpt-table-content li {
+  padding: 10px 10px 10px 32px;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-features-holder .edgt-cpt-table-content li span {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-comparision-table-holder .edgt-cpt-table-head-holder {
+  background-color: #f7fdff;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-comparision-table-holder .edgt-cpt-table-image-holder {
+  margin-bottom: 14px;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-comparision-table-holder .edgt-cpt-table-content li {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-comparision-table-holder .edgt-cpt-table-footer {
+  background-color: #f7fdff;
+  border-bottom: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  text-align: center;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-comparision-table-holder:last-child .edgt-cpt-table-footer {
+  border-right: 1px solid #efefef;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table {
+  border: 4px solid #d6f2ff;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table.edgt-featured-item {
+  border-top: 4px solid #2d76b2;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table.edgt-featured-item .edgt-cpt-table-btn a {
+  color: #ffffff;
+  background-color: #2d76b2;
+  border-color: #2d76b2;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table.edgt-featured-item .edgt-cpt-table-btn a:hover {
+  background-color: #2d76b2;
+  border-color: #2d76b2;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table:not(.edgt-cpt-features-holder) {
+  text-align: center;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table:not(.edgt-cpt-features-holder) .edgt-cpt-table-head-holder,
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table:not(.edgt-cpt-features-holder) .edgt-cpt-table-content {
+  border-right: none;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table:not(.edgt-cpt-features-holder) li {
+  line-height: 60px;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table:last-child .edgt-cpt-table-head-holder,
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table:last-child .edgt-cpt-table-content {
+  border-right: 1px solid #efefef;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-head-holder,
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-content {
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-border-top {
+  width: 100%;
+  height: 6px;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-head-holder {
+  display: table;
+  height: 137px;
+  width: 100%;
+  padding: 40px 10px 37px;
+  border-bottom: 1px solid #efefef;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-head-holder .edgt-cpt-table-head-holder-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-head-holder .edgt-cpt-table-title {
+  margin-bottom: 13px;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-head-holder .edgt-cpt-table-price {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #545454;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-head-holder .edgt-cpt-table-currency {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #545454;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-head-holder .edgt-cpt-table-period {
+  font-size: 14px;
+  color: #868686;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-content li {
+  height: 62px;
+  border-bottom: 1px solid #efefef;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-content li:nth-child(odd) {
+  background-color: #fff;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-content li:nth-child(even) {
+  background-color: #fff;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-btn {
+  padding: 23px 0;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-btn a {
+  display: inline-block;
+  height: 50px;
+  color: #888888;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #fff;
+  border: 2px solid #eaebeb;
+  padding: 0 33px;
+  -webkit-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  -moz-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-btn a:hover {
+  background-color: #2d76b2;
+  border-color: #2d76b2;
+  color: #ffffff;
+}
+
+.edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-btn a span {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ==========================================================================
+   Countdown shortcode style - begin
+   ========================================================================== */
+.edgt-countdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-countdown .countdown-rtl {
+  direction: rtl;
+}
+
+.edgt-countdown .countdown-row {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.edgt-countdown .countdown-row.countdown-show1 .countdown-section {
+  width: 100%;
+}
+
+.edgt-countdown .countdown-row.countdown-show2 .countdown-section {
+  width: 50%;
+}
+
+.edgt-countdown .countdown-row.countdown-show3 .countdown-section {
+  width: 33.33333%;
+}
+
+.edgt-countdown .countdown-row.countdown-show4 .countdown-section {
+  width: 25%;
+}
+
+.edgt-countdown .countdown-row.countdown-show5 .countdown-section {
+  width: 20%;
+}
+
+.edgt-countdown .countdown-row.countdown-show6 .countdown-section {
+  width: 16.66667%;
+}
+
+.edgt-countdown .countdown-row .countdown-section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.edgt-countdown .countdown-row .countdown-section .countdown-amount,
+.edgt-countdown .countdown-row .countdown-section .countdown-period {
+  font-family: "Montserrat", sans-serif;
+  color: #888;
+  font-weight: 700;
+  text-align: center;
+}
+
+.edgt-predefined-font-type-1 .edgt-countdown .countdown-row .countdown-section .countdown-amount, .edgt-predefined-font-type-1
+.edgt-countdown .countdown-row .countdown-section .countdown-period {
+  font-family: "Montserrat", sans-serif;
+}
+
+.edgt-predefined-font-type-2 .edgt-countdown .countdown-row .countdown-section .countdown-amount, .edgt-predefined-font-type-2
+.edgt-countdown .countdown-row .countdown-section .countdown-period {
+  font-family: "Nunito", sans-serif;
+}
+
+.edgt-predefined-font-type-3 .edgt-countdown .countdown-row .countdown-section .countdown-amount, .edgt-predefined-font-type-3
+.edgt-countdown .countdown-row .countdown-section .countdown-period {
+  font-family: "Lora", sans-serif;
+}
+
+.edgt-countdown .countdown-row .countdown-section .countdown-amount {
+  position: relative;
+  display: block;
+  font-size: 65px;
+  line-height: 1em;
+}
+
+.edgt-countdown .countdown-row .countdown-section .countdown-period {
+  display: block;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.edgt-countdown.text-align-left .countdown-section .countdown-amount,
+.edgt-countdown.text-align-left .countdown-section .countdown-period {
+  text-align: left;
+}
+
+.edgt-countdown.edgt-inline .countdown-row .countdown-section .countdown-amount,
+.edgt-countdown.edgt-inline .countdown-row .countdown-section .countdown-period {
+  display: inline-block;
+}
+
+.edgt-countdown.edgt-inline .countdown-row .countdown-section .countdown-amount {
+  font-size: 48px;
+  line-height: 1em;
+  margin-right: 15px;
+}
+
+.edgt-countdown.edgt-inline .countdown-row .countdown-section .countdown-period {
+  font-size: 18px;
+}
+
+.edgt-countdown.edgt-dark-skin .countdown-row .countdown-section .countdown-amount,
+.edgt-countdown.edgt-dark-skin .countdown-row .countdown-section .countdown-period {
+  color: #000;
+}
+
+.edgt-countdown.edgt-light-skin .countdown-row .countdown-section .countdown-amount,
+.edgt-countdown.edgt-light-skin .countdown-row .countdown-section .countdown-period {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Countdown shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+.edgt-counter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.edgt-counter-holder .edgt-counter-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edgt-counter-holder .edgt-counter-icon {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.edgt-counter-holder .edgt-counter {
+  margin: 0;
+  vertical-align: middle;
+  color: #2d76b2;
+  font-size: 48px;
+  line-height: 1em;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.edgt-counter-holder .edgt-counter-title {
+  margin: 6px 0 0;
+  color: #555555;
+}
+
+.edgt-counter-holder .edgt-counter-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Dropcaps shortcode style - begin
+   ========================================================================== */
+.edgt-dropcaps {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  line-height: 42px;
+  font-size: 42px;
+  color: #999;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 7px 0 0;
+}
+
+.edgt-dropcaps.edgt-square, .edgt-dropcaps.edgt-circle {
+  height: 35px;
+  width: 35px;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #434343;
+  margin: 7px 14px 0 0;
+  box-sizing: border-box;
+}
+
+.edgt-dropcaps.edgt-circle {
+  border-radius: 3em;
+}
+
+/* ==========================================================================
+   Dropcaps shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Education Timeline shortcode style - begin
+   ========================================================================== */
+.edgt-tml-holder .edgt-timeline {
+  position: relative;
+}
+
+.edgt-tml-holder .edgt-timeline .edgt-tml-item-holder {
+  position: relative;
+  padding-bottom: 38px;
+}
+
+.edgt-tml-holder .edgt-timeline .edgt-tml-item-holder.edgt-appeared:not(:last-of-type)::after {
+  height: 100%;
+}
+
+.edgt-tml-holder .edgt-timeline .edgt-tml-item-holder.edgt-appeared .edgt-tml-item-content {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.edgt-tml-holder .edgt-timeline .edgt-tml-item-holder:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: .6em;
+  width: 3px;
+  height: 0;
+  background: #2d76b2;
+  z-index: 1;
+  -webkit-transition: linear height 0.5s;
+  -moz-transition: linear height 0.5s;
+  transition: linear height 0.5s;
+}
+
+.edgt-tml-holder .edgt-timeline .edgt-tml-item-holder .edgt-tml-item-circle {
+  width: 12px;
+  height: 12px;
+  background-color: #2d76b2;
+  position: absolute;
+  top: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+
+.edgt-tml-holder .edgt-timeline .edgt-tml-item-holder .edgt-tml-item-content {
+  padding-left: 27px;
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.edgt-tml-holder .edgt-timeline .edgt-tml-item-holder .edgt-tml-item-content div {
+  font-size: 14px;
+}
+
+.edgt-tml-holder .edgt-timeline .edgt-tml-item-holder .edgt-tml-item-content .edgt-tml-item-title {
+  margin: 0;
+  line-height: 1em;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #303030;
+}
+
+/* ==========================================================================
+   Education Timeline shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+.edgt-elements-holder {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.edgt-elements-holder.edgt-eh-full-height {
+  height: 100%;
+}
+
+.edgt-elements-holder.edgt-ehi-float .edgt-eh-item {
+  float: left;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-1-1 {
+  width: 100%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-1-2 {
+  width: 50%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-1-3 {
+  width: 33.3333%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-2-3 {
+  width: 66.6666%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-1-4 {
+  width: 25%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-3-4 {
+  width: 75%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-1-5 {
+  width: 20%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-2-5 {
+  width: 40%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-3-5 {
+  width: 60%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-4-5 {
+  width: 80%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-1-6 {
+  width: 16.6666%;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-width-5-6 {
+  width: 83.3333%;
+}
+
+.edgt-elements-holder.edgt-two-columns .edgt-eh-item {
+  width: 50%;
+}
+
+.edgt-elements-holder.edgt-three-columns .edgt-eh-item {
+  width: 33.33333%;
+}
+
+.edgt-elements-holder.edgt-four-columns .edgt-eh-item {
+  width: 25%;
+}
+
+.edgt-elements-holder.edgt-five-columns .edgt-eh-item {
+  width: 20%;
+}
+
+.edgt-elements-holder.edgt-six-columns .edgt-eh-item {
+  width: 16.66667%;
+}
+
+.edgt-elements-holder .edgt-eh-item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-vertical-alignment-top {
+  vertical-align: top;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-vertical-alignment-bottom {
+  vertical-align: bottom;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-horizontal-alignment-center {
+  text-align: center;
+}
+
+.edgt-elements-holder .edgt-eh-item.edgt-horizontal-alignment-right {
+  text-align: right;
+}
+
+.edgt-elements-holder .edgt-eh-item .edgt-elements-holder-item-inner {
+  width: 100%;
+}
+
+.edgt-elements-holder .edgt-ehi-content {
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Full Screen Sections shortcode style - begin
+   ========================================================================== */
+html.fp-enabled,
+.fp-enabled body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none;
+}
+
+.fp-scrollable {
+  overflow: hidden;
+  position: relative;
+}
+
+.fp-scroller {
+  overflow: hidden;
+}
+
+.iScrollIndicator {
+  border: 0 !important;
+}
+
+.fp-notransition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.fp-auto-height.edgt-fss-item,
+.fp-auto-height .edgt-fss-slide,
+.fp-auto-height .fp-tableCell {
+  height: auto !important;
+}
+
+.fp-responsive .fp-auto-height-responsive.edgt-fss-item,
+.fp-responsive .fp-auto-height-responsive .edgt-fss-slide,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell {
+  height: auto !important;
+}
+
+#fp-nav {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  margin: -32px 0 0;
+  z-index: 1001;
+}
+
+@media only screen and (max-width: 1024px) {
+  #fp-nav {
+    right: 30px;
+  }
+}
+
+#fp-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#fp-nav ul li {
+  position: relative;
+  display: block;
+  margin: 25px 0;
+  padding: 0;
+}
+
+#fp-nav ul li a {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+#fp-nav ul li a span {
+  position: relative;
+  border-radius: 100%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#fp-nav ul li a.active span, #fp-nav ul li a:hover span {
+  background-color: rgba(80, 80, 80, 0.7);
+}
+
+.edgt-light-header #fp-nav ul li a span {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.edgt-light-header #fp-nav ul li a.active span, .edgt-light-header #fp-nav ul li a:hover span {
+  background-color: #fff;
+}
+
+.edgt-dark-header #fp-nav ul li a span {
+  background-color: rgba(45, 118, 178, 0.5);
+}
+
+.edgt-dark-header #fp-nav ul li a.active span, .edgt-dark-header #fp-nav ul li a:hover span {
+  background-color: #2d76b2;
+}
+
+.edgt-full-screen-sections {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-full-screen-sections .edgt-fss-wrapper {
+  visibility: hidden;
+}
+
+.edgt-full-screen-sections .edgt-fss-item {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  -moz-transition: -moz-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.edgt-full-screen-sections .edgt-fss-item .fp-scroller > .vc_column_container {
+  padding: 0;
+  margin: 0;
+}
+
+.edgt-full-screen-sections .edgt-fss-item .fp-scroller > .vc_column_container > .vc_column-inner {
+  padding: 0;
+  margin: 0;
+}
+
+.edgt-full-screen-sections .edgt-fss-item.edgt-fss-item-va-top .edgt-fss-item-inner {
+  vertical-align: top;
+}
+
+.edgt-full-screen-sections .edgt-fss-item.edgt-fss-item-va-bottom .edgt-fss-item-inner {
+  vertical-align: bottom;
+}
+
+.edgt-full-screen-sections .edgt-fss-item.edgt-fss-item-ha-left .edgt-fss-item-inner {
+  text-align: left;
+}
+
+.edgt-full-screen-sections .edgt-fss-item.edgt-fss-item-ha-center .edgt-fss-item-inner {
+  text-align: center;
+}
+
+.edgt-full-screen-sections .edgt-fss-item.edgt-fss-item-ha-right .edgt-fss-item-inner {
+  text-align: right;
+}
+
+.edgt-full-screen-sections .edgt-fss-item.edgt-fss-item-has-link .edgt-fss-item-inner a {
+  position: relative;
+  z-index: 2;
+}
+
+.edgt-full-screen-sections .edgt-fss-item .edgt-fss-item-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.edgt-full-screen-sections .edgt-fss-item .edgt-fss-item-inner a {
+  position: relative;
+  z-index: 2;
+}
+
+.edgt-full-screen-sections .edgt-fss-item .edgt-fss-item-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.edgt-full-screen-sections .edgt-fss-nav-holder {
+  position: fixed;
+  bottom: 48px;
+  left: 57px;
+  display: block;
+  width: 55px;
+  text-align: center;
+  visibility: hidden;
+  z-index: 1001;
+}
+
+.edgt-full-screen-sections .edgt-fss-nav-holder a {
+  display: block;
+  font-size: 55px;
+  line-height: 0.9;
+  color: #434343;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: color 0.2s ease-out, opacity 0.25s ease-out;
+  -moz-transition: color 0.2s ease-out, opacity 0.25s ease-out;
+  transition: color 0.2s ease-out, opacity 0.25s ease-out;
+}
+
+.edgt-full-screen-sections .edgt-fss-nav-holder a:hover {
+  color: rgba(67, 67, 67, 0.7);
+}
+
+.edgt-light-header .edgt-full-screen-sections .edgt-fss-nav-holder a {
+  color: #fff;
+}
+
+.edgt-light-header .edgt-full-screen-sections .edgt-fss-nav-holder a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edgt-dark-header .edgt-full-screen-sections .edgt-fss-nav-holder a {
+  color: #000;
+}
+
+.edgt-dark-header .edgt-full-screen-sections .edgt-fss-nav-holder a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.edgt-full-screen-sections .edgt-fss-nav-holder a span {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-full-screen-sections .edgt-fss-nav-holder a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-full-screen-sections .edgt-fss-nav-holder {
+    bottom: 28px;
+    left: 37px;
+  }
+}
+
+/* ==========================================================================
+   Full Screen Sections shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode style - begin
+   ========================================================================== */
+.edgt-google-map-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-google-map {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.edgt-google-map iframe,
+.edgt-google-map object,
+.edgt-google-map embed {
+  width: 100%;
+  display: block;
+}
+
+.edgt-google-map img {
+  max-width: none;
+}
+
+.edgt-google-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+}
+
+/* ==========================================================================
+   Google Map shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon List Item shortcode style - begin
+   ========================================================================== */
+.edgt-icon-list-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: auto;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.edgt-icon-list-holder .edgt-il-icon-holder,
+.edgt-icon-list-holder .edgt-il-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.edgt-icon-list-holder .edgt-il-icon-holder {
+  width: 1%;
+}
+
+.edgt-icon-list-holder .edgt-il-icon-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: #2d76b2;
+  font-size: 16px;
+  line-height: inherit;
+}
+
+.edgt-icon-list-holder .edgt-il-icon-holder > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-icon-list-holder .edgt-il-text {
+  width: 99%;
+  padding: 0 0 0 28px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+/* ==========================================================================
+   Icon List Item shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Interactive Icon Showcase start styles
+   ========================================================================== */
+.edgt-int-icon-showcase {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+}
+
+.edgt-int-icon-showcase .edgt-int-icon-showcase-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  margin: 50px;
+}
+
+.edgt-int-icon-showcase .edgt-int-icon-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  margin: 50px;
+  background-color: transparent;
+  border: 1px dashed #a6a6a6;
+  border-radius: 50%;
+  -webkit-transition: all 0.85s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -moz-transition: all 0.85s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transition: all 0.85s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -webkit-transform: scale(0.1, 0.1);
+  -moz-transform: scale(0.1, 0.1);
+  transform: scale(0.1, 0.1);
+}
+
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-int-icon-circle {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-int-icon-circle {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.edgt-int-icon-showcase .edgt-showcase-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.15s ease-out 0.15s;
+  -moz-transition: opacity 0.15s ease-out 0.15s;
+  transition: opacity 0.15s ease-out 0.15s;
+}
+
+.edgt-int-icon-showcase .edgt-showcase-content .edgt-section-subtitle {
+  text-transform: capitalize;
+}
+
+.edgt-int-icon-showcase .edgt-showcase-content .edgt-showcase-content-inner {
+  margin-top: 10px;
+}
+
+.edgt-int-icon-showcase .edgt-showcase-content-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.edgt-int-icon-showcase .edgt-showcase-content-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20%;
+}
+
+.edgt-int-icon-showcase .edgt-showcase-content-cell .edgt-showcase-title {
+  margin: 20px 0 12px;
+}
+
+.edgt-showcase-icon {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate(-50%, -50%) scale(1.01);
+  -moz-transform: translate(-50%, -50%) scale(1.01);
+  transform: translate(-50%, -50%) scale(1.01);
+}
+
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-icon {
+  -webkit-transition: opacity .2s ease !important;
+  transition: opacity .2s ease !important;
+  -webkit-transition-delay: 0s !important;
+  transition-delay: 0s !important;
+}
+
+.edgt-showcase-icon .edgt-icon-shortcode.edgt-circle {
+  width: 94px;
+  height: 94px;
+  line-height: 94px;
+  font-size: 42px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edgt-showcase-item-holder.edgt-showcase-active .edgt-showcase-icon {
+  border: 1px solid #e3e3e3;
+}
+
+.edgt-showcase-item-holder.edgt-showcase-active .edgt-icon-element {
+  color: #2d76b2;
+}
+
+.edgt-showcase-item-holder.edgt-showcase-active .edgt-showcase-content {
+  opacity: 1;
+}
+
+.edgt-showcase-item-holder .edgt-showcase-icon {
+  background: #fff;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.2s ease, top 0.5s cubic-bezier(0.18, 0.89, 0.32, 1), left 0.5s cubic-bezier(0.18, 0.89, 0.32, 1), -webkit-transform 0.5s ease;
+  transition: opacity 0.2s ease, top 0.5s cubic-bezier(0.18, 0.89, 0.32, 1), left 0.5s cubic-bezier(0.18, 0.89, 0.32, 1), transform 0.5s ease;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder .edgt-showcase-icon {
+  opacity: 1;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder:first-child .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder:first-child .edgt-showcase-icon {
+  top: 0;
+  left: 50%;
+  -webkit-transition-delay: .65s;
+  transition-delay: .65s;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder:nth-child(2) .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder:nth-child(2) .edgt-showcase-icon {
+  top: 14.6%;
+  left: 85.4%;
+  -webkit-transition-delay: .85s;
+  transition-delay: .85s;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder:nth-child(3) .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder:nth-child(3) .edgt-showcase-icon {
+  top: 50%;
+  left: 100%;
+  -webkit-transition-delay: 1.05s;
+  transition-delay: 1.05s;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder:nth-child(4) .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder:nth-child(4) .edgt-showcase-icon {
+  top: 85.4%;
+  left: 85.4%;
+  -webkit-transition-delay: 1.25s;
+  transition-delay: 1.25s;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder:nth-child(5) .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder:nth-child(5) .edgt-showcase-icon {
+  top: 100%;
+  left: 50%;
+  -webkit-transition-delay: 1.45s;
+  transition-delay: 1.45s;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder:nth-child(6) .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder:nth-child(6) .edgt-showcase-icon {
+  top: 85.4%;
+  left: 14.6%;
+  -webkit-transition-delay: 1.65s;
+  transition-delay: 1.65s;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder:nth-child(7) .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder:nth-child(7) .edgt-showcase-icon {
+  top: 50%;
+  left: 0;
+  -webkit-transition-delay: 1.85s;
+  transition-delay: 1.85s;
+}
+
+.edgt-int-icon-showcase.edgt-appeared .edgt-showcase-item-holder:nth-child(8) .edgt-showcase-icon,
+.touch .edgt-no-animations-on-touch .edgt-int-icon-showcase .edgt-showcase-item-holder:nth-child(8) .edgt-showcase-icon {
+  top: 14.6%;
+  left: 14.6%;
+  -webkit-transition-delay: 2.05s;
+  transition-delay: 2.05s;
+}
+
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+.edgt-icon-tabs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-icon-tabs.edgt-icon-tabs-one ul li {
+  width: 100%;
+}
+
+.edgt-icon-tabs.edgt-icon-tabs-two ul li {
+  width: calc(50% - 2px);
+}
+
+.edgt-icon-tabs.edgt-icon-tabs-three ul li {
+  width: calc(33.33% - 3px);
+}
+
+.edgt-icon-tabs.edgt-icon-tabs-four ul li {
+  width: calc(25% - 4px);
+}
+
+.edgt-icon-tabs.edgt-icon-tabs-five ul li {
+  width: calc(20% - 5px);
+}
+
+.edgt-icon-tabs.edgt-icon-tabs-six ul li {
+  width: calc(16.66% - 6px);
+}
+
+.edgt-icon-tabs .edgt-icon-tabs-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edgt-icon-tabs .edgt-icon-tabs-nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e1e1e1;
+  margin-left: -1px;
+}
+
+.edgt-icon-tabs .edgt-icon-tabs-nav li a {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  text-align: center;
+  color: #434343;
+  font-family: "Open Sans", sans-serif;
+  padding: 6px 26px;
+  font-weight: 400;
+  -webkit-transition: color 0.15s ease-out, background-color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out, background-color 0.15s ease-out;
+  transition: color 0.15s ease-out, background-color 0.15s ease-out;
+}
+
+.edgt-icon-tabs .edgt-icon-tabs-nav li a .edgt-icon-tabs-title-holder {
+  padding-left: 5px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 40px;
+  color: #434343;
+}
+
+.edgt-icon-tabs .edgt-icon-tabs-nav li a img {
+  display: block;
+  margin: 0 auto 18px;
+}
+
+.edgt-icon-tabs .edgt-icon-tabs-nav li a .edgt-icon-shortcode {
+  display: inline-block;
+}
+
+.edgt-icon-tabs .edgt-icon-tabs-nav li.ui-state-active a, .edgt-icon-tabs .edgt-icon-tabs-nav li.ui-state-hover a {
+  color: #2d76b2;
+  background-color: #fff;
+}
+
+.edgt-icon-tabs .edgt-icon-tabs-nav li.ui-state-active .edgt-icon-tabs-title-holder, .edgt-icon-tabs .edgt-icon-tabs-nav li.ui-state-hover .edgt-icon-tabs-title-holder {
+  color: #2d76b2;
+}
+
+.edgt-icon-tabs .edgt-icon-tab-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  transform: translateY(5px);
+  box-sizing: border-box;
+  margin: 6px 0 0;
+  padding-top: 27px;
+}
+
+.edgt-icon-tabs .edgt-icon-tab-container p {
+  margin: 0;
+}
+
+.edgt-icon-tabs .edgt-icon-tab-container.edgt-visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  -moz-transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+.edgt-iwt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-iwt .edgt-iwt-icon {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.edgt-iwt .edgt-iwt-icon img {
+  display: block;
+}
+
+.edgt-iwt .edgt-iwt-icon a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edgt-iwt .edgt-iwt-icon .edgt-icon-shortcode {
+  line-height: 1;
+}
+
+.edgt-iwt .edgt-iwt-icon .edgt-icon-shortcode.edgt-circle, .edgt-iwt .edgt-iwt-icon .edgt-icon-shortcode.edgt-square, .edgt-iwt .edgt-iwt-icon .edgt-icon-shortcode.edgt-dropcaps.edgt-circle {
+  line-height: 2;
+}
+
+.edgt-iwt .edgt-iwt-title {
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.edgt-iwt .edgt-iwt-title a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.edgt-iwt .edgt-iwt-title a:hover {
+  color: #434343;
+}
+
+.edgt-iwt .edgt-iwt-title-text {
+  display: block;
+}
+
+.edgt-iwt .edgt-iwt-text {
+  margin: 16px 0 0;
+}
+
+.edgt-iwt.edgt-iwt-icon-left {
+  width: auto;
+}
+
+.edgt-iwt.edgt-iwt-icon-left .edgt-iwt-icon,
+.edgt-iwt.edgt-iwt-icon-left .edgt-iwt-content {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.edgt-iwt.edgt-iwt-icon-left .edgt-iwt-icon {
+  position: relative;
+  top: 1px;
+}
+
+.edgt-iwt.edgt-iwt-icon-left .edgt-iwt-icon img {
+  max-width: none;
+}
+
+.edgt-iwt.edgt-iwt-icon-left .edgt-iwt-content {
+  padding: 0 0 0 13px;
+}
+
+.edgt-iwt.edgt-iwt-icon-left-from-title .edgt-iwt-icon,
+.edgt-iwt.edgt-iwt-icon-left-from-title .edgt-iwt-title-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.edgt-iwt.edgt-iwt-icon-left-from-title .edgt-iwt-icon .edgt-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.edgt-iwt.edgt-iwt-icon-left-from-title .edgt-iwt-icon img {
+  max-width: none;
+}
+
+.edgt-iwt.edgt-iwt-icon-left-from-title .edgt-iwt-title-text {
+  padding: 0 0 0 17px;
+}
+
+.edgt-iwt.edgt-iwt-icon-top {
+  text-align: center;
+}
+
+.edgt-iwt.edgt-iwt-icon-top .edgt-iwt-icon img {
+  margin: 0 auto;
+}
+
+.edgt-iwt.edgt-iwt-icon-top .edgt-iwt-content {
+  padding: 23px 0 0;
+}
+
+.edgt-iwt.edgt-iwt-hover .edgt-iwt-icon {
+  -webkit-transform: translate3d(0, -6px, 0);
+  -moz-transform: translate3d(0, -6px, 0);
+  transform: translate3d(0, -6px, 0);
+}
+
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon shortcode style - begin
+   ========================================================================== */
+.edgt-icon-shortcode {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.1em;
+}
+
+.edgt-icon-shortcode.edgt-circle, .edgt-icon-shortcode.edgt-square, .edgt-icon-shortcode.edgt-dropcaps.edgt-circle {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  background-color: #2d76b2;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.edgt-icon-shortcode.edgt-circle a, .edgt-icon-shortcode.edgt-square a, .edgt-icon-shortcode.edgt-dropcaps.edgt-circle a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.edgt-icon-shortcode.edgt-circle .edgt-icon-element, .edgt-icon-shortcode.edgt-square .edgt-icon-element, .edgt-icon-shortcode.edgt-dropcaps.edgt-circle .edgt-icon-element {
+  color: #fff;
+  line-height: inherit;
+}
+
+.edgt-icon-shortcode.edgt-circle {
+  border-radius: 50%;
+}
+
+.edgt-icon-shortcode .edgt-icon-element {
+  display: block;
+  line-height: 1em;
+}
+
+.edgt-icon-shortcode .edgt-icon-element:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-icon-animation-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: transform 0.15s ease-in-out;
+  -moz-transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+}
+
+.edgt-icon-animation-holder.edgt-icon-animation-show {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.edgt-icon-tiny {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+.edgt-icon-small {
+  font-size: 2em;
+}
+
+.edgt-icon-medium {
+  font-size: 3em;
+}
+
+.edgt-icon-large {
+  font-size: 4em;
+}
+
+.edgt-icon-huge {
+  font-size: 5em;
+}
+
+/* ==========================================================================
+   Icon shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+.edgt-image-gallery {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Image Gallery Space Between Columns Style - begin *****/
+  /***** Image Gallery Space Between Columns Style - end *****/
+  /***** Image Gallery Grid Style - begin *****/
+  /***** Image Gallery Grid Style - end *****/
+  /***** Image Gallery Masonry Style - begin *****/
+  /***** Image Gallery Masonry Style - end *****/
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+}
+
+.edgt-image-gallery.edgt-has-shadow .edgt-ig-image-inner {
+  box-shadow: 6px 8px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.edgt-image-gallery.edgt-has-shadow.edgt-ig-slider-type .owl-stage-outer {
+  padding: 0 0 20px;
+}
+
+.edgt-image-gallery.edgt-has-shadow.edgt-ig-slider-type .edgt-ig-image {
+  box-shadow: 6px 8px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.edgt-image-gallery .edgt-ig-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edgt-image-gallery .edgt-ig-image a, .edgt-image-gallery .edgt-ig-image img {
+  position: relative;
+  display: block;
+}
+
+.edgt-image-gallery .edgt-ig-image-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.edgt-image-gallery .edgt-ig-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-image-gallery .edgt-ig-inner.edgt-ig-no-space {
+  margin: 0;
+}
+
+.edgt-image-gallery .edgt-ig-inner.edgt-ig-no-space .edgt-ig-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edgt-image-gallery .edgt-ig-inner.edgt-ig-tiny-space {
+  margin: 0 -5px;
+}
+
+.edgt-image-gallery .edgt-ig-inner.edgt-ig-tiny-space .edgt-ig-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edgt-image-gallery .edgt-ig-inner.edgt-ig-small-space {
+  margin: 0 -10px;
+}
+
+.edgt-image-gallery .edgt-ig-inner.edgt-ig-small-space .edgt-ig-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edgt-image-gallery .edgt-ig-inner.edgt-ig-normal-space {
+  margin: 0 -15px;
+}
+
+.edgt-image-gallery .edgt-ig-inner.edgt-ig-normal-space .edgt-ig-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.edgt-image-gallery .edgt-ig-grid .edgt-ig-image {
+  float: left;
+}
+
+.edgt-image-gallery .edgt-ig-grid.edgt-ig-two-columns .edgt-ig-image {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-two-columns .edgt-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edgt-image-gallery .edgt-ig-grid.edgt-ig-three-columns .edgt-ig-image {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-three-columns .edgt-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edgt-image-gallery .edgt-ig-grid.edgt-ig-four-columns .edgt-ig-image {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-four-columns .edgt-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image {
+  width: 16.66667%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+.edgt-image-gallery .edgt-ig-masonry {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edgt-image-gallery .edgt-ig-masonry .edgt-ig-grid-sizer {
+  width: 100%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry .edgt-ig-grid-gutter {
+  width: 0;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-two-columns .edgt-ig-image,
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-two-columns .edgt-ig-grid-sizer {
+  width: 50%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-two-columns .edgt-ig-image.edgt-large-masonry-item {
+  width: 100%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-image,
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-grid-sizer {
+  width: 33.33333%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-image.edgt-large-masonry-item {
+  width: 66.66667%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-image,
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-grid-sizer {
+  width: 25%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-image.edgt-large-masonry-item {
+  width: 50%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image,
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-grid-sizer {
+  width: 20%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image.edgt-large-masonry-item {
+  width: 40%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image,
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-grid-sizer {
+  width: 16.66667%;
+}
+
+.edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image.edgt-large-masonry-item {
+  width: 33.33333%;
+}
+
+.edgt-image-gallery.edgt-image-behavior-lightbox .edgt-ig-image img {
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.edgt-image-gallery.edgt-image-behavior-lightbox .edgt-ig-image:hover img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.touch .edgt-image-gallery.edgt-image-behavior-zoom .edgt-ig-image {
+  cursor: pointer;
+}
+
+.edgt-image-gallery.edgt-image-behavior-zoom .edgt-ig-image:hover img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.edgt-image-gallery.edgt-image-behavior-zoom .edgt-ig-image .edgt-ig-image-inner {
+  overflow: hidden;
+}
+
+.edgt-image-gallery.edgt-image-behavior-zoom .edgt-ig-image img {
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.edgt-image-gallery.edgt-image-behavior-grayscale .edgt-ig-image {
+  overflow: hidden;
+}
+
+.touch .edgt-image-gallery.edgt-image-behavior-grayscale .edgt-ig-image {
+  cursor: pointer;
+}
+
+.edgt-image-gallery.edgt-image-behavior-grayscale .edgt-ig-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.edgt-image-gallery.edgt-image-behavior-grayscale .edgt-ig-image img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type.edgt-active-item-enabled .owl-item:not(.center) .edgt-ig-image {
+  -webkit-transition: transform 0.3s ease-in-out 0.3s, -webkit-transform 0.3s ease-in-out 0.3s;
+  -moz-transition: transform 0.3s ease-in-out 0.3s, -webkit-transform 0.3s ease-in-out 0.3s;
+  transition: transform 0.3s ease-in-out 0.3s, -webkit-transform 0.3s ease-in-out 0.3s;
+  -webkit-transform: translateZ(0) scale(0.898);
+  -moz-transform: translateZ(0) scale(0.898);
+  transform: translateZ(0) scale(0.898);
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type.edgt-active-item-enabled .owl-item.active .edgt-ig-image {
+  -webkit-transition: transform 0.3s ease-in-out 0.3s, -webkit-transform 0.3s ease-in-out 0.3s;
+  -moz-transition: transform 0.3s ease-in-out 0.3s, -webkit-transform 0.3s ease-in-out 0.3s;
+  transition: transform 0.3s ease-in-out 0.3s, -webkit-transform 0.3s ease-in-out 0.3s;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type.edgt-image-no-behavior .edgt-owl-slider .owl-item {
+  cursor: -webkit-grab;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type.edgt-has-shadow .edgt-ig-image {
+  padding: 20px 0;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type.edgt-has-shadow .edgt-ig-image img {
+  -webkit-box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.11);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type.edgt-has-shadow .edgt-ig-image:hover img {
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.18);
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .edgt-owl-slider .owl-dots {
+  margin: 10px 0 0;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .owl-prev:hover .edgt-prev-icon,
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .owl-prev:hover .edgt-next-icon,
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .owl-next:hover .edgt-prev-icon,
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .owl-next:hover .edgt-next-icon {
+  color: #2d76b2;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .owl-prev {
+  left: 16%;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .owl-next {
+  right: 16%;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .edgt-prev-icon,
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .edgt-next-icon {
+  color: #2d76b2;
+  background-color: #fff;
+  width: 88px;
+  height: 88px;
+  line-height: 88px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.15);
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .edgt-prev-icon .edgt-icon-arrow,
+.edgt-image-gallery.edgt-ig-carousel-type .owl-nav .edgt-next-icon .edgt-icon-arrow {
+  font-size: 35px;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .owl-dots {
+  margin: 15px 0 0 !important;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .owl-dots .owl-dot span {
+  margin: 0 13px;
+  width: 10px;
+  height: 10px;
+  background-color: #e1e1e1;
+}
+
+.edgt-image-gallery.edgt-ig-carousel-type .owl-dots .owl-dot.active span, .edgt-image-gallery.edgt-ig-carousel-type .owl-dots .owl-dot:hover span {
+  background-color: #2d76b2;
+}
+
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+.edgt-image-with-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+}
+
+.edgt-image-with-text-holder.edgt-has-shadow .edgt-iwt-image img {
+  -webkit-box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.11);
+}
+
+.edgt-image-with-text-holder .edgt-iwt-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-image-with-text-holder .edgt-iwt-image a, .edgt-image-with-text-holder .edgt-iwt-image img {
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.edgt-image-with-text-holder .edgt-iwt-image img {
+  margin: 0 auto;
+}
+
+.edgt-image-with-text-holder .edgt-iwt-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-image-with-text-holder .edgt-iwt-title {
+  margin: 18px 0 0;
+  color: #434343;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.edgt-image-with-text-holder:hover .edgt-iwt-title {
+  color: #2d76b2;
+}
+
+.edgt-image-with-text-holder .edgt-iwt-link-overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-custom-link .edgt-iwt-image img {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-custom-link:hover .edgt-iwt-image img {
+  -webkit-box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 1px 13px 0px rgba(0, 0, 0, 0.18);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-lightbox .edgt-iwt-image a:hover:after {
+  opacity: 1;
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-lightbox .edgt-iwt-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(67, 67, 67, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-zoom .edgt-iwt-image {
+  overflow: hidden;
+}
+
+.touch .edgt-image-with-text-holder.edgt-image-behavior-zoom .edgt-iwt-image {
+  cursor: pointer;
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-zoom .edgt-iwt-image:hover img {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-zoom .edgt-iwt-image img {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  -moz-transition: -moz-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-grayscale .edgt-iwt-image {
+  overflow: hidden;
+}
+
+.touch .edgt-image-with-text-holder.edgt-image-behavior-grayscale .edgt-iwt-image {
+  cursor: pointer;
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-grayscale .edgt-iwt-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.edgt-image-with-text-holder.edgt-image-behavior-grayscale .edgt-iwt-image img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Info Card shortcode style - begin
+   ========================================================================== */
+.edgt-info-card {
+  border: 1px solid #e1e1e1;
+}
+
+.edgt-info-card .edgt-info-card-inner .edgt-ic-image-holder {
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+}
+
+.edgt-info-card .edgt-info-card-inner .edgt-ic-image-holder img {
+  display: block;
+  width: 100%;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.edgt-info-card .edgt-info-card-inner .edgt-ic-text-holder {
+  padding: 0 27px 40px;
+  position: relative;
+}
+
+.edgt-info-card .edgt-info-card-inner .edgt-ic-text-holder .edgt-ic-title {
+  margin: 31px 0 14px;
+}
+
+.edgt-info-card .edgt-info-card-inner .edgt-ic-text-holder .edgt-ic-description {
+  text-align: left;
+}
+
+.edgt-info-card .edgt-info-card-inner .edgt-ic-text-holder .edgt-ic-tag {
+  position: absolute;
+  right: 15px;
+  bottom: 6px;
+  font-size: 14px;
+  color: #2d76b2;
+  font-weight: 600;
+}
+
+.edgt-info-card:hover .edgt-info-card-inner .edgt-ic-image-holder img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Info Card shortcode style - end
+   ========================================================================== */
+.edgt-linked-images-list.edgt-two-columns .edgt-linked-images-item {
+  width: 48%;
+  margin-right: 2%;
+}
+
+.edgt-linked-images-list.edgt-two-columns .edgt-linked-images-item:last-child {
+  margin-right: 0;
+}
+
+.edgt-linked-images-list.edgt-three-columns .edgt-linked-images-item {
+  width: 31.33333%;
+  margin-right: 2%;
+}
+
+.edgt-linked-images-list.edgt-three-columns .edgt-linked-images-item:last-child {
+  margin-right: 0;
+}
+
+.edgt-linked-images-list.edgt-four-columns .edgt-linked-images-item {
+  width: 23%;
+  margin-right: 2%;
+}
+
+.edgt-linked-images-list.edgt-four-columns .edgt-linked-images-item:last-child {
+  margin-right: 0;
+}
+
+.edgt-linked-images-list.edgt-five-columns .edgt-linked-images-item {
+  width: 18%;
+  margin-right: 2%;
+}
+
+.edgt-linked-images-list.edgt-five-columns .edgt-linked-images-item:last-child {
+  margin-right: 0;
+}
+
+.edgt-linked-images-list.edgt-six-columns .edgt-linked-images-item {
+  width: 14.66667%;
+  margin-right: 2%;
+}
+
+.edgt-linked-images-list.edgt-six-columns .edgt-linked-images-item:last-child {
+  margin-right: 0;
+}
+
+.edgt-linked-images-list .edgt-linked-images-item {
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.edgt-linked-images-list .edgt-linked-images-item:last-child {
+  padding-right: 0;
+}
+
+.edgt-linked-images-list .edgt-linked-images-item .edgt-linked-images-item-inner {
+  position: relative;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+}
+
+.edgt-linked-images-list .edgt-linked-images-item .edgt-linked-images-item-image {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.edgt-linked-images-list .edgt-linked-images-item .edgt-corse-category-title-text {
+  margin-bottom: 0;
+}
+
+.edgt-linked-images-list .edgt-linked-images-item .edgt-linked-images-item-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.edgt-linked-images-list .edgt-linked-images-item:hover .edgt-linked-images-item-image {
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+/* ==========================================================================
+   Pie Chart shortcode style - begin
+   ========================================================================== */
+.edgt-pie-chart-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.edgt-pie-chart-holder .edgt-pc-percentage {
+  position: relative;
+  display: block;
+  height: 176px;
+  width: 176px;
+  line-height: 176px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.edgt-pie-chart-holder .edgt-pc-percentage canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.edgt-pie-chart-holder .edgt-pc-percentage .edgt-pc-percent {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #434343;
+  font-size: 52px;
+  line-height: inherit;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.edgt-pie-chart-holder .edgt-pc-percentage .edgt-pc-percent:after {
+  position: relative;
+  top: -20px;
+  content: '%';
+  font-size: 22px;
+}
+
+.edgt-pie-chart-holder .edgt-pc-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.edgt-pie-chart-holder .edgt-pc-text-holder .edgt-pc-title {
+  margin: 0;
+}
+
+.edgt-pie-chart-holder .edgt-pc-text-holder .edgt-pc-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Pie Chart shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+.edgt-pricing-tables {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.edgt-pricing-tables .edgt-pt-wrapper {
+  position: relative;
+}
+
+.edgt-pricing-tables.edgt-pt-no-space .edgt-pt-wrapper {
+  margin: 0;
+}
+
+.edgt-pricing-tables.edgt-pt-no-space .edgt-price-table {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edgt-pricing-tables.edgt-pt-tiny-space .edgt-pt-wrapper {
+  margin: 0 -5px;
+}
+
+.edgt-pricing-tables.edgt-pt-tiny-space .edgt-price-table {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edgt-pricing-tables.edgt-pt-small-space .edgt-pt-wrapper {
+  margin: 0 -10px;
+}
+
+.edgt-pricing-tables.edgt-pt-small-space .edgt-price-table {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edgt-pricing-tables.edgt-pt-normal-space .edgt-pt-wrapper {
+  margin: 0 -15px;
+}
+
+.edgt-pricing-tables.edgt-pt-normal-space .edgt-price-table {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.edgt-pricing-tables.edgt-two-columns .edgt-price-table {
+  width: 50%;
+}
+
+.edgt-pricing-tables.edgt-three-columns .edgt-price-table {
+  width: 33.33333%;
+}
+
+.edgt-pricing-tables.edgt-four-columns .edgt-price-table {
+  width: 25%;
+}
+
+.edgt-pricing-tables.edgt-five-columns .edgt-price-table {
+  width: 20%;
+}
+
+.edgt-price-table {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+.edgt-price-table .edgt-pt-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+}
+
+.edgt-price-table .edgt-pt-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edgt-price-table .edgt-pt-inner ul li {
+  margin: 0;
+  padding: 6px 30px 2px;
+  text-align: center;
+}
+
+.edgt-price-table .edgt-pt-inner ul li.edgt-pt-title-holder {
+  position: relative;
+  color: #434343;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.edgt-price-table .edgt-pt-inner ul li.edgt-pt-title-holder .edgt-pt-title {
+  margin: 20px 0 0;
+  padding: 22px 0 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+.edgt-price-table .edgt-pt-inner ul li.edgt-pt-prices {
+  position: relative;
+  padding: 3px 15px 27px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.edgt-price-table .edgt-pt-inner ul li.edgt-pt-prices .edgt-pt-value {
+  margin: 0;
+  position: relative;
+  vertical-align: top;
+  bottom: 0;
+  color: #2d76b2;
+  display: inline-block;
+}
+
+.edgt-price-table .edgt-pt-inner ul li.edgt-pt-prices .edgt-pt-price {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  left: -5px;
+  color: #2d76b2;
+}
+
+.edgt-price-table .edgt-pt-inner ul li.edgt-pt-prices .edgt-pt-mark {
+  position: relative;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #ababab;
+  text-transform: uppercase;
+  margin: 13px 0 0;
+}
+
+.edgt-price-table .edgt-pt-inner ul li.edgt-pt-content {
+  padding: 23px 15px;
+}
+
+.edgt-price-table .edgt-pt-inner ul li.edgt-pt-button {
+  padding: 11px 15px 50px;
+}
+
+.edgt-price-table.edgt-price-table-active .edgt-pt-inner {
+  background-color: #fafafa;
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */
+.edgt-process-holder {
+  position: relative;
+  margin-top: 55px;
+}
+
+.edgt-process-holder .edgt-process-inner:before, .edgt-process-holder .edgt-process-inner:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.edgt-process-holder .edgt-process-inner:after {
+  clear: both;
+}
+
+.edgt-process-holder .edgt-process-inner {
+  *zoom: 1;
+}
+
+.edgt-process-holder .edgt-process-bg-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: url("img/process-bg.png") no-repeat 50% 17%;
+  z-index: 0;
+  opacity: 0;
+  margin: 0 -100px 0 -100px;
+}
+
+.edgt-process-holder .edgt-process-item-holder {
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+
+.no-touch .edgt-process-holder .edgt-process-item-holder {
+  opacity: 0;
+}
+
+.edgt-process-holder .edgt-process-item-holder .edgt-pi-holder-inner {
+  width: 72.03947368421053%;
+}
+
+.edgt-process-holder .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-image-holder {
+  width: 314px;
+  height: 314px;
+  margin-top: -38px;
+}
+
+.edgt-process-holder .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-holder-inner {
+  width: 100%;
+}
+
+.edgt-process-holder .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-holder-inner .edgt-pi-content-holder .edgt-pi-text-holder {
+  padding: 0 10%;
+}
+
+.edgt-process-holder .edgt-process-item-holder.edgt-pi-push-right .edgt-pi-holder-inner {
+  float: right;
+}
+
+.edgt-process-holder.edgt-process-holder-items-three .edgt-process-item-holder {
+  width: 33.33%;
+}
+
+.edgt-process-holder.edgt-process-multiple-highlights .edgt-pi-holder-inner {
+  width: 100%;
+}
+
+.edgt-process-holder .edgt-pi-title-holder {
+  margin-bottom: 12px;
+}
+
+.edgt-process-holder .edgt-pi-title {
+  margin: 0;
+}
+
+.edgt-process-holder .edgt-pi-text-holder p {
+  margin: 0;
+}
+
+.edgt-process-holder .edgt-pi-image-holder {
+  background-color: #fff;
+  display: inline-block;
+  width: 197px;
+  height: 197px;
+  padding: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.edgt-process-holder .edgt-pi-image-holder img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.edgt-process-holder.edgt-process-light-skin .edgt-pi-title {
+  color: #fff;
+}
+
+.edgt-process-holder.edgt-process-light-skin .edgt-pi-text-holder {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Progress Bar Rating shortcode style - begin
+   ========================================================================== */
+.edgt-progress-bar.rating {
+  margin: 0 0 11px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-progress-bar.rating .edgt-pb-title-holder {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.edgt-progress-bar.rating .edgt-pb-title-holder .edgt-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+  color: #4b4b4b;
+  font-weight: 400;
+}
+
+.edgt-progress-bar.rating .edgt-pb-number-of-ratings {
+  color: #4b4b4b;
+  position: relative;
+  top: 2px;
+}
+
+.edgt-progress-bar.rating .edgt-pb-content-holder {
+  margin: 0 4.3% 0 3.1%;
+  position: relative;
+  height: 9px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  display: inline-block;
+  width: 80.5%;
+  float: left;
+  top: 12px;
+}
+
+.edgt-progress-bar.rating .edgt-pb-content-holder .edgt-pb-content {
+  height: 9px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #2d76b2;
+}
+
+/* ==========================================================================
+   Progress Bar Rating shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+.edgt-progress-bar {
+  margin: 0 0 16px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-progress-bar .edgt-pb-title-holder {
+  position: relative;
+  margin: 10px 0 6px;
+}
+
+.edgt-progress-bar .edgt-pb-title-holder .edgt-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+  color: #212121;
+}
+
+.edgt-progress-bar .edgt-pb-percent {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+  letter-spacing: 0.025em;
+  color: #212121;
+}
+
+.edgt-progress-bar .edgt-pb-percent:after {
+  content: '%';
+}
+
+.edgt-progress-bar .edgt-pb-content-holder {
+  position: relative;
+  height: 9px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.edgt-progress-bar .edgt-pb-content-holder .edgt-pb-content {
+  height: 9px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #2d76b2;
+}
+
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+.edgt-section-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-tiny-space .edgt-st-inner {
+  margin: 0 -5px;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-tiny-space .edgt-st-title,
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-tiny-space .edgt-st-text {
+  padding: 0 5px;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-small-space .edgt-st-inner {
+  margin: 0 -10px;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-small-space .edgt-st-title,
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-small-space .edgt-st-text {
+  padding: 0 10px;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-normal-space .edgt-st-inner {
+  margin: 0 -15px;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-normal-space .edgt-st-title,
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-normal-space .edgt-st-text {
+  padding: 0 15px;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns .edgt-st-title,
+.edgt-section-title-holder.edgt-st-two-columns .edgt-st-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  float: left;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-title-left .edgt-st-title {
+  text-align: right;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-title-left .edgt-st-text {
+  text-align: left;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-title-right .edgt-st-title {
+  float: right;
+  text-align: left;
+}
+
+.edgt-section-title-holder.edgt-st-two-columns.edgt-st-title-right .edgt-st-text {
+  text-align: right;
+}
+
+.edgt-section-title-holder .edgt-st-title {
+  display: block;
+  margin: 0;
+}
+
+.edgt-section-title-holder .edgt-st-title .edgt-st-title-bold {
+  font-weight: 700;
+}
+
+.edgt-section-title-holder .edgt-st-title .edgt-st-title-light {
+  font-weight: 300;
+}
+
+.edgt-section-title-holder .edgt-st-text {
+  display: block;
+  margin: 16px 0 0;
+  font-size: 17px;
+  color: #595959;
+}
+
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Separator shortcode style - begin
+   ========================================================================== */
+.edgt-separator-holder {
+  position: relative;
+  height: auto;
+  font-size: 0;
+  line-height: 1em;
+}
+
+.edgt-separator-holder.edgt-separator-center {
+  text-align: center;
+}
+
+.edgt-separator-holder.edgt-separator-left {
+  text-align: left;
+}
+
+.edgt-separator-holder.edgt-separator-right {
+  text-align: right;
+}
+
+.edgt-separator-holder.edgt-separator-full-width .edgt-separator {
+  width: 100% !important;
+}
+
+.edgt-separator {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #ebebeb;
+  margin: 10px 0;
+}
+
+/* ==========================================================================
+   Separator shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Shadow Title shortcode styles - begin
+   ========================================================================== */
+.edgt-shadow-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edgt-shadow-title-holder .edgt-st-title {
+  display: block;
+  margin: 0;
+  font-family: 'Amatic SC';
+  font-size: 60px;
+  text-shadow: 2px 2px #fafafa;
+  line-height: 1.1em;
+}
+
+/* ==========================================================================
+   Shadow Title shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Single Image shortcode style - begin
+   ========================================================================== */
+.edgt-single-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+  /***** Moving Behavior Style - begin *****/
+  /***** Moving Behavior Style - end *****/
+}
+
+.edgt-single-image-holder .edgt-si-inner {
+  background-size: cover;
+}
+
+.edgt-single-image-holder.edgt-has-shadow .edgt-si-inner {
+  -webkit-box-shadow: 0 10px 21px 0 rgba(19, 117, 154, 0.1);
+  -moz-box-shadow: 0 10px 21px 0 rgba(19, 117, 154, 0.1);
+  box-shadow: 0 10px 21px 0 rgba(19, 117, 154, 0.1);
+}
+
+.edgt-single-image-holder .edgt-si-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-single-image-holder .edgt-si-inner a, .edgt-single-image-holder .edgt-si-inner img {
+  position: relative;
+  display: block;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-custom-link .edgt-si-inner {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-custom-link:hover .edgt-si-inner {
+  -webkit-box-shadow: 0 9px 21px 9px rgba(19, 117, 154, 0.1);
+  -moz-box-shadow: 0 9px 21px 9px rgba(19, 117, 154, 0.1);
+  box-shadow: 0 9px 21px 9px rgba(19, 117, 154, 0.1);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.edgt-single-image-holder.edgt-image-behavior-lightbox .edgt-si-inner a:hover:after {
+  opacity: 1;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-lightbox .edgt-si-inner a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(67, 67, 67, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-zoom .edgt-si-inner {
+  overflow: hidden;
+}
+
+.touch .edgt-single-image-holder.edgt-image-behavior-zoom .edgt-si-inner {
+  cursor: pointer;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-zoom .edgt-si-inner:hover img {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.edgt-single-image-holder.edgt-image-behavior-zoom .edgt-si-inner img {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  -moz-transition: -moz-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.edgt-single-image-holder.edgt-image-behavior-grayscale .edgt-si-inner {
+  overflow: hidden;
+}
+
+.touch .edgt-single-image-holder.edgt-image-behavior-grayscale .edgt-si-inner {
+  cursor: pointer;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-grayscale .edgt-si-inner:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-grayscale .edgt-si-inner img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-moving .edgt-si-inner {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 120%;
+  -webkit-transition: background 0.7s ease-out;
+  -moz-transition: background 0.7s ease-out;
+  transition: background 0.7s ease-out;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-moving .edgt-si-inner:hover {
+  background-position: 90% center;
+}
+
+.touch .edgt-single-image-holder.edgt-image-behavior-moving .edgt-si-inner {
+  cursor: pointer;
+}
+
+.edgt-single-image-holder.edgt-image-behavior-moving .edgt-si-inner img {
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-single-image-holder.edgt-image-behavior-moving .edgt-si-inner {
+    background: none;
+  }
+  .edgt-single-image-holder.edgt-image-behavior-moving .edgt-si-inner img {
+    z-index: inherit;
+  }
+}
+
+/* ==========================================================================
+   Single Image shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+.edgt-social-share-holder {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.edgt-social-share-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List type - begin
+========================================================================== */
+.edgt-social-share-holder.edgt-list .edgt-social-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  color: #434343;
+  font-weight: 400;
+  margin-right: 6px;
+}
+
+.edgt-social-share-holder.edgt-list li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 13px 3px 0;
+}
+
+.edgt-social-share-holder.edgt-list li:last-child {
+  margin: 0 0 3px;
+}
+
+.edgt-social-share-holder.edgt-list li a {
+  font-size: 15px;
+  color: #757575;
+}
+
+.edgt-social-share-holder.edgt-list li.edgt-facebook-share a {
+  color: #3b5998;
+}
+
+.edgt-social-share-holder.edgt-list li.edgt-twitter-share a {
+  color: #55acee;
+}
+
+.edgt-social-share-holder.edgt-list li.edgt-google_plus-share a {
+  color: #dc4e41;
+}
+
+.edgt-social-share-holder.edgt-list li.edgt-linkedin-share a {
+  color: #007bb5;
+}
+
+.edgt-social-share-holder.edgt-list li.edgt-tumblr-share a {
+  color: #3a485d;
+}
+
+.edgt-social-share-holder.edgt-list li.edgt-pinterest-share a {
+  color: #bd081b;
+}
+
+.edgt-social-share-holder.edgt-list li.edgt-vk-share a {
+  color: #000;
+}
+
+/* List type - end
+========================================================================== */
+/* Dropdown type - begin
+========================================================================== */
+.edgt-social-share-holder.edgt-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown-opener {
+  display: block;
+  color: #888888;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown-opener .edgt-social-share-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown-opener .social_share {
+  font-size: 12px;
+  color: #434343;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown-opener:hover {
+  color: #2d76b2;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown-opener:hover .social_share {
+  color: inherit;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown {
+  position: relative;
+  visibility: hidden;
+  z-index: 950;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul {
+  position: relative;
+  display: block;
+  z-index: 990;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li {
+  width: 84px;
+  height: 28px;
+  line-height: 28px;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  font-size: 12px;
+  color: #888888;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  -moz-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li:not(:first-child) {
+  border-top: none;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li.edgt-facebook-share:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li.edgt-twitter-share:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li.edgt-google_plus-share:hover {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li.edgt-linkedin-share:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li.edgt-tumblr-share:hover {
+  background-color: #32506d;
+  color: #fff;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li.edgt-pinterest-share:hover {
+  background-color: #cb2027;
+  color: #fff;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li.edgt-vk-share:hover {
+  background-color: #45668e;
+  color: #fff;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li * {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li a {
+  color: inherit !important;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li:nth-child(1) {
+  bottom: -28px;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li:nth-child(2) {
+  bottom: -56px;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li:nth-child(3) {
+  bottom: -84px;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li:nth-child(4) {
+  bottom: -112px;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li:nth-child(5) {
+  bottom: -140px;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li:nth-child(6) {
+  bottom: -168px;
+}
+
+.edgt-social-share-holder.edgt-dropdown .edgt-social-share-dropdown ul li:nth-child(7) {
+  bottom: -196px;
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover .edgt-social-share-dropdown ul li {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover .edgt-social-share-dropdown ul li {
+  /* opacity and visibility need to be different, but not background-color */
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover .edgt-social-share-dropdown ul li:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover .edgt-social-share-dropdown ul li:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover .edgt-social-share-dropdown ul li:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover .edgt-social-share-dropdown ul li:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover .edgt-social-share-dropdown ul li:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+}
+
+.edgt-social-share-holder.edgt-dropdown:hover .edgt-social-share-dropdown ul li:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+}
+
+/* Dropdown type - end
+========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+.edgt-tabs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-tabs .edgt-tabs-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edgt-tabs .edgt-tabs-nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.edgt-tabs .edgt-tabs-nav li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #434343;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: 400;
+  -webkit-transition: color 0.15s ease-out, background-color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out, background-color 0.15s ease-out;
+  transition: color 0.15s ease-out, background-color 0.15s ease-out;
+}
+
+.edgt-tabs .edgt-tab-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.edgt-tabs .edgt-tab-container.edgt-visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  -moz-transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.edgt-tabs .edgt-tab-container p {
+  margin: 0;
+}
+
+.edgt-tabs .edgt-tab-description {
+  margin-bottom: 59px;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.edgt-tabs .edgt-tab-content-holder {
+  display: table;
+}
+
+.edgt-tabs .edgt-tab-content-holder .edgt-tab-content {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.edgt-tabs .edgt-tab-content-holder .edgt-tab-image {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: 20%;
+  vertical-align: bottom;
+}
+
+.edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li {
+  border: 1px solid #e1e1e1;
+}
+
+.edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li:not(first-child) {
+  margin-left: -1px;
+}
+
+.edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li h5 {
+  margin: 0;
+}
+
+.edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li a {
+  padding: 6px 30px;
+  background-color: transparent;
+}
+
+.edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li.ui-state-active a,
+.edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li.ui-state-hover a {
+  color: #2d76b2;
+  background-color: #fff;
+}
+
+.edgt-tabs.edgt-tabs-standard .edgt-tab-container {
+  margin: 22px 0 0;
+}
+
+.edgt-tabs.edgt-tabs-vertical {
+  display: table;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav {
+  display: table-cell;
+  vertical-align: top;
+  width: 415px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li {
+  display: block;
+  float: none;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li:first-child {
+  border-top: 1px solid #e1e1e1;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li:last-child {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li h5 {
+  margin: 0;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li a {
+  width: 100%;
+  padding: 32px 10px 28px 20px;
+  border-left: 4px solid transparent;
+  line-height: 1em;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li.ui-state-active a, .edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li.ui-state-hover a {
+  background-color: #f7f7f7;
+  border-left: 4px solid #2d76b2;
+  padding-left: 25px;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.edgt-tabs.edgt-tabs-vertical .edgt-tab-container {
+  display: table-cell;
+  vertical-align: top;
+  width: calc(100% - 415px);
+  height: 100%;
+  padding: 0 0 0 45px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+# Team style - begin
+========================================================================== */
+.touch .edgt-team .edgt-team-social-holder {
+  cursor: pointer;
+}
+
+.edgt-team p {
+  margin: 0;
+}
+
+.edgt-team .edgt-team-social-wrapp {
+  margin: 20px 0 0 0;
+}
+
+.edgt-team .edgt-team-social-wrapp .edgt-icon-shortcode {
+  font-size: 16px;
+  margin: 0 7px;
+}
+
+.edgt-team .edgt-team-social-wrapp .edgt-icon-shortcode i,
+.edgt-team .edgt-team-social-wrapp .edgt-icon-shortcode span {
+  color: #b9b9b9;
+  -webkit-transition: color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+}
+
+.edgt-team .edgt-team-social-wrapp .edgt-icon-shortcode i:hover,
+.edgt-team .edgt-team-social-wrapp .edgt-icon-shortcode span:hover {
+  color: #2d76b2;
+}
+
+.edgt-team .edgt-team-social-wrapp .edgt-icon-shortcode.circle,
+.edgt-team .edgt-team-social-wrapp .edgt-icon-shortcode.square {
+  border: 1px solid #dbdbdb;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 10px;
+}
+
+.edgt-team.main-info-below-image .edgt-team-image {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.edgt-team.main-info-below-image .edgt-team-image:hover .edgt-team-image-overlay {
+  opacity: 1;
+}
+
+.edgt-team.main-info-below-image .edgt-team-image .edgt-team-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(67, 74, 84, 0.35);
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edgt-team.main-info-below-image .edgt-team-image img {
+  display: block;
+}
+
+.edgt-team.main-info-below-image .edgt-team-info .edgt-team-title-holder .edgt-team-name {
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #353535;
+}
+
+.edgt-team.main-info-below-image .edgt-team-info .edgt-team-position {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #9b9b9b;
+}
+
+.edgt-team.main-info-below-image .edgt-team-info .edgt-team-description {
+  margin-top: 12px;
+  padding: 0 20px;
+}
+
+.edgt-team.main-info-below-image.light .edgt-team-info .edgt-team-title-holder .edgt-team-name,
+.edgt-team.main-info-below-image.light .edgt-team-info .edgt-team-title-holder .edgt-team-position {
+  color: #ffffff;
+}
+
+.edgt-team.main-info-below-image.light .edgt-team-info .edgt-team-text .edgt-team-description p {
+  color: #ffffff;
+}
+
+.edgt-team.main-info-below-image.light .edgt-team-info .edgt-team-social-wrapp .edgt-icon-shortcode .edgt-icon-element {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+# Team style - end
+========================================================================== */
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+.edgt-video-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.edgt-video-button-holder:hover .edgt-video-button-image:after {
+  opacity: 1;
+}
+
+.edgt-video-button-holder:hover .edgt-video-button-image img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.edgt-video-button-holder .edgt-video-button-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-video-button-holder .edgt-video-button-image img {
+  display: block;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.edgt-video-button-holder .edgt-video-button-image:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edgt-video-button-holder .edgt-video-button-play,
+.edgt-video-button-holder .edgt-video-button-play-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.edgt-video-button-holder .edgt-video-button-play .edgt-video-button-play-inner,
+.edgt-video-button-holder .edgt-video-button-play-image .edgt-video-button-play-inner {
+  position: relative;
+  top: 50%;
+  left: 0;
+  display: block;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edgt-video-button-holder .edgt-video-button-play .edgt-video-button-label,
+.edgt-video-button-holder .edgt-video-button-play-image .edgt-video-button-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 18px;
+}
+
+.edgt-video-button-holder .edgt-video-button-play {
+  color: #fff;
+  line-height: 1;
+  font-size: 120px;
+}
+
+.edgt-video-button-holder .edgt-video-button-play span {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-video-button-holder .edgt-video-button-play span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-video-button-holder .edgt-video-button-play span.arrow_triangle-right {
+  display: inline-block;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+  backface-visibility: hidden;
+}
+
+.edgt-video-button-holder .edgt-video-button-play-image.edgt-vb-has-hover-image:hover img:first-child {
+  opacity: 0;
+}
+
+.edgt-video-button-holder .edgt-video-button-play-image.edgt-vb-has-hover-image:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+.edgt-video-button-holder .edgt-video-button-play-image img {
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.edgt-video-button-holder .edgt-video-button-play-image img:first-child {
+  position: relative;
+  opacity: 1;
+}
+
+.edgt-video-button-holder .edgt-video-button-play-image img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateZ(0);
+  -moz-transform: translateX(-50%) translateZ(0);
+  transform: translateX(-50%) translateZ(0);
+}
+
+.rev_slider_wrapper .edgt-video-button-holder .edgt-video-button-play-image img:nth-child(2) {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-cpt/assets/css/shortcodes-map.css.map */

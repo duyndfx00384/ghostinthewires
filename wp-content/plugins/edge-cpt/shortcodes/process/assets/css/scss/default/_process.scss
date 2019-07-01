@@ -1,0 +1,123 @@
+.edgt-process-holder {
+    position: relative;
+    margin-top: 55px;
+
+    .edgt-process-inner {
+        &:before,
+        &:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        &:after {
+            clear: both;
+        }
+
+        & {
+            *zoom: 1;
+        }
+    }
+
+    .edgt-process-bg-holder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background: url('img/process-bg.png') no-repeat 50% 17%;
+        z-index: 0;
+        opacity: 0;
+        margin: 0 -100px 0 -100px;
+    }
+
+    .edgt-process-item-holder {
+        text-align: center;
+        float: left;
+        width: 25%;
+
+        .no-touch & {
+            opacity: 0;
+        }
+
+        .edgt-pi-holder-inner {
+            width: 72.03947368421053%;
+        }
+
+        &.edgt-pi-highlighted {
+            .edgt-pi-image-holder {
+                width: 314px;
+                height: 314px;
+                margin-top: -38px;
+            }
+
+            .edgt-pi-holder-inner {
+                width: 100%;
+
+                .edgt-pi-content-holder{
+                    .edgt-pi-text-holder{
+                        padding: 0 10%;
+                    }
+                }
+            }
+        }
+
+        &.edgt-pi-push-right {
+            .edgt-pi-holder-inner {
+                float: right;
+            }
+        }
+    }
+
+    &.edgt-process-holder-items-three {
+        .edgt-process-item-holder {
+            width: 33.33%;
+        }
+    }
+
+    &.edgt-process-multiple-highlights {
+        .edgt-pi-holder-inner {
+            width: 100%;
+        }
+    }
+
+    .edgt-pi-title-holder {
+        margin-bottom: 12px;
+    }
+
+    .edgt-pi-title {
+        margin: 0;
+    }
+
+    .edgt-pi-text-holder {
+        p { margin: 0; }
+    }
+
+    .edgt-pi-image-holder {
+        background-color: #fff;
+
+        display: inline-block;
+        width: 197px;
+        height: 197px;
+        padding: 10px;
+        margin-bottom: 15px;
+
+        overflow: hidden;
+
+        border-radius: 50%;
+        box-sizing: border-box;
+
+        img {
+            vertical-align: middle;
+            width: 100%;
+        }
+    }
+
+    &.edgt-process-light-skin{
+        .edgt-pi-title{
+            color: #fff;
+        }
+        .edgt-pi-text-holder{
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,368 @@
+/* Login/Register widget - start
+   ========================================================================== */
+
+/* User not logged in */
+.edgt-login-register-widget {
+    &.edgt-user-not-logged-in {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+
+        .edgt-menu-area & {
+            height: 100%;
+            line-height: 0;
+        }
+
+        .edgt-sidebar & {
+            width: 100%;
+        }
+
+        .edgt-modal-opener {
+
+            /* Menu area */
+            .edgt-menu-area & {
+                top: 50%;
+                @include edgtButtonDefaultStyle();
+                @include edgtButtonSmallParams();
+                margin: 0 6px;
+                &.edgt-login-opener {
+                    @include edgtButtonOutlineColor();
+                    border-color: $first-main-color;
+                    color: $first-main-color;
+                    padding: 13px 51px;
+                    &:hover {
+                        @include edgtButtonOutlineHoverColor();
+                    }
+                }
+                &.edgt-register-opener {
+                    @include edgtButtonSolidColor();
+                    padding: 13px 42px;
+                    &:hover {
+                        @include edgtButtonSolidHoverColor();
+                    }
+                }
+            }
+            .edgt-menu-area.edgt-menu-right & {
+                @include edgtTransform(translateY(-50%));
+            }
+
+            /* Sidebar */
+            .edgt-sidebar & {
+                color: #000;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+
+            /* Footer */
+            footer & {
+                color: #fff;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                display: block;
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+
+            /* Side area */
+            .edgt-side-menu & {
+                color: #000;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+
+            /* Top bar */
+            .edgt-top-bar & {
+                font-size: 12px;
+                color: #212121;
+                font-weight: 400;
+                padding: 0 14px;
+                height: 100%;
+                vertical-align: middle;
+                display: inline-block;
+                line-height: 50px;
+                text-transform: capitalize;
+                @include edgtTransition(background-color .2s);
+
+                &.edgt-register-opener{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+/* User logged in */
+
+.edgt-login-register-widget {
+    &.edgt-user-logged-in {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+
+        .edgt-logged-in-user {
+            height: 100%;
+            line-height: 46px;
+            .edgt-logged-in-user-inner{
+                & > span {
+                    img {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 28px;
+                        height: 28px;
+                        margin: 0 5px 0 0;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+
+        /* Top bar and menu area dropdown position */
+        .edgt-menu-area &,
+        .edgt-top-bar & {
+            .edgt-login-dropdown {
+                position: absolute;
+                top: 100%;
+                margin: 0;
+                right: 0;
+                opacity: 0;
+                list-style-type: none;
+                text-align: left;
+                padding: 0;
+                width: 180px;
+                box-sizing: border-box;
+                visibility: hidden;
+                z-index: 100;
+                @include edgtTransition(opacity 0.35s cubic-bezier(.53,.01,.18,1));
+
+                li {
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1em;
+
+                    a {
+                        display: block;
+                        position: relative;
+                        @include edgtTransition(color 0.3s ease);
+                    }
+                }
+            }
+
+            &:hover .edgt-login-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        /* Menu area style */
+        .edgt-menu-area & {
+            cursor: pointer;
+            /* User part */
+            .edgt-logged-in-user {
+                height: 100%;
+                display: table;
+                vertical-align: middle;
+
+                .edgt-logged-in-user-inner {
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 100%;
+                    & > span {
+                        color: #9c9c9c;
+                        font-size: 13px;
+                        line-height: 23px;
+                        margin: 0 10px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &:hover {
+                .edgt-logged-in-user {
+                    .edgt-logged-in-user-inner {
+                        & > span {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            /* Dropdown part */
+            .edgt-login-dropdown {
+                background-color: #fff;
+
+                li {
+                    a {
+                        font-size: 13px;
+                        line-height: 23px;
+                        font-weight: 600;
+                        color: #9c9c9c;
+                        padding: 5px 20px;
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            &:hover .edgt-login-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .edgt-dark-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) & {
+            .edgt-logged-in-user {
+                .edgt-logged-in-user-inner {
+                    & > span span,
+                    & > span i {
+                        color: #000 !important;
+                        &:hover {
+                            color: rgba(0, 0, 0, .8);
+                        }
+                    }
+                }
+            }
+        }
+
+        .edgt-light-header .edgt-menu-area:not(.fixed):not(.edgt-sticky-header) & {
+            .edgt-logged-in-user {
+                .edgt-logged-in-user-inner {
+                    & > span span,
+                    & > span i {
+                        color: #fff !important;
+                        &:hover {
+                            color: rgba(#fff, .8);
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Top bar style */
+        .edgt-top-bar & {
+            cursor: pointer;
+            /* User part */
+            .edgt-logged-in-user {
+                padding-top: 2px;
+                .edgt-logged-in-user-inner {
+                    & > span {
+                        color: #212121;
+                        font-weight: 400;
+                        line-height: 20px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            /* Dropdown part */
+            .edgt-login-dropdown {
+                background-color: #ffffff;
+                padding: 9px 0;
+                border: 1px solid #ebebeb;
+
+                li {
+                    a {
+                        color: #929292;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        letter-spacing: 0;
+                        font-size: 14px;
+                        line-height: 24px;
+                        padding: 6px 17px;
+                        &:hover {
+                            color: #212121;
+                        }
+                    }
+                }
+            }
+
+            &:hover .edgt-login-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        /* Sidebar style */
+        .edgt-sidebar & {
+            .edgt-logged-in-user {
+                .edgt-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    & > span {
+                        color: #000;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Footer style */
+        footer & {
+            height: auto;
+            .edgt-logged-in-user {
+                .edgt-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    & > span {
+                        color: #fff;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer .dark & {
+            .edgt-logged-in-user {
+                .edgt-logged-in-user-inner {
+                    & > span {
+                        color: #313131;
+                    }
+                }
+            }
+        }
+
+        /* Sidearea style */
+        .edgt-side-menu & {
+            height: auto;
+            .edgt-logged-in-user {
+                .edgt-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    & > span {
+                        color: #666;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Login/Register widget - end
+   ========================================================================== */

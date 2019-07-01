@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgt-twitter-list-holder.edgt-tl-four-columns .edgt-tl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgt-twitter-list-holder.edgt-tl-four-columns .edgt-tl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-twitter-list-holder.edgt-tl-five-columns .edgt-tl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgt-twitter-list-holder.edgt-tl-five-columns .edgt-tl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-twitter-list-holder.edgt-tl-three-columns .edgt-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-twitter-list-holder.edgt-tl-three-columns .edgt-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-twitter-list-holder.edgt-tl-four-columns .edgt-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-twitter-list-holder.edgt-tl-four-columns .edgt-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-twitter-list-holder.edgt-tl-five-columns .edgt-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-twitter-list-holder.edgt-tl-five-columns .edgt-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-twitter-list-holder .edgt-tl-item {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/edge-twitter-feed/assets/css/shortcodes-map-responsive.css.map */

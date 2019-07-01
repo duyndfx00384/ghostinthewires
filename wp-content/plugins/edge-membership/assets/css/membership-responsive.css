@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edgt-membership-main-wrapper {
+    display: block;
+  }
+  .edgt-membership-dashboard-nav-holder {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .edgt-membership-dashboard-nav-holder ul {
+    border-right: 0;
+    padding-right: 0;
+    padding-bottom: 35px;
+  }
+  .edgt-membership-dashboard-content-holder {
+    width: 100%;
+    padding: 0;
+    display: block;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-login-register-content .edgt-social-login-holder-outer {
+    display: block;
+  }
+  .edgt-login-register-content .edgt-social-login-holder-inner,
+  .edgt-login-register-content .edgt-login-form-social-login {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border-right: none;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/edge-membership/assets/css/membership-responsive.css.map */

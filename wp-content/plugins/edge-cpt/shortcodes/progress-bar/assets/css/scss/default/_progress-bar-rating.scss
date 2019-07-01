@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Progress Bar Rating shortcode style - begin
+   ========================================================================== */
+
+.edgt-progress-bar {
+    &.rating {
+        margin: 0 0 11px;
+        @include edgtRelativeHolderLayout();
+
+        .edgt-pb-title-holder {
+            position: relative;
+            display: inline-block;
+            float: left;
+
+            .edgt-pb-title {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                z-index: 100;
+                color: #4b4b4b;
+                font-weight: 400;
+            }
+        }
+
+        .edgt-pb-number-of-ratings {
+            color: #4b4b4b;
+            position: relative;
+            top: 2px;
+        }
+
+        .edgt-pb-content-holder {
+            margin: 0 4.3% 0 3.1%;
+            position: relative;
+            height: 9px;
+            overflow: hidden;
+            background-color: #f2f2f2;
+            display: inline-block;
+            width: 80.5%;
+            float: left;
+            top: 12px;
+
+            .edgt-pb-content {
+                height: 9px;
+                max-width: 100%;
+                overflow: hidden;
+                background-color: $first-main-color;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Progress Bar Rating shortcode style - end
+   ========================================================================== */

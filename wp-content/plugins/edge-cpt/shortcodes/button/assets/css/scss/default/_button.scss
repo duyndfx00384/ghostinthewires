@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.edgt-btn {
+    @include edgtButtonDefaultStyle();
+    @include edgtButtonMediumParams();
+    cursor: pointer;
+    
+    &.edgt-btn-simple {
+        padding: 0 !important;
+        color: $default-heading-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+        overflow: hidden;
+        backface-visibility: hidden;
+        @include edgtTransition(transform .3s ease, color .15s ease-out);
+
+        .edgt-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:not(.edgt-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $default-heading-color !important;
+        }
+
+        &:not(.edgt-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: transparent !important;
+        }
+
+        &:not(.edgt-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: transparent !important;
+        }
+
+        .edgt-btn-text {
+            padding-right: 3px;
+        }
+
+        &.edgt-btn-icon {
+            > i,
+            > span:not(.edgt-btn-text) {
+                vertical-align: middle;
+                margin: 0;
+                font-size: 18px;
+                opacity: 0;
+                @include edgtTransform(translateX(-3px));
+                @include edgtTransition(transform 0.2s ease-in-out, opacity 0.1s);
+            }
+        }
+
+        &:hover {
+            &.edgt-btn-icon {
+                > i,
+                > span:not(.edgt-btn-text) {
+                    opacity: 1;
+                    @include edgtTransform(translateX(0));
+                }
+            }
+        }
+    }
+
+    &.edgt-btn-solid {
+        @include edgtButtonSolidColor();
+
+        &:not(.edgt-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.edgt-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $default-heading-color  !important;
+        }
+
+        &:not(.edgt-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: transparent  !important;
+        }
+    }
+
+    &.edgt-btn-outline {
+	    @include edgtButtonOutlineColor();
+
+        &:not(.edgt-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.edgt-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $first-main-color !important;
+        }
+
+        &:not(.edgt-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $first-main-color !important;
+        }
+    }
+
+    &.edgt-btn-small {
+        @include edgtButtonSmallParams();
+    }
+
+    &.edgt-btn-medium {
+        //same as default
+    }
+
+    &.edgt-btn-large {
+        @include edgtButtonLargeParams();
+    }
+
+    &.edgt-btn-huge {
+        @include edgtButtonHugeParams();
+    }
+
+    &.edgt-btn-icon {
+
+        > i,
+        > span:not(.edgt-btn-text) {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 0 4px;
+            font-size: 1.142857142857143em;
+            line-height: inherit;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+}
+
+input[type=submit].edgt-btn,
+button.edgt-btn {
+    cursor: pointer;
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

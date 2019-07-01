@@ -1,0 +1,572 @@
+/* ==========================================================================
+   Course shortcode style - begin
+   ========================================================================== */
+body.archive {
+    .edgt-course-list-holder {
+        margin-bottom: 70px;
+    }
+}
+.edgt-course-list-holder {
+    @include edgtRelativeHolderLayout();
+
+    /***** Article Global Style - begin *****/
+
+    .edgt-cl-inner{
+        &.edgt-owl-slider{
+            article{
+                padding: 1px!important;
+            }
+        }
+    }
+
+    article {
+        @include edgtRelativeHolderLayout();
+        box-sizing: border-box;
+
+        .touch & {
+            cursor: pointer;
+        }
+
+        .edgt-cl-item-inner {
+            @include edgtRelativeHolderLayout();
+        }
+
+        .edgt-cli-image-wrapper {
+            @include edgtRelativeHolderLayout();
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .edgt-cli-link {
+            @include edgtAbsoluteHolderLayout();
+            z-index: 1;
+        }
+
+        .edgt-cli-text-wrapper {
+            @include edgtTableLayout();
+        }
+
+        .edgt-cli-text {
+            @include edgtTableCellLayout();
+
+            .edgt-cli-title {
+                margin: 0;
+                position: relative;
+                z-index: 2;
+            }
+
+            .edgt-instructor-name {
+                position: relative;
+                z-index: 2;
+            }
+
+            .edgt-cli-category-holder {
+                position: relative;
+                display: block;
+                margin: 3px 0 0;
+
+                a {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0 6px 0 0;
+                    margin: 0 3px 0 0;
+                    z-index: 8;
+
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        right: -3px;
+                        content: '/';
+                        color: inherit;
+                        font-size: 12px;
+                        line-height: inherit;
+                    }
+
+                    &:last-child {
+                        margin: 0;
+                        padding: 0;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.edgt-cl-simple{
+        .edgt-cli-text{
+            vertical-align: top;
+
+            .edgt-cli-top-info{
+                padding: 22px 27px 0;
+            }
+        }
+    }
+
+    &.edgt-cl-simple {
+        .edgt-cl-inner {
+            padding-top: 3px;
+        }
+        article {
+            display: block;
+            .edgt-cl-item-inner {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                .edgt-cli-image-wrapper {
+                    width: 38%;
+                    display: table-cell;
+                    height: 100%;
+                }
+                .edgt-cli-text-holder {
+                    width: 62%;
+                    display: table-cell;
+                    height: 100%;
+
+                    .edgt-cli-text{
+                        vertical-align: middle;
+
+                        .edgt-cli-top-info{
+                            padding: 22px 27px 0;
+                        }
+
+                        .edgt-cli-excerpt{
+                            margin: 17px 0 20px;
+                            padding: 0 26px;
+                        }
+                    }
+
+                    .edgt-ci-price-holder {
+                        position: relative;
+                        display: inline-block;
+                    }
+
+                    .edgt-cli-bottom-info {
+                        border: 0;
+                        padding: 13px 26px 9px;
+
+                        .edgt-cli-category-holder {
+                            float: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Article Global Style - end *****/
+
+    /***** Specific Global Style - begin *****/
+
+    &.edgt-cl-has-filter {
+
+        .edgt-cl-inner {
+            overflow: hidden;
+        }
+    }
+
+    /***** Specific Global Style - end *****/
+
+
+    /***** Course Columns Space - begin *****/
+
+    $columns_space_label: ('no', 'tiny', 'small', 'normal');
+    $columns_space: (0, 5, 10, 15);
+
+    @for $i from 0 to length($columns_space_label) {
+        &.edgt-#{nth($columns_space_label,$i+1)}-space {
+            $item_space: nth($columns_space, $i+1);
+            $item_bottom_margin: $item_space * 2;
+
+            .edgt-cl-inner {
+                @if($item_space == 0) {
+                    margin: 0;
+                } @else {
+                    margin: 0 -#{$item_space}px;
+                }
+            }
+
+            article {
+                padding: 0 #{$item_space}px;
+                margin: 0 0 #{$item_bottom_margin}px;
+            }
+        }
+    }
+
+    /***** Course Columns Space - end *****/
+
+    /***** Course Types - begin *****/
+
+    &.edgt-cl-gallery {
+
+        &:not(.edgt-cl-one-column) {
+
+            article {
+                float: left;
+            }
+        }
+
+        $gallery_columns_number: ('two', 'three', 'four', 'five');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.edgt-cl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+                article {
+                    width: 100% / ($i+2);
+                }
+
+                @if ($i > 1) { // set different break point for four and five columns
+                    @media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+                        article {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                } @else if ($i == 1 ) { // set different break point for three columns
+                    @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                        article {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                } @else {
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                        article {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Course Types - end *****/
+
+    /***** Additional Features - begin *****/
+
+    &.edgt-cl-has-animation {
+
+        article {
+            opacity: 0;
+            @include edgtTransform(translateY(80px));
+            @include edgtTransition(opacity .8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform .8s cubic-bezier(0.34, 0.52, 0.57, 1.04));
+
+            &.edgt-item-show {
+                opacity: 1;
+                @include edgtTransform(translateY(0));
+
+                &.edgt-item-shown {
+                    @include edgtTransition(none);
+                }
+            }
+
+            .touch & {
+                opacity: 1;
+                @include edgtTransform(translateY(0));
+            }
+        }
+    }
+
+    /***** Additional Features - end *****/
+}
+
+/* ==========================================================================
+   Course shortcode style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Course filter style - begin
+   ========================================================================== */
+
+.edgt-cl-filter-holder {
+    @include edgtTableLayout();
+    margin: 0;
+    text-align: center;
+    padding: 8px 0 4px 8px;
+    box-sizing: border-box;
+
+    .edgt-course-layout-filter {
+        @include edgtTableCellLayout();
+        width: 55px;
+        text-align: left;
+        padding-right: 12px;
+        color: #353535;
+        span {
+            &.edgt-active {
+                color: $first-main-color;
+            }
+            i {
+                vertical-align: middle;
+            }
+            &:first-child {
+                font-size: 18px;
+                margin-right: 7px;
+            }
+            &:last-child {
+                font-size: 20px
+            }
+            &:hover {
+                color: $first-main-color;
+                cursor: pointer;
+            }
+        }
+    }
+    .edgt-course-items-counter {
+        font-size: 14px;
+        color: #ababab;
+        @include edgtTableCellLayout();
+        width: 33%;
+        text-align: left;
+        line-height: 25px;
+    }
+    .edgt-course-order-filter {
+        height: 36px;
+        width: 160px;
+        text-align: right;
+        border: 1px solid #f2f2f2;
+        color: $default-text-color;
+        padding-left: 12px;
+        font-size: 12px;
+        float: right;
+    }
+    .edgt-course-items-order {
+        text-align: right;
+
+        select {
+            display: none;
+        }
+
+        .select2-container--default .select2-selection--single {
+            background-color: #fff;
+            font-size: 14px;
+            height: 38px;
+            line-height: 36px;
+            border: 0;
+            color: #ababab;
+
+            .select2-selection__arrow{
+                right: 15px!important;
+            }
+        }
+    }
+
+    .select2-container--default .select2-dropdown{
+        border-top: 1px solid #e5e5e5!important;
+    }
+}
+/* ==========================================================================
+   Course filter style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Course standard pagination style - begin
+   ========================================================================== */
+
+.edgt-Course-list-holder {
+
+    &.edgt-cl-pag-standard {
+
+        .edgt-cl-inner {
+            opacity: 1;
+            @include edgtTransition(opacity .2s ease-out);
+        }
+
+        &.edgt-cl-pag-standard-animate {
+
+            .edgt-cl-inner {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.edgt-cl-standard-pagination {
+    @include edgtRelativeHolderLayout();
+    margin: 8px 0 0;
+    clear: both;
+
+    ul {
+        @include edgtRelativeHolderLayout();
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: right;
+        font-size: 14px;
+
+        li {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 4px;
+            padding: 0;
+
+            a {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+                color: #ababab;
+
+                &:hover{
+                    color: $first-main-color;
+                }
+            }
+
+            &.edgt-cl-pag-active {
+
+                a {
+                    color: $first-main-color;
+                }
+            }
+
+            &.edgt-cl-pag-prev,
+            &.edgt-cl-pag-next {
+                position: relative;
+                top: 0;
+
+                a {
+                    font-size: 16px;
+                    @include edgtTransition(color .2s ease-out, opacity .2s ease-out);
+
+                    span {
+                        display: block;
+                        line-height: inherit;
+
+                        &:before {
+                            display: block;
+                            line-height: inherit;
+                        }
+                    }
+                }
+            }
+
+            &.edgt-cl-pag-next{
+                margin-right: 0;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Course standard pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Course load more pagination style - begin
+   ========================================================================== */
+
+.edgt-cl-load-more-holder {
+    @include edgtRelativeHolderLayout();
+
+    .edgt-cl-load-more {
+        margin: 40px 0 0;
+        text-align: center;
+    }
+}
+/* ==========================================================================
+   Course load more pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Course loading element style - begin
+   ========================================================================== */
+
+.edgt-cl-loading {
+    position: relative;
+    display: none;
+    width: 100%;
+    margin: 40px 0 20px;
+    color: $default-heading-color;
+    text-align: center;
+
+    &.edgt-filter-trigger {
+        position: absolute;
+        top: 250px;
+        left: 0;
+    }
+
+    &.edgt-standard-pag-trigger {
+        position: absolute;
+        top: 50px;
+        left: 0;
+
+        .edgt-cl-has-filter & {
+            top: 150px;
+        }
+    }
+
+    &.edgt-showing {
+        display: block;
+    }
+
+    > div {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        margin: 0 3px;
+        background-color: $default-heading-color;
+        border-radius: 100%;
+        @include edgtAnimation(sk-bouncedelay 1.4s infinite ease-in-out both);
+    }
+
+    .edgt-cl-loading-bounce1 {
+        -webkit-animation-delay: -0.32s;
+        -moz-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+
+    .edgt-cl-loading-bounce2 {
+        -webkit-animation-delay: -0.16s;
+        -moz-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@-moz-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -moz-transform: scale(0);
+    }
+    40% {
+        -moz-transform: scale(1.0);
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+/* ==========================================================================
+   Course loading element style - end
+   ========================================================================== */

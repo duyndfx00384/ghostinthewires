@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Portfolio Single navigation responsive style - begin
+   ========================================================================== */
+@include ipad-portrait {
+    .edgt-ps-navigation {
+
+        .edgt-ps-prev,
+        .edgt-ps-next {
+
+            a {
+                width: auto;
+
+                .edgt-next-ps-img-wrapper,
+                .edgt-prev-ps-img-wrapper{
+                    display: none;
+                }
+
+                .edgt-prev-ps-text-wrapper,
+                .edgt-next-ps-text-wrapper{
+                    padding: 0;
+                    width: auto;
+                }
+            }
+        }
+
+        .edgt-ps-back-btn{
+            top: 78%;
+        }
+    }
+}
+
+@include phone-portrait {
+    .edgt-ps-navigation {
+        padding: 30px 0 0;
+
+        .edgt-ps-prev,
+        .edgt-ps-next {
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+
+                .edgt-ps-nav-prev-title,
+                .edgt-ps-nav-next-title{
+                    display: none;
+                }
+            }
+        }
+
+        .edgt-ps-back-btn{
+            top: 74%;
+        }
+
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single navigation responsive style - end
+   ========================================================================== */

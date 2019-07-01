@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Footer responsive styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-page-footer .edgt-column-content.edgt-grid-col-3 {
+    width: 50%;
+    float: left;
+  }
+  .edgt-page-footer .edgt-column-content.edgt-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+  .edgt-page-footer .edgt-column-content.edgt-grid-col-3:nth-child(3), .edgt-page-footer .edgt-column-content.edgt-grid-col-3:nth-child(4) {
+    margin-top: 30px;
+  }
+  .edgt-page-footer .edgt-column-content.edgt-grid-col-4 {
+    width: 33.33333333333333%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-page-footer .edgt-footer-bottom-holder .edgt-grid-col-6:last-child {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-page-footer .edgt-footer-bottom-holder .edgt-grid-col-6 .widget_text p {
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-page-footer .edgt-column-content:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/footer-map-responsive.css.map */

@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Icon shortcode style - begin
+   ========================================================================== */
+
+.edgt-icon-shortcode {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+	line-height: 1.1em;
+	
+    &.edgt-circle,
+    &.edgt-square {
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+        background-color: $first-main-color;
+        @include edgtTransition(background-color .15s ease-in-out, border-color .15s ease-in-out);
+
+        a {
+	        position: relative;
+	        display: inline-block;
+	        vertical-align: top;
+			width: 100%;
+	        height: 100%;
+        }
+
+        .edgt-icon-element {
+            color: #fff;
+            line-height: inherit;
+        }
+    }
+
+    &.edgt-circle {
+        border-radius: 50%;
+    }
+
+    .edgt-icon-element {
+	    display: block;
+	    line-height: 1em;
+	    
+	    &:before {
+		    display: block;
+		    line-height: inherit;
+	    }
+    }
+}
+
+.edgt-icon-animation-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+    @include edgtTransform(scale(0));
+    @include edgtTransition(transform 0.15s ease-in-out);
+
+    &.edgt-icon-animation-show {
+        @include edgtTransform(scale(1));
+    }
+}
+
+.edgt-icon-tiny {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+.edgt-icon-small {
+    font-size: 2em;
+}
+
+.edgt-icon-medium {
+    font-size: 3em;
+}
+
+.edgt-icon-large {
+    font-size: 4em;;
+}
+
+.edgt-icon-huge {
+    font-size: 5em;
+}
+/* ==========================================================================
+   Icon shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,390 @@
+/* ==========================================================================
+   Search styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+# Search opener - begin
+========================================================================== */
+.edgt-search-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #212121;
+  line-height: 1;
+  margin: 0 3px 0 12px;
+}
+
+.edgt-search-opener:hover {
+  color: #212121;
+}
+
+.edgt-search-opener .edgt-search-opener-wrapper > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.edgt-search-opener .edgt-search-opener-wrapper > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-light-header .edgt-page-header > div:not(.edgt-sticky-header):not(.fixed) .edgt-search-opener,
+.edgt-light-header .edgt-top-bar .edgt-search-opener {
+  color: #fff !important;
+}
+
+.edgt-light-header .edgt-page-header > div:not(.edgt-sticky-header):not(.fixed) .edgt-search-opener:hover,
+.edgt-light-header .edgt-top-bar .edgt-search-opener:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.edgt-dark-header .edgt-page-header > div:not(.edgt-sticky-header):not(.fixed) .edgt-search-opener,
+.edgt-dark-header .edgt-top-bar .edgt-search-opener {
+  color: #333 !important;
+}
+
+.edgt-dark-header .edgt-page-header > div:not(.edgt-sticky-header):not(.fixed) .edgt-search-opener:hover,
+.edgt-dark-header .edgt-top-bar .edgt-search-opener:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+/* ==========================================================================
+# Search opener - end
+========================================================================== */
+/* ==========================================================================
+# Search template style - begin
+========================================================================== */
+.edgt-search-page-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 80px;
+}
+
+.edgt-search-page-holder .edgt-search-page-form {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-search-title {
+  margin: 0 0 20px;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-search-label {
+  display: block;
+  font-size: 13px;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 10px;
+  clear: both;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-column-left {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-column-right {
+  display: table-cell;
+  width: 1%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-search-field {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 20px 0 3px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-search-field::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-search-field:-moz-placeholder {
+  color: inherit;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-search-field::-moz-placeholder {
+  color: inherit;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-search-field:-ms-input-placeholder {
+  color: inherit;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-search-submit {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: 18px;
+  color: #888888;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.edgt-search-page-holder .edgt-search-page-form .edgt-form-holder .edgt-search-submit:hover {
+  color: #434343;
+}
+
+.edgt-search-page-holder .edgt-advanced-course-search .select2-container--default {
+  border: 1px solid #e1e1e1;
+}
+
+.edgt-search-page-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 30px 0;
+  margin: 0;
+}
+
+.edgt-search-page-holder article.sticky .edgt-post-title a {
+  color: #2d76b2;
+}
+
+.edgt-search-page-holder article.page .edgt-post-title-area .edgt-post-info > div.edgt-post-info-category {
+  display: none;
+}
+
+.edgt-search-page-holder article .edgt-post-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edgt-search-page-holder article .edgt-post-image {
+  display: block;
+  float: left;
+  width: 130px;
+}
+
+.edgt-search-page-holder article .edgt-post-image a, .edgt-search-page-holder article .edgt-post-image img {
+  display: block;
+}
+
+.edgt-search-page-holder article .edgt-post-title-area {
+  min-height: 130px;
+  padding: 0 0 0 150px;
+}
+
+.edgt-search-page-holder article .edgt-post-title-area.edgt-no-thumbnail {
+  padding: 0;
+  min-height: inherit;
+}
+
+.edgt-search-page-holder article .edgt-post-title-area .edgt-post-title-area-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.edgt-search-page-holder article .edgt-post-title-area .edgt-post-title-area-inner .edgt-post-title {
+  margin: 0;
+}
+
+.edgt-search-page-holder article .edgt-post-title-area .edgt-post-title-area-inner .edgt-post-excerpt {
+  margin: 7px 0 0;
+}
+
+.edgt-search-page-holder .edgt-blog-pagination {
+  margin: 50px 0 0;
+}
+
+/* ==========================================================================
+# Search template style - end
+========================================================================== */
+/* ==========================================================================
+# Search covers header - start
+========================================================================== */
+.edgt-search-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  color: #fff;
+  background-color: #fff;
+  z-index: 115;
+}
+
+.edgt-fixed-header-appear .edgt-search-cover,
+.edgt-sticky-header-appear .edgt-search-cover,
+.edgt-mobile-header.mobile-header-appear .edgt-search-cover {
+  position: fixed;
+}
+
+.edgt-fixed-header-appear .edgt-search-cover {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.edgt-sticky-header-appear .edgt-search-cover {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.edgt-fixed-header-appear.admin-bar .edgt-search-cover,
+.edgt-sticky-header-appear.admin-bar .edgt-search-cover,
+.admin-bar .edgt-mobile-header.mobile-header-appear .edgt-search-cover {
+  top: 32px;
+}
+
+.edgt-search-cover .edgt-form-holder-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.edgt-search-cover .edgt-form-holder {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 90px 0 60px;
+}
+
+.edgt-search-cover .edgt-form-holder-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  width: 96.5%;
+}
+
+.edgt-search-cover .edgt-container {
+  height: 100%;
+}
+
+.edgt-search-cover .edgt-container .edgt-container-inner {
+  height: 100%;
+}
+
+.edgt-search-cover .edgt-container .edgt-container-inner .edgt-form-holder {
+  padding: 0;
+}
+
+.edgt-search-cover .edgt-container .edgt-container-inner .edgt-search-close {
+  right: 45px;
+}
+
+.edgt-search-cover input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  outline-offset: 0;
+  border-radius: 0;
+}
+
+.edgt-search-cover input::-webkit-input-placeholder {
+  color: #888888;
+}
+
+.edgt-search-cover input:-moz-placeholder {
+  color: #888888;
+}
+
+.edgt-search-cover input::-moz-placeholder {
+  color: #888888;
+}
+
+.edgt-search-cover input:-ms-input-placeholder {
+  color: #888888;
+}
+
+.edgt-search-cover input[type="submit"] {
+  border: 0 none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  visibility: hidden;
+}
+
+.edgt-search-cover .edgt-search-close {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 14px;
+  line-height: 1em;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edgt-search-cover .edgt-search-close a {
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edgt-search-cover .edgt-search-close a * {
+  display: block;
+  line-height: inherit;
+}
+
+.edgt-search-cover .edgt-search-close a:hover {
+  color: #2d76b2;
+}
+
+.edgt-search-cover.disabled input,
+.edgt-search-cover.disabled input:focus {
+  font-weight: normal;
+}
+
+/* ==========================================================================
+# Search covers header - end
+========================================================================== */
+/* ==========================================================================
+   Search styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/search-map.css.map */

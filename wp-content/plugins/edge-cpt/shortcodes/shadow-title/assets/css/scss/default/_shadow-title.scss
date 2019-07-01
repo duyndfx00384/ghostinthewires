@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Shadow Title shortcode styles - begin
+   ========================================================================== */
+
+.edgt-shadow-title-holder {
+    @include edgtRelativeHolderLayout();
+	box-sizing: border-box;
+	
+    .edgt-st-title {
+	    display: block;
+        margin: 0;
+        font-family: 'Amatic SC';
+        font-size: 60px;
+        text-shadow: 2px 2px #fafafa;
+        line-height: 1.1em;
+    }
+
+}
+/* ==========================================================================
+   Shadow Title shortcode styles - end
+   ========================================================================== */
+
+

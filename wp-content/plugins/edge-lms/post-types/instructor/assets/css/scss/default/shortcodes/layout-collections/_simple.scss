@@ -1,0 +1,65 @@
+/* ==========================================================================
+# Instructor simple - begin
+	========================================================================== */
+
+.edgt-instructor {
+
+    &.simple {
+
+        &:hover {
+            .edgt-instructor-inner {
+                border:1px solid $default-text-color;
+            }
+
+            .edgt-instructor-name {
+                color: $first-main-color;
+            }
+        }
+
+        .edgt-instructor-inner {
+            @include edgtTableLayout();
+            text-align: left;
+            width: 100%;
+            padding: 24px 22px 28px;
+            border:1px solid #e1e1e1;
+            box-sizing: border-box;
+            @include edgtTransition(all 0.15s ease-out);
+        }
+
+        .edgt-instructor-image {
+            @include edgtTableCellLayout();
+            width: 70px;
+            padding-right: 25px;
+            img {
+                display: block;
+            }
+        }
+
+
+        .edgt-instructor-info {
+            @include edgtTableCellLayout();
+        }
+
+        .edgt-instructor-link {
+            @include edgtAbsoluteHolderLayout();
+            z-index: 101;
+        }
+
+        .edgt-instructor-name {
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .edgt-instructor-position {
+            margin: 0;
+            font-size: 14px;
+            color: #808080;
+            font-weight: 400;
+        }
+    }
+}
+
+/* ==========================================================================
+# Instructor simple - end
+	========================================================================== */

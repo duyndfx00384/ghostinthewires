@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.edgt-tabs {
+	@include edgtRelativeHolderLayout();
+	
+	.edgt-tabs-nav {
+		@include edgtRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				color: $default-heading-color;
+				font-family: $default-text-font;
+				font-size: 15px;
+				line-height: 40px;
+				font-weight: 400;
+				@include edgtTransition(color .15s ease-out, background-color .15s ease-out);
+			}
+		}
+	}
+	
+	.edgt-tab-container {
+		@include edgtRelativeHolderLayout();
+		visibility: hidden;
+		opacity:0;
+		@include edgtTransform(translateY(5px));
+
+		&.edgt-visible {
+			visibility: visible;
+			opacity:1;
+			@include edgtTransform(translateY(0));
+			@include edgtTransition(all .35s cubic-bezier(0.22, 0.61, 0.36, 1));
+		}
+		
+		p {
+			margin: 0;
+		}
+	}
+
+    .edgt-tab-description {
+        margin-bottom: 59px;
+		font-size: 17px;
+		line-height: 28px;
+    }
+
+    .edgt-tab-content-holder {
+        display: table;
+
+        .edgt-tab-content {
+            @include edgtTableCellLayout();
+            width: 80%;
+        }
+        .edgt-tab-image {
+            @include edgtTableCellLayout();
+            width: 20%;
+            vertical-align: bottom;
+        }
+    }
+	
+	&.edgt-tabs-standard {
+		
+		.edgt-tabs-nav {
+
+			li {
+                border: 1px solid #e1e1e1;
+
+                &:not(first-child){
+                    margin-left: -1px;
+                }
+
+				h5{
+					margin: 0;
+				}
+				
+				a {
+					padding: 6px 30px;
+					background-color: transparent;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $first-main-color;
+					background-color: #fff;
+				}
+			}
+		}
+		
+		.edgt-tab-container {
+			margin: 22px 0 0;
+		}
+	}
+	
+	&.edgt-tabs-vertical {
+		display: table;
+		
+		.edgt-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 415px;
+			height: 100%;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				border-left: 1px solid #e1e1e1;
+				border-right: 1px solid #e1e1e1;
+
+				&:first-child{
+					border-top: 1px solid #e1e1e1;
+				}
+
+				&:last-child{
+					border-bottom: 1px solid #e1e1e1;
+				}
+
+				h5{
+					margin: 0;
+				}
+				
+				a {
+					width: 100%;
+					padding: 32px 10px 28px 20px;
+					border-left: 4px solid transparent;
+					line-height: 1em;
+                    background-color: transparent;
+					@include edgtTransition(all 0.2s ease-out);
+				}
+				
+				&.ui-state-active,
+				&.ui-state-hover {
+                    a {
+                        background-color: #f7f7f7;
+                        border-left: 4px solid $first-main-color;
+                        padding-left: 25px;
+                    }
+                }
+
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.edgt-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(100% - 415px);
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+		}
+	}
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

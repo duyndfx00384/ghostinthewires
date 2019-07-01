@@ -1,0 +1,111 @@
+/* ==========================================================================
+# Instructor list - begin
+	========================================================================== */
+
+.edgt-instructor-list-holder {
+    @include edgtRelativeHolderLayout();
+
+    .edgt-instructor {
+        @include edgtRelativeHolderLayout();
+
+        float: left;
+        box-sizing: border-box;
+    }
+
+    /***** Instructor Columns Space - begin *****/
+
+    $columns_space_label: ('no', 'tiny', 'small', 'normal');
+    $columns_space: (0, 5, 10, 15);
+
+    @for $i from 0 to length($columns_space_label) {
+        &.edgt-tl-#{nth($columns_space_label,$i+1)}-space {
+            $item_space: nth($columns_space, $i+1);
+            $item_bottom_margin: $item_space * 2;
+
+            .edgt-tl-inner {
+                @if($item_space == 0) {
+                    margin: 0;
+                } @else {
+                    margin: 0 -#{$item_space}px;
+                }
+            }
+
+            .edgt-instructor {
+                padding: 0 #{$item_space}px;
+                margin: 0 0 #{$item_bottom_margin}px;
+            }
+        }
+    }
+
+    /***** Instructor Columns Space - end *****/
+
+    /***** Instructor Columns - begin *****/
+
+    $instructor_columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($instructor_columns_number) {
+        &.edgt-tl-#{nth($instructor_columns_number,$i+1)}-columns {
+
+            .edgt-instructor {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) { // set different break point for four and five columns
+                @media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+                    .edgt-instructor {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else if ($i == 1 ) { // set different break point for three columns
+                @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                    .edgt-instructor {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .edgt-instructor {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Instructor Columns - end *****/
+
+    /***** Instructor Shadow style - begin *****/
+
+    &.edgt-has-shadow {
+
+        .edgt-instructor-inner {
+            @include edgtTransition(all .2s ease-in-out);
+
+            &:hover {
+                -webkit-box-shadow: -2px 4px 13px 0 rgba(81,137,162,.05);
+                -moz-box-shadow: -2px 4px 13px 0 rgba(81,137,162,.05);
+                box-shadow: -2px 4px 13px 0 rgba(81,137,162,.05);
+                @include edgtTransform(translateY(-3px));
+            }
+        }
+
+    }
+
+    /***** Instructor Shadow style - end *****/
+
+}
+
+/* ==========================================================================
+# Instructor list - end
+========================================================================== */

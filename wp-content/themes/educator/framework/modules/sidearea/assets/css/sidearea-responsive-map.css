@@ -1,0 +1,21 @@
+/* ==========================================================================
+  Sidearea responsive styles - begin
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+@media only screen and (max-width: 1280px) {
+  .edgt-side-menu-slide-from-right .edgt-side-menu {
+    width: 500px !important;
+    right: -500px !important;
+  }
+  .edgt-side-menu-slide-from-right.edgt-right-side-menu-opened .edgt-side-menu {
+    right: 0 !important;
+    visibility: visible;
+  }
+}
+
+/* ==========================================================================
+   Search responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/sidearea-responsive-map.css.map */

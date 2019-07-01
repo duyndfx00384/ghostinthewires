@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Course Category shortcode styles - begin
+   ========================================================================== */
+
+.edgt-cc-holder{
+  position: relative;
+
+    .edgt-cc-image {
+        overflow: hidden;
+
+        img {
+            display: block;
+            @include edgtTransition(transform .5s ease);
+            @include edgtTransform(translateZ(0));
+            backface-visibility: hidden;
+        }
+    }
+
+    &:hover {
+        .edgt-cc-image {
+            img {
+                @include edgtTransform(scale(1.02));
+            }
+        }
+    }
+
+  .edgt-cc-text-wrapper {
+    @include edgtAbsoluteHolderLayout();
+
+    .edgt-cc-text-holder {
+      display: table;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+
+      .edgt-cc-text {
+        display: table-cell;
+        vertical-align: middle;
+
+          .edgt-cc-category-title{
+              margin: 2px 0;
+              text-transform: capitalize;
+          }
+          .edgt-cc-number{
+              color: #000;
+              &:hover{
+                  color: #000;
+              }
+          }
+      }
+    }
+  }
+
+    &.light-skin {
+        .edgt-cc-text-wrapper {
+            .edgt-cc-text {
+                .edgt-cc-category-title {
+                    color: #fff;
+                }
+                .edgt-cc-number {
+                    color: #fff;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Course Category shortcode styles - end
+   ========================================================================== */

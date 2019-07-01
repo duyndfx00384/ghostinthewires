@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Course search shortcode style - begin
+   ========================================================================== */
+.edgt-advanced-course-search {
+    margin-bottom: 25px;
+    select {
+        display: none;
+    }
+    .select2 {
+        min-width: calc(25% - 25px);
+        margin-right: 25px;
+        border: 1px solid #e1e1e1;
+        .select2-selection--single {
+            height: 52px;
+            line-height: 54px;
+            font-size: 14px;
+            margin-left: 50px;
+            background-color: #fff;
+            border: 0;
+        }
+
+        &.edgt-course-category,
+        &.edgt-course-instructor,
+        &.edgt-course-price {
+            &:before {
+                position: absolute;
+                color: #212121;
+                font-size: 18px;
+                line-height: 54px;
+                text-align: center;
+                top: 0;
+                left: 0;
+                font-family: 'Linearicons-Free', serif;
+                width: 50px;
+                height: 100%;
+                background-color: #f5f5f5;
+            }
+        }
+
+        &.edgt-course-category {
+            &:before {
+                content: "\e821";
+            }
+        }
+        &.edgt-course-instructor {
+            &:before {
+                content: "\e82a";
+            }
+        }
+        &.edgt-course-price {
+            &:before {
+                content: "\e82f";
+            }
+        }
+    }
+
+    button{
+        width: 25%;
+    }
+
+}
+
+body{
+    &:not(.woocommerce){
+        .select2-container--default .select2-results>.select2-results__options{
+            padding: 15px 15px;
+        }
+        .select2-container--default .select2-results__option{
+            padding: 3px 0;
+        }
+    }
+}
+
+@include ipad-landscape {
+    .edgt-advanced-course-search {
+        .select2  {
+            min-width: 100%;
+        }
+
+        .select2 {
+            margin: 0 0 15px 0;
+        }
+
+        button {
+            width: auto;
+            margin: 0 auto;
+            display: inherit;
+        }
+    }
+}
+
+@include phone-landscape {
+    .edgt-advanced-course-search {
+
+        .select2 {
+            margin: 0 0 15px 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Course search shortcode style - end
+   ========================================================================== */

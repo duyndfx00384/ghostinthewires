@@ -1,0 +1,1096 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-boxes.edgt-two-columns .edgt-boxes-item, .edgt-boxes.edgt-three-columns .edgt-boxes-item, .edgt-boxes.edgt-four-columns .edgt-boxes-item {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edgt-btn.edgt-btn-large, .edgt-btn.edgt-btn-huge {
+    padding: 16px 44px;
+    font-size: 14px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .edgt-call-to-action-holder .edgt-grid {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edgt-call-to-action-holder.edgt-three-quarters-columns .edgt-cta-text-holder, .edgt-call-to-action-holder.edgt-four-fifths-columns .edgt-cta-text-holder {
+    width: 66.66666666666667%;
+  }
+  .edgt-call-to-action-holder.edgt-three-quarters-columns .edgt-cta-button-holder, .edgt-call-to-action-holder.edgt-four-fifths-columns .edgt-cta-button-holder {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-call-to-action-holder.edgt-normal-layout .edgt-cta-inner,
+  .edgt-call-to-action-holder.edgt-normal-layout .edgt-cta-text-holder,
+  .edgt-call-to-action-holder.edgt-normal-layout .edgt-cta-button-holder {
+    display: block;
+  }
+  .edgt-call-to-action-holder.edgt-normal-layout .edgt-cta-button-holder {
+    margin: 28px 0 0;
+    text-align: initial;
+  }
+  .edgt-call-to-action-holder.edgt-two-halves-columns .edgt-cta-text-holder,
+  .edgt-call-to-action-holder.edgt-two-halves-columns .edgt-cta-button-holder, .edgt-call-to-action-holder.edgt-two-thirds-columns .edgt-cta-text-holder,
+  .edgt-call-to-action-holder.edgt-two-thirds-columns .edgt-cta-button-holder, .edgt-call-to-action-holder.edgt-three-quarters-columns .edgt-cta-text-holder,
+  .edgt-call-to-action-holder.edgt-three-quarters-columns .edgt-cta-button-holder, .edgt-call-to-action-holder.edgt-four-fifths-columns .edgt-cta-text-holder,
+  .edgt-call-to-action-holder.edgt-four-fifths-columns .edgt-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Cards Gallery responsive shortcode style - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edgt-cards-gallery-holder .card:nth-last-child(8) {
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+    top: -70%;
+  }
+  .edgt-cards-gallery-holder .card:nth-last-child(7) {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+    top: -60%;
+  }
+  .edgt-cards-gallery-holder .card:nth-last-child(6) {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    top: -50%;
+  }
+  .edgt-cards-gallery-holder .card:nth-last-child(5) {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    top: -40%;
+  }
+  .edgt-cards-gallery-holder .card:nth-last-child(4) {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+    top: -30%;
+  }
+  .edgt-cards-gallery-holder .card:nth-last-child(3) {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    top: -20%;
+  }
+  .edgt-cards-gallery-holder .card:nth-last-child(2) {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    top: -10%;
+  }
+}
+
+/* ==========================================================================
+   Cards Gallery responsive shortcode style - end
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-comparision-pricing-tables-holder.edgt-three-columns .edgt-cpt-features-holder {
+    display: none;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-three-columns .edgt-cpt-table {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-three-columns .edgt-cpt-table .edgt-cpt-table-head-holder,
+  .edgt-comparision-pricing-tables-holder.edgt-three-columns .edgt-cpt-table .edgt-cpt-table-content,
+  .edgt-comparision-pricing-tables-holder.edgt-three-columns .edgt-cpt-table .edgt-cpt-table-footer {
+    border-left: 1px solid #f2f2f2 !important;
+    border-right: 1px solid #f2f2f2 !important;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-three-columns .edgt-cpt-table-item-feature {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-four-columns .edgt-cpt-table {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-four-columns .edgt-cpt-features-holder {
+    display: none;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-four-columns .edgt-cpt-table-item-feature {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-four-columns .edgt-cpt-table-head-holder,
+  .edgt-comparision-pricing-tables-holder.edgt-four-columns .edgt-cpt-table-content {
+    border-left: 1px solid #f2f2f2 !important;
+  }
+  .edgt-comparision-pricing-tables-holder .edgt-cpt-table .edgt-cpt-table-content li {
+    line-height: 1.7em;
+    padding-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-comparision-pricing-tables-holder.edgt-four-columns .edgt-cpt-table, .edgt-comparision-pricing-tables-holder.edgt-two-columns .edgt-cpt-table {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-two-columns .edgt-cpt-features-holder {
+    display: none;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-two-columns .edgt-cpt-table-item-feature {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .edgt-comparision-pricing-tables-holder.edgt-two-columns .edgt-cpt-table-head-holder,
+  .edgt-comparision-pricing-tables-holder.edgt-two-columns .edgt-cpt-table-content {
+    border-left: 1px solid #f2f2f2 !important;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edgt-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-countdown .countdown-row.countdown-show4 .countdown-section, .edgt-countdown .countdown-row.countdown-show5 .countdown-section, .edgt-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 20%;
+  }
+  .edgt-countdown .countdown-row .countdown-section {
+    margin-bottom: 20px;
+  }
+  .edgt-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 35px !important;
+  }
+  .edgt-countdown .countdown-row .countdown-section .countdown-period {
+    font-size: 12px !important;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+  Education Timeline  shortcode responsive style - begin
+   ========================================================================== */
+/* ==========================================================================
+   Education Timeline  shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-two-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-three-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-four-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-five-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-six-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-1-1, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-1-2, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-1-3, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-1-4, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-2-3, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-3-4, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-1-5, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-2-5, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-3-5, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-4-5, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-1-6, .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column .edgt-eh-item.edgt-width-5-6 {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column-alignment-left .edgt-eh-item .edgt-eh-item-content {
+    text-align: left;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column-alignment-right .edgt-eh-item .edgt-eh-item-content {
+    text-align: right;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1280.edgt-one-column-alignment-center .edgt-eh-item .edgt-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-two-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-three-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-four-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-five-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-six-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-1-1, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-1-2, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-1-3, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-1-4, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-2-3, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-3-4, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-1-5, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-2-5, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-3-5, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-4-5, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-1-6, .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column .edgt-eh-item.edgt-width-5-6 {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column-alignment-left .edgt-eh-item .edgt-eh-item-content {
+    text-align: left;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column-alignment-right .edgt-eh-item .edgt-eh-item-content {
+    text-align: right;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-1024.edgt-one-column-alignment-center .edgt-eh-item .edgt-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-two-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-three-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-four-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-five-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-six-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-1-1, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-1-2, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-1-3, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-1-4, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-2-3, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-3-4, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-1-5, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-2-5, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-3-5, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-4-5, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-1-6, .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column .edgt-eh-item.edgt-width-5-6 {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column-alignment-left .edgt-eh-item .edgt-eh-item-content {
+    text-align: left;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column-alignment-right .edgt-eh-item .edgt-eh-item-content {
+    text-align: right;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-768.edgt-one-column-alignment-center .edgt-eh-item .edgt-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-two-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-three-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-four-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-five-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-six-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-1-1, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-1-2, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-1-3, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-1-4, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-2-3, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-3-4, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-1-5, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-2-5, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-3-5, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-4-5, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-1-6, .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column .edgt-eh-item.edgt-width-5-6 {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column-alignment-left .edgt-eh-item .edgt-eh-item-content {
+    text-align: left;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column-alignment-right .edgt-eh-item .edgt-eh-item-content {
+    text-align: right;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-680.edgt-one-column-alignment-center .edgt-eh-item .edgt-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-two-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-three-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-four-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-five-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-six-columns .edgt-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-1-1, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-1-2, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-1-3, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-1-4, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-2-3, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-3-4, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-1-5, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-2-5, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-3-5, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-4-5, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-1-6, .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column .edgt-eh-item.edgt-width-5-6 {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column-alignment-left .edgt-eh-item .edgt-eh-item-content {
+    text-align: left;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column-alignment-right .edgt-eh-item .edgt-eh-item-content {
+    text-align: right;
+  }
+  .edgt-elements-holder.edgt-responsive-mode-480.edgt-one-column-alignment-center .edgt-eh-item .edgt-eh-item-content {
+    text-align: center;
+  }
+  .edgt-elements-holder .edgt-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .edgt-int-icon-showcase .edgt-int-icon-circle,
+  .edgt-int-icon-showcase .edgt-int-icon-showcase-inner {
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    margin: 30px;
+  }
+  .edgt-int-icon-showcase .edgt-showcase-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .edgt-int-icon-showcase .edgt-showcase-icon .edgt-icon-shortcode {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+  }
+  .edgt-int-icon-showcase .edgt-showcase-content-inner {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-icon-tabs .edgt-icon-tabs-nav li a {
+    padding: 20px 5px;
+  }
+  .edgt-icon-tabs .edgt-icon-tabs-nav li a .edgt-icon-tabs-title-holder {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-icon-tabs.edgt-icon-tabs-four ul li, .edgt-icon-tabs.edgt-icon-tabs-five ul li, .edgt-icon-tabs.edgt-icon-tabs-six ul li {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-icon-tabs.edgt-icon-tabs-two ul li, .edgt-icon-tabs.edgt-icon-tabs-three ul li, .edgt-icon-tabs.edgt-icon-tabs-four ul li, .edgt-icon-tabs.edgt-icon-tabs-five ul li, .edgt-icon-tabs.edgt-icon-tabs-six ul li {
+    width: 100%;
+  }
+  .edgt-icon-tabs.edgt-icon-tabs-two ul li:not(:last-child), .edgt-icon-tabs.edgt-icon-tabs-three ul li:not(:last-child), .edgt-icon-tabs.edgt-icon-tabs-four ul li:not(:last-child), .edgt-icon-tabs.edgt-icon-tabs-five ul li:not(:last-child), .edgt-icon-tabs.edgt-icon-tabs-six ul li:not(:last-child) {
+    border-bottom: none;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1281px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image:nth-child(6n+1) {
+    clear: none;
+  }
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-grid-sizer {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-grid-sizer {
+    width: 25%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 50%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-grid-sizer {
+    width: 25%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-four-columns .edgt-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-two-columns .edgt-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-three-columns .edgt-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-four-columns .edgt-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-grid-sizer {
+    width: 33.33333%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 66.66667%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-grid-sizer {
+    width: 33.33333%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 66.66667%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-grid-sizer {
+    width: 50%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-three-columns .edgt-ig-image {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-grid-sizer {
+    width: 50%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-grid-sizer {
+    width: 50%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+  .edgt-ig-carousel-type .owl-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-two-columns .edgt-ig-image {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-three-columns .edgt-ig-image {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-four-columns .edgt-ig-image {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-five-columns .edgt-ig-image {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-grid.edgt-ig-six-columns .edgt-ig-image {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-two-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-two-columns .edgt-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-two-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-three-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-four-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-five-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image,
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgt-image-gallery .edgt-ig-masonry.edgt-ig-six-columns .edgt-ig-image.edgt-large-masonry-item {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Info Card shortcode style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-info-card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* ==========================================================================
+   Info Card shortcode style - end
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-linked-images-list.edgt-four-columns .edgt-linked-images-item {
+    width: 32.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1025px) {
+  .edgt-linked-images-list.edgt-four-columns .edgt-linked-images-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .edgt-linked-images-list.edgt-four-columns .edgt-linked-images-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-linked-images-list.edgt-five-columns .edgt-linked-images-item {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1025px) {
+  .edgt-linked-images-list.edgt-five-columns .edgt-linked-images-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .edgt-linked-images-list.edgt-five-columns .edgt-linked-images-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-linked-images-list.edgt-six-columns .edgt-linked-images-item {
+    width: 31.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1025px) {
+  .edgt-linked-images-list.edgt-six-columns .edgt-linked-images-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .edgt-linked-images-list.edgt-six-columns .edgt-linked-images-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-linked-images-list.edgt-four-columns .edgt-linked-images-item {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1025px) {
+  .edgt-linked-images-list.edgt-four-columns .edgt-linked-images-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-linked-images-list.edgt-five-columns .edgt-linked-images-item {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1025px) {
+  .edgt-linked-images-list.edgt-five-columns .edgt-linked-images-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-linked-images-list.edgt-six-columns .edgt-linked-images-item {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1025px) {
+  .edgt-linked-images-list.edgt-six-columns .edgt-linked-images-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-linked-images-list.edgt-two-columns .edgt-linked-images-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .edgt-linked-images-list.edgt-three-columns .edgt-linked-images-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .edgt-linked-images-list.edgt-four-columns .edgt-linked-images-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .edgt-linked-images-list.edgt-five-columns .edgt-linked-images-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .edgt-linked-images-list.edgt-six-columns .edgt-linked-images-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgt-pricing-tables.edgt-four-columns .edgt-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 681px) {
+  .edgt-pricing-tables.edgt-four-columns .edgt-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgt-pricing-tables.edgt-five-columns .edgt-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 681px) {
+  .edgt-pricing-tables.edgt-five-columns .edgt-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-pricing-tables.edgt-three-columns .edgt-price-table {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-pricing-tables .edgt-price-table {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgt-process-holder .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-image-holder {
+    width: 275px;
+    height: 275px;
+    margin-top: -20px;
+  }
+  .edgt-process-holder .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-holder-inner {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edgt-process-holder .edgt-process-bg-holder {
+    display: none;
+  }
+  .edgt-process-holder .edgt-process-item-holder .edgt-pi-image-holder {
+    width: 171px;
+    height: 171px;
+  }
+  .edgt-process-holder .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-image-holder {
+    width: 237px;
+    height: 237px;
+    margin-top: -30px;
+  }
+  .edgt-process-holder .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-holder-inner {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgt-process-holder.edgt-process-holder-items-four .edgt-process-item-holder {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .edgt-process-holder.edgt-process-holder-items-four .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-image-holder {
+    margin-top: 0;
+  }
+  .edgt-process-holder.edgt-process-holder-items-four .edgt-process-item-holder .edgt-pi-holder-inner {
+    width: 100%;
+  }
+  .edgt-process-holder.edgt-process-holder-items-four .edgt-process-item-holder .edgt-pi-holder-inner .edgt-pi-content-holder {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-process-holder.edgt-process-holder-items-three .edgt-process-item-holder.edgt-pi-highlighted .edgt-pi-image-holder {
+    margin-top: 0;
+  }
+  .edgt-process-holder .edgt-process-item-holder {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .edgt-process-holder .edgt-process-item-holder .edgt-pi-holder-inner {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Progress Bar Rating shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgt-progress-bar.rating .edgt-pb-content-holder {
+    margin: 0 3.5% 0 3.1%;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgt-progress-bar.rating .edgt-pb-content-holder {
+    margin: 0 3.5% 0 3.1%;
+    width: 68%;
+  }
+}
+
+/* ==========================================================================
+   Progress Bar Rating shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-section-title-holder.edgt-st-two-columns {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-section-title-holder {
+    padding: 0 !important;
+  }
+  .edgt-section-title-holder.edgt-st-two-columns .edgt-st-title,
+  .edgt-section-title-holder.edgt-st-two-columns .edgt-st-text {
+    width: 100%;
+    float: none !important;
+    text-align: initial !important;
+  }
+  .edgt-section-title-holder.edgt-st-two-columns .edgt-st-text {
+    margin: 14px 0 0;
+  }
+  .edgt-section-title-holder.edgt-st-disable-title-break .edgt-st-title br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Shadow Title shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edgt-shadow-title-holder {
+    padding: 0 !important;
+  }
+  .edgt-shadow-title-holder .edgt-st-title {
+    width: 100%;
+    float: none !important;
+  }
+}
+
+/* ==========================================================================
+   Shadow Title shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgt-tabs .edgt-tab-content-holder {
+    display: block;
+    height: auto;
+  }
+  .edgt-tabs .edgt-tab-content-holder .edgt-tab-content {
+    display: block;
+    width: 100%;
+  }
+  .edgt-tabs .edgt-tab-content-holder .edgt-tab-image {
+    display: block;
+    width: 100%;
+  }
+  .edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li a {
+    padding: 7px 21px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav,
+  .edgt-tabs.edgt-tabs-vertical .edgt-tab-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .edgt-tabs.edgt-tabs-vertical .edgt-tabs-nav li {
+    display: block;
+    width: 100%;
+  }
+  .edgt-tabs.edgt-tabs-vertical .edgt-tab-container {
+    padding: 0;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgt-tabs.edgt-tabs-standard .edgt-tabs-nav {
+    width: 100%;
+    border-bottom: 0;
+  }
+  .edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li {
+    border-bottom: 1px solid #ebebeb;
+    display: block;
+    float: none;
+  }
+  .edgt-tabs.edgt-tabs-standard .edgt-tabs-nav li a {
+    padding: 10px 0 7px;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+# Team responsive style - begin
+========================================================================== */
+/* ==========================================================================
+# Team responsive style - end
+========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-cpt/assets/css/shortcodes-map-responsive.css.map */

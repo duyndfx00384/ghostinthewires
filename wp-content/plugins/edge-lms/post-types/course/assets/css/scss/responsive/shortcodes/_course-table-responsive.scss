@@ -1,0 +1,69 @@
+.edgt-course-table-holder {
+	@include ipad-landscape{
+		tbody {
+			.edgt-ct-item {
+				.edgt-tc-course-field {
+					.edgt-ci-price-holder {
+						margin-left: 0;
+						margin-top: 5px;
+					}
+				}
+				.edgt-tc-instructor-field {
+					.edgt-instructor-image {
+						display: none;
+					}
+					.edgt-instructor-name {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	@include ipad-portrait {
+
+
+		tbody {
+			.edgt-ct-item {
+				td {
+					padding: 17px 15px;
+				}
+			}
+		}
+	}
+
+	@include  phone-landscape {
+		thead {
+			td {
+				padding: 26px 15px;
+			}
+			display: none;
+		}
+		tbody {
+			.edgt-ct-item {
+				display: block;
+				padding: 25px 0 30px;
+				td {
+					display: block;
+					text-align: center;
+					padding: 10px 33px;
+					&.edgt-tc-button-field {
+						text-align: center;
+					}
+				}
+				.edgt-ci-price-holder {
+					display: block!important;
+				}
+				.edgt-tc-instructor-field {
+					a {
+						display: block!important;
+					}
+					.edgt-instructor-name {
+						display: block;
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

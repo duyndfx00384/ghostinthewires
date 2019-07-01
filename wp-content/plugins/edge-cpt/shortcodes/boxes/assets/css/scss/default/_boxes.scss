@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Boxes shortcode style - begin
+   ========================================================================== */
+
+.edgt-boxes {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+
+  &.edgt-two-columns {
+
+    .edgt-boxes-item {
+      width: 50%;
+    }
+  }
+
+  &.edgt-three-columns {
+
+    .edgt-boxes-item {
+      width: 33%;
+    }
+
+  }
+
+  &.edgt-four-columns {
+
+    .edgt-boxes-item {
+      width: 25%;
+    }
+  }
+
+  .edgt-boxes-item {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+    &.edgt-vertical-alignment-top {
+      vertical-align: top;
+    }
+
+    &.edgt-vertical-alignment-bottom {
+      vertical-align: bottom;
+    }
+
+    &.edgt-horizontal-alignment-center {
+      text-align: center;
+    }
+
+    &.edgt-horizontal-alignment-right {
+      text-align: right;
+    }
+
+    .edgt-boxes-item-inner {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .edgt-boxes-item-content{
+      padding: 50px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .edgt-boxes-item-link{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+    }
+
+    .edgt-boxes-item-content-overlay {
+      background-color: rgba(0,0,0,0.05);
+      opacity: 0;
+      @include edgtTransition(opacity 0.3s ease);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    &:hover {
+      .edgt-boxes-item-content-overlay {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  &.edgt-boxes-inner-float {
+
+    &.edgt-three-columns {
+
+      .edgt-boxes-item {
+        width: 33.33333333333333%;
+      }
+    }
+
+    .edgt-boxes-item {
+      float:left;
+    }
+  }
+
+  .edgt-boxes-inner-content {
+    padding: 0 20px;
+  }
+}
+
+/* ==========================================================================
+   Boxes shortcode style - end
+   ========================================================================== */

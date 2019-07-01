@@ -1,0 +1,1 @@
+<?php echo educator_edge_execute_shortcode('edgt_course_search', $search_params);

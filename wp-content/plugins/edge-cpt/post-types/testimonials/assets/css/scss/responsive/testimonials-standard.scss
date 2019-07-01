@@ -1,0 +1,50 @@
+@include laptop-landscape-large {
+    .edgt-testimonials-holder{
+        &.edgt-testimonials-standard {
+            .edgt-testimonial-text {
+                padding: 0px 6%;
+            }
+        }
+    }
+}
+
+@include  laptop-landscape-medium {
+    .edgt-testimonials-holder{
+        &.edgt-testimonials-disable-padding {
+            &.edgt-testimonials-standard {
+                .edgt-testimonial-text {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@include ipad-landscape {
+    .edgt-testimonials-holder {
+        &.edgt-testimonials-standard {
+            .edgt-testimonial-text {
+                padding: 0 8%;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    .edgt-testimonials-holder {
+        &.edgt-testimonials-standard {
+            .edgt-testimonial-text {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@include phone-portrait {
+    .edgt-testimonials-holder {
+        .edgt-testimonials {
+            padding: 0;
+        }
+    }
+}
